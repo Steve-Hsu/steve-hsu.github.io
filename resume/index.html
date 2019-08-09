@@ -1,0 +1,82 @@
+---
+layout: default
+---
+
+<body class="resume">
+
+  <main role="main" class="container">
+    <!----- frist card-deck ----->
+    {% for post in site.posts %}
+    <div class="row mb-4">
+
+      <!-- left squire -->
+      <div class="col-4 d-flex justify-content-center align-items-center" style="background-color: rgb(41, 173, 199);">
+        <div class="singleYear">{{post.year}}</div>
+      </div>
+
+      <!-- right squire -->
+      <div class="col-8 p-4 overflow-auto" style="height: 270px">
+        <div class="">
+          <span class="title">Company : </span>
+          {{post.Company}}
+        </div>
+        <div class="">
+          <span class="title">Job Title : </span>
+          {{post.JobTitle}}
+        </div>
+        <div class="">
+          <span class="title">Accomplishments : </span>
+          {{post.Accomplisthements}}
+        </div>
+      </div>
+
+    </div>
+    {% endfor %}
+
+    <!----- second card-deck ----->
+    <div class="card-deck mb-3">
+
+      <div class="card shadow-sm">
+        <div class="card-header">
+          <h4 class="mt-2">2015 ~ 2017</h4>
+        </div>
+        <div class="card-body">
+          <h4>Job Title :</h4>
+          <p>Vice general manager</p>
+          <h4>Accomplishments :</h4>
+          <p>imporve the production from 300 to 850 each line.</p>
+        </div>
+      </div>
+
+      <div class="card shadow-sm">
+        <div class="card-header">
+          <h4 class="mt-2">2018</h4>
+        </div>
+        <div class="card-body">
+          <h4>Job Title :</h4>
+          <p>Vice general manager</p>
+          <h4>Accomplishments :</h4>
+          <p>instroduce the QC system and rearrange the warehouse.</p>
+        </div>
+      </div>
+
+      <div class="card shadow-sm">
+        <div class="card-header">
+          <h4 class="mt-2">2015</h4>
+        </div>
+        <div class="card-body">
+          <h4>Job Title :</h4>
+          <p>Sales manager</p>
+          <h4>Accomplishments :</h4>
+          <p>use the smallest team to win a snowbaord jacket salesmen sample as the first brand direct order for the new factory.</p>
+        </div>
+      </div>
+    </div>
+
+
+  </main><!-- /.container -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+
+
+</body>
