@@ -75,3 +75,14 @@ body.resume li.resume > a.nav-link {
 body.resume li.resume > a.nav-link:hover {
   @extend .currentPage
 }
+
+/* animeJS Obejcts */
+
+.circle{
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: rgb(25, 33, 28);
+  display: inline-block;
+  position:relative;
+}

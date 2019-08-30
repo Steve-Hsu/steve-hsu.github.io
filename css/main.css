@@ -52,4 +52,14 @@ footer {
   font-weight: 900;
 }
 
+/* animeJS Obejcts */
+.circle {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #19211c;
+  display: inline-block;
+  position: relative;
+}
+
 /*# sourceMappingURL=main.css.map */
