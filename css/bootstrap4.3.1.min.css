@@ -4486,7 +4486,6 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
 .navbar-dark .navbar-text a:focus, .navbar-dark .navbar-text a:hover {
   color: #fff
 }
-
 .card {
   position: relative;
   display: -ms-flexbox;

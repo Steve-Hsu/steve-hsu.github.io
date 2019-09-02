@@ -1,21 +1,23 @@
 header {
-  background-color: #094646;
+  background-color: #f1e0c2;
   font-variant: small-caps;
 }
 
 body {
-  background-color: #f1e0c2;
+  background-color: white;
   padding-top: 5rem;
 }
 
 footer {
-  background-color: #102dc6;
+  background-color: #f1e0c2;
   height: 10%;
 }
 
-/* h1, h2, h3, h4, h5, h6 {
-  font-family: 'Palanquin Dark', sans-serif;
-} */
+nav {
+  background-color: white;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
+}
+
 .title {
   font-family: "Palanquin Dark", sans-serif;
   font-size: 1.5rem;
@@ -31,10 +33,28 @@ footer {
   .singleYear {
     font-size: 6rem;
   }
+
+  .homeCard:hover {
+    animation: homecard 0.5s;
+    animation-fill-mode: both;
+  }
+  .homeCard:hover .circle {
+    animation: circleHover 0.5s;
+    animation-fill-mode: both;
+  }
 }
 @media (min-width: 768px) {
   .singleYear {
     font-size: 7rem;
+  }
+
+  .homeCard:hover {
+    animation: homecard 0.5s;
+    animation-fill-mode: both;
+  }
+  .homeCard:hover .circle {
+    animation: circleHover 0.5s;
+    animation-fill-mode: both;
   }
 }
 @media (min-width: 992px) {
@@ -47,19 +67,77 @@ footer {
     font-size: 10rem;
   }
 }
-.currentPage, body.resume li.resume > a.nav-link:hover, body.resume li.resume > a.nav-link, body.home li.home > a.nav-link:hover, body.home li.home > a.nav-link {
-  color: #ed9117;
+/*nav bar ------------------------------------------------------- */
+body.resume li.resume > a.nav-link:hover, body.resume li.resume > a.nav-link, body.home li.home > a.nav-link:hover, body.home li.home > a.nav-link {
+  color: #040404;
   font-weight: 900;
 }
 
-/* animeJS Obejcts */
+/* animetion Obejcts ------------------------------------------------------- */
 .circle {
-  width: 25px;
-  height: 25px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
-  background-color: #19211c;
+  background-color: black;
   display: inline-block;
   position: relative;
+}
+
+/* animation ------------------------------------------------------- */
+.homeCard:hover {
+  animation: homecard 0.5s;
+  animation-fill-mode: both;
+}
+.homeCard:hover .circle {
+  animation: circleHover 0.5s;
+  animation-fill-mode: both;
+}
+
+.homeCard:not(:hover) {
+  animation: Rhomecard 0.5s;
+  animation-fill-mode: both;
+}
+.homeCard:not(:hover) .circle {
+  animation: RcircleHover 0.5s;
+  animation-fill-mode: both;
+}
+
+@keyframes homecard {
+  from {
+    background-color: white;
+    color: black;
+  }
+  to {
+    background-color: black;
+    color: white;
+  }
+}
+/* animation circle */
+@keyframes circleHover {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(992px);
+  }
+}
+@keyframes Rhomecard {
+  from {
+    background-color: black;
+    color: white;
+  }
+  to {
+    background-color: white;
+    color: black;
+  }
+}
+@keyframes RcircleHover {
+  from {
+    transform: translateX(992px);
+  }
+  to {
+    transform: translateX(0);
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
