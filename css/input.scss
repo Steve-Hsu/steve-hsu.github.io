@@ -92,12 +92,52 @@ body.resume li.resume > a.nav-link:hover {
 
 /* animetion Obejcts ------------------------------------------------------- */
 .circle{
-  width: 15px;
-  height: 15px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   background-color: rgb(0, 0, 0);
   display: inline-block;
   position: relative;
+}
+
+/* trigrams ------------------------------------------------------- */
+.trigrams{
+  // transform: translate(-50%, -50%);
+  // top: 50%;
+  // left: 50%;
+  // background-clip: border-box;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: rgba(255, 255, 255, 0);
+  // border: 1px solid rgba(0, 0, 0, .125);
+  border-radius: .25rem
+
+}
+.tri{
+  background-color: rgba(255, 255, 255, 0);
+  display: inline-block;
+  height: 20px;
+  position: relative;
+  //fullWidth:88px * 2
+  width: 20px;
+  border-radius: 50%
+}
+
+.triGap{
+  background-color: white;
+  // display: inline-block;
+  height: 0px;
+  width:0px;
+  transform: translate(79px);
+  // top: 50%;
+  // left: 50%;
+}
+
+.triGapBlack{
+  background-color: black;
 }
 
 /* animation ------------------------------------------------------- */
@@ -136,10 +176,10 @@ body.resume li.resume > a.nav-link:hover {
 
 @keyframes circleHover{
   from{
-    transform: translateX(0);
+    transform: translateY(0);
   }
   to{
-    transform: translateX(992px);
+    transform: translateY(120px);
   }
 }
 
@@ -150,7 +190,7 @@ body.resume li.resume > a.nav-link:hover {
 
 @keyframes RcircleHover{
   from{
-    transform: translateX(992px);
+    transform: translateY(120px);
   }
   to{
     transform: translateX(0);

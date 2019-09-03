@@ -1,7 +1,6 @@
 
-$(document).ready(function(){
+// Prevent the "not(:hover)" from executing in refreshing the page
   $("#card").mouseover(function(){
     $("#card").addClass("homeCard");
-    console.log("homeCard is added as a class");
+    console.log("Hey! have good day my friend!");
   });
-});

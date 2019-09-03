@@ -75,12 +75,43 @@ body.resume li.resume > a.nav-link:hover, body.resume li.resume > a.nav-link, bo
 
 /* animetion Obejcts ------------------------------------------------------- */
 .circle {
-  width: 15px;
-  height: 15px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   background-color: black;
   display: inline-block;
   position: relative;
+}
+
+/* trigrams ------------------------------------------------------- */
+.trigrams {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 0.25rem;
+}
+
+.tri {
+  background-color: rgba(255, 255, 255, 0);
+  display: inline-block;
+  height: 20px;
+  position: relative;
+  width: 20px;
+  border-radius: 50%;
+}
+
+.triGap {
+  background-color: white;
+  height: 0px;
+  width: 0px;
+  transform: translate(79px);
+}
+
+.triGapBlack {
+  background-color: black;
 }
 
 /* animation ------------------------------------------------------- */
@@ -115,10 +146,10 @@ body.resume li.resume > a.nav-link:hover, body.resume li.resume > a.nav-link, bo
 /* animation circle */
 @keyframes circleHover {
   from {
-    transform: translateX(0);
+    transform: translateY(0);
   }
   to {
-    transform: translateX(992px);
+    transform: translateY(120px);
   }
 }
 @keyframes Rhomecard {
@@ -133,7 +164,7 @@ body.resume li.resume > a.nav-link:hover, body.resume li.resume > a.nav-link, bo
 }
 @keyframes RcircleHover {
   from {
-    transform: translateX(992px);
+    transform: translateY(120px);
   }
   to {
     transform: translateX(0);
