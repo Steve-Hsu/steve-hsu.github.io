@@ -48,6 +48,7 @@ nav {
   .homeCard:hover{
     animation: homecard 0.5s;
     animation-fill-mode: both;
+    cursor:pointer;
     .circle{
       animation: circleHover 0.5s;
       animation-fill-mode: both;
@@ -67,31 +68,80 @@ nav {
 
 }
 
+/*KL Pages ------------------------------------------------------- */
+/*KL Index.html -------- */
+.KLAbout{
+
+}
+
+
+
 /*nav bar ------------------------------------------------------- */
+nav > button#myNavBtn{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+nav > button#myNavBtn:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#myNav{
+  color: rgba(4, 4, 4,0.5);
+
+}
+
+#myNav:hover{
+  color: rgb(4, 4, 4);
+}
+
 %currentPage {
   color: rgb(4, 4, 4);
   font-weight: 900;
 }
 
-body.home li.home > a.nav-link {
+body.home li.home > a.nav-link#myNav {
   @extend %currentPage
 }
 
-body.home li.home > a.nav-link:hover {
+body.home li.home > a.nav-link#myNav:hover {
   @extend %currentPage
 }
 
-body.resume li.resume > a.nav-link {
+body.resume li.resume > a.nav-link#myNav {
   @extend %currentPage
 }
 
-body.resume li.resume > a.nav-link:hover {
+body.resume li.resume > a.nav-link#myNav:hover {
   @extend %currentPage
 }
 
+// /* nav bar KL---------------- */
+body.about li.about> a.nav-link#myNav {
+  @extend %currentPage
+}
 
-/* animetion Obejcts ------------------------------------------------------- */
-.circle{
+body.about li.about> a.nav-link#myNav:hover {
+  @extend %currentPage
+}
+
+body.products li.products> a.nav-link#myNav {
+  @extend %currentPage
+}
+
+body.products li.products> a.nav-link#myNav:hover {
+  @extend %currentPage
+}
+
+body.orders li.orders> a.nav-link#myNav {
+  @extend %currentPage
+}
+
+body.orders li.orders> a.nav-link#myNav:hover {
+  @extend %currentPage
+}
+
+/* animeObject ------------------------------------------------------- */
+.circle {
   width: 20px;
   height: 20px;
   border-radius: 50%;

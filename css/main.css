@@ -51,6 +51,7 @@ nav {
   .homeCard:hover {
     animation: homecard 0.5s;
     animation-fill-mode: both;
+    cursor: pointer;
   }
   .homeCard:hover .circle {
     animation: circleHover 0.5s;
@@ -67,13 +68,31 @@ nav {
     font-size: 10rem;
   }
 }
+/*KL Pages ------------------------------------------------------- */
+/*KL Index.html -------- */
 /*nav bar ------------------------------------------------------- */
-body.resume li.resume > a.nav-link:hover, body.resume li.resume > a.nav-link, body.home li.home > a.nav-link:hover, body.home li.home > a.nav-link {
+nav > button#myNavBtn {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+nav > button#myNavBtn:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#myNav {
+  color: rgba(4, 4, 4, 0.5);
+}
+
+#myNav:hover {
+  color: #040404;
+}
+
+body.orders li.orders > a.nav-link#myNav:hover, body.orders li.orders > a.nav-link#myNav, body.products li.products > a.nav-link#myNav:hover, body.products li.products > a.nav-link#myNav, body.about li.about > a.nav-link#myNav:hover, body.about li.about > a.nav-link#myNav, body.resume li.resume > a.nav-link#myNav:hover, body.resume li.resume > a.nav-link#myNav, body.home li.home > a.nav-link#myNav:hover, body.home li.home > a.nav-link#myNav {
   color: #040404;
   font-weight: 900;
 }
 
-/* animetion Obejcts ------------------------------------------------------- */
+/* animeObject ------------------------------------------------------- */
 .circle {
   width: 20px;
   height: 20px;
