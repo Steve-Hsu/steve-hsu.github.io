@@ -1,4 +1,4 @@
-header {
+demoheader {
   background-color: rgb(241, 224, 194);
   font-variant: small-caps;
 }
@@ -28,53 +28,55 @@ nav {
   font-family: 'Palanquin Dark', sans-serif;
   padding-bottom: 2rem;
 }
-@media (min-width:576px) {
-  .singleYear {
-    font-size: 6rem;
-  }
-  .homeCard:hover{
-    animation: homecard 0.5s;
-    animation-fill-mode: both;
-    .circle{
-      animation: circleHover 0.5s;
-      animation-fill-mode: both;
-    }
-  }
-}
-@media (min-width:768px) {
-  .singleYear {
-    font-size: 7rem;
-  }
-  .homeCard:hover{
-    animation: homecard 0.5s;
-    animation-fill-mode: both;
-    cursor:pointer;
-    .circle{
-      animation: circleHover 0.5s;
-      animation-fill-mode: both;
-    }
-  }
-}
-@media (min-width:992px) {
-  .singleYear {
-    font-size: 8rem;
-  }
 
-}
-@media (min-width:1200px) {
-  .singleYear {
-    font-size: 10rem;
-  }
-
-}
 
 /*KL Pages ------------------------------------------------------- */
 /*KL Index.html -------- */
-.KLAbout{
+.KLPreface{
+    // background-color:rgb(192, 39, 246);
+    position: absolute;
+    padding: 50px;
+}
+.KLPrefaceWord{
+  // background-color:rgb(192, 39, 0);
+    color:rgb(255, 255, 255);
+  text-shadow: 0px 0px 3px rgb(0, 0, 0);
 
 }
 
+.KLlogo{
+    // background-color:rgb(0, 39, 246);
+    color:rgb(255, 255, 255);
+    text-shadow: 0px 0px 15px rgba(0, 0, 0,0.8);
 
+}
+
+.KLtitle{
+
+    // background-color:rgb(0, 39, 246);
+    font-size: 35px;
+    bottom:0px;
+    color:rgb(255, 255, 255);
+    text-shadow: 0px 0px 15px rgba(0, 0, 0,0.8);
+    text-align: right;
+
+}
+
+/*KLcarousel ------------- */
+.carousel-caption{
+  background-color:rgba(182, 9, 9, 0.5);
+  border-radius: 3px;
+  text-shadow: 0px 0px 15px rgba(0, 0, 0,0.8);
+  padding: 5px 20px 0;
+}
+
+.d-md-block{
+    font-size: 1rem;
+}
+
+.aboutWord{
+  color: rgba(4, 4, 4,0.5) ;
+}
 
 /*nav bar ------------------------------------------------------- */
 nav > button#myNavBtn{
@@ -86,11 +88,20 @@ nav > button#myNavBtn:hover{
 }
 
 #myNav{
-  color: rgba(4, 4, 4,0.5);
+  color: rgba(4, 4, 4,0.5) ;
 
 }
 
 #myNav:hover{
+  color: rgb(4, 4, 4);
+}
+
+li >a.dropdown-toggle #myNav #dropdown01{
+  color: rgba(4, 4, 4,0.5)!important;
+
+}
+
+li>a#myNav #dropdown01:hover{
   color: rgb(4, 4, 4);
 }
 
@@ -112,6 +123,14 @@ body.resume li.resume > a.nav-link#myNav {
 }
 
 body.resume li.resume > a.nav-link#myNav:hover {
+  @extend %currentPage
+}
+
+body.demo li.demo > a.nav-link#myNav {
+  @extend %currentPage
+}
+
+body.demo li.demo > a.nav-link#myNav:hover {
   @extend %currentPage
 }
 
@@ -139,6 +158,8 @@ body.orders li.orders> a.nav-link#myNav {
 body.orders li.orders> a.nav-link#myNav:hover {
   @extend %currentPage
 }
+
+
 
 /* animeObject ------------------------------------------------------- */
 .circle {
@@ -245,4 +266,101 @@ body.orders li.orders> a.nav-link#myNav:hover {
   to{
     transform: translateX(0);
   }
+}
+
+/* media screen size change -------------------------------------------------------*/
+@media (min-width:0px) {
+  .singleYear {
+    font-size: 6rem;
+  }
+  .homeCard:hover{
+    animation: homecard 0.5s;
+    animation-fill-mode: both;
+    .circle{
+      animation: circleHover 0.5s;
+      animation-fill-mode: both;
+    }
+  }
+  .KLlogo{
+      text-align: center;
+      font-size: 5rem;
+  }
+  .KLtitle{
+      text-align: center;
+  }
+}
+@media (min-width:576px) {
+  .singleYear {
+    font-size: 6rem;
+  }
+  .homeCard:hover{
+    animation: homecard 0.5s;
+    animation-fill-mode: both;
+    .circle{
+      animation: circleHover 0.5s;
+      animation-fill-mode: both;
+    }
+  }
+  .KLlogo{
+      text-align: center;
+  }
+  .KLtitle{
+      text-align: center;
+  }
+}
+
+@media (min-width:768px) {
+  .singleYear {
+    font-size: 7rem;
+  }
+  .homeCard:hover{
+    animation: homecard 0.5s;
+    animation-fill-mode: both;
+    cursor:pointer;
+    .circle{
+      animation: circleHover 0.5s;
+      animation-fill-mode: both;
+    }
+  }
+  .KLlogo{
+      text-align: center;
+      font-size: 7rem;
+  }
+  .KLtitle{
+      text-align: center;
+  }
+}
+@media (min-width:992px) {
+  .singleYear {
+    font-size: 8rem;
+  }
+  .d-md-block{
+      font-size: 1.3rem;
+  }
+  .KLlogo{
+      text-align: right;
+        font-size: 8rem;
+  }
+  .KLtitle{
+      text-align: right;
+  }
+
+}
+@media (min-width:1200px) {
+  .singleYear {
+    font-size: 10rem;
+  }
+
+  .d-md-block{
+      font-size: 1.5rem;
+  }
+  .KLlogo{
+      text-align: right;
+      font-size: 8rem;
+  }
+  .KLtitle{
+      text-align: right;
+  }
+
+
 }
