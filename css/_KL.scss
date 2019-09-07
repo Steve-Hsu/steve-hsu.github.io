@@ -19,8 +19,6 @@
 }
 
 .KLLogo{
-  width:58px;
-  height:58px;
 }
 
 .KLTagline{
@@ -55,31 +53,31 @@
 @media (min-width:0px) {
   .KLTitle{
       text-align: center;
-      font-size: 5rem;
+      font-size: 4.5rem;
   }
   .KLTagline{
       text-align: center;
       font-size: 1.5rem;
   }
-  // img.KLLogo{
-  //   width:20px;
-  //   height:20px;
-  // }
+  img.KLLogo{
+    width:35px;
+    height:35px;
+  }
 }
 
 @media (min-width:576px) {
   .KLTitle{
       text-align: center;
-        font-size: 5rem;
+        font-size: 4.5rem;
   }
   .KLTagline{
       text-align: center;
       font-size: 1.5rem;
   }
-  // img.KLLogo{
-  //   width:20px;
-  //   height:20px;
-  // }
+  img.KLLogo{
+    width:35px;
+    height:35px;
+  }
 }
 
 @media (min-width:768px) {
@@ -91,10 +89,10 @@
       text-align: center;
       font-size: 35px;
   }
-  // img.KLLogo{
-  //   width:50px;
-  //   height:50px;
-  // }
+  img.KLLogo{
+    width:50px;
+    height:50px;
+  }
 }
 
 @media (min-width:992px) {
@@ -104,13 +102,13 @@
   }
   .KLTagline{
       text-align: right;
-      font-size: 35px;
+      font-size: 40px;
   }
 
-  // img.KLLogo{
-  //   width:58px;
-  //   height:58px;
-  // }
+  img.KLLogo{
+    width:58px;
+    height:58px;
+  }
 }
 
 @media (min-width:1200px) {
@@ -120,7 +118,11 @@
   }
   .KLTagline{
       text-align: right;
-      font-size: 50px;
+      font-size: 45px;
+  }
+  img.KLLogo{
+    width:68px;
+    height:68px;
   }
 
 }

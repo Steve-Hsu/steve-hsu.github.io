@@ -236,11 +236,6 @@ body.orders li.orders > a.nav-link#myNav:hover, body.orders li.orders > a.nav-li
   text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8);
 }
 
-.KLLogo {
-  width: 58px;
-  height: 58px;
-}
-
 .KLTagline {
   font-size: 35px;
   bottom: 0px;
@@ -272,21 +267,33 @@ body.orders li.orders > a.nav-link#myNav:hover, body.orders li.orders > a.nav-li
 @media (min-width: 0px) {
   .KLTitle {
     text-align: center;
-    font-size: 5rem;
+    font-size: 4.5rem;
   }
 
   .KLTagline {
     text-align: center;
     font-size: 1.5rem;
   }
+
+  img.KLLogo {
+    width: 35px;
+    height: 35px;
+  }
 }
 @media (min-width: 576px) {
   .KLTitle {
     text-align: center;
+    font-size: 4.5rem;
   }
 
   .KLTagline {
     text-align: center;
+    font-size: 1.5rem;
+  }
+
+  img.KLLogo {
+    width: 35px;
+    height: 35px;
   }
 }
 @media (min-width: 768px) {
@@ -297,6 +304,12 @@ body.orders li.orders > a.nav-link#myNav:hover, body.orders li.orders > a.nav-li
 
   .KLTagline {
     text-align: center;
+    font-size: 35px;
+  }
+
+  img.KLLogo {
+    width: 50px;
+    height: 50px;
   }
 }
 @media (min-width: 992px) {
@@ -307,6 +320,12 @@ body.orders li.orders > a.nav-link#myNav:hover, body.orders li.orders > a.nav-li
 
   .KLTagline {
     text-align: right;
+    font-size: 40px;
+  }
+
+  img.KLLogo {
+    width: 58px;
+    height: 58px;
   }
 }
 @media (min-width: 1200px) {
@@ -317,6 +336,12 @@ body.orders li.orders > a.nav-link#myNav:hover, body.orders li.orders > a.nav-li
 
   .KLTagline {
     text-align: right;
+    font-size: 45px;
+  }
+
+  img.KLLogo {
+    width: 68px;
+    height: 68px;
   }
 }
 /* The Modal (background) W3school example */
