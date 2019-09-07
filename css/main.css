@@ -29,47 +29,6 @@ nav {
   padding-bottom: 2rem;
 }
 
-/*KL Pages ------------------------------------------------------- */
-/*KL Index.html -------- */
-.KLPreface {
-  position: absolute;
-  padding: 50px;
-}
-
-.KLPrefaceWord {
-  color: white;
-  text-shadow: 0px 0px 3px black;
-}
-
-.KLlogo {
-  color: white;
-  text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8);
-}
-
-.KLtitle {
-  font-size: 35px;
-  bottom: 0px;
-  color: white;
-  text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8);
-  text-align: right;
-}
-
-/*KLcarousel ------------- */
-.carousel-caption {
-  background-color: rgba(182, 9, 9, 0.5);
-  border-radius: 3px;
-  text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8);
-  padding: 5px 20px 0;
-}
-
-.d-md-block {
-  font-size: 1rem;
-}
-
-.aboutWord {
-  color: rgba(4, 4, 4, 0.5);
-}
-
 /*nav bar ------------------------------------------------------- */
 nav > button#myNavBtn {
   background-color: rgba(0, 0, 0, 0.2);
@@ -100,7 +59,7 @@ body.orders li.orders > a.nav-link#myNav:hover, body.orders li.orders > a.nav-li
   font-weight: 900;
 }
 
-/* animeObject ------------------------------------------------------- */
+/* anime ------------------------------------------------------- */
 .circle {
   width: 20px;
   height: 20px;
@@ -211,15 +170,6 @@ body.orders li.orders > a.nav-link#myNav:hover, body.orders li.orders > a.nav-li
     animation: circleHover 0.5s;
     animation-fill-mode: both;
   }
-
-  .KLlogo {
-    text-align: center;
-    font-size: 5rem;
-  }
-
-  .KLtitle {
-    text-align: center;
-  }
 }
 @media (min-width: 576px) {
   .singleYear {
@@ -233,14 +183,6 @@ body.orders li.orders > a.nav-link#myNav:hover, body.orders li.orders > a.nav-li
   .homeCard:hover .circle {
     animation: circleHover 0.5s;
     animation-fill-mode: both;
-  }
-
-  .KLlogo {
-    text-align: center;
-  }
-
-  .KLtitle {
-    text-align: center;
   }
 }
 @media (min-width: 768px) {
@@ -257,15 +199,6 @@ body.orders li.orders > a.nav-link#myNav:hover, body.orders li.orders > a.nav-li
     animation: circleHover 0.5s;
     animation-fill-mode: both;
   }
-
-  .KLlogo {
-    text-align: center;
-    font-size: 7rem;
-  }
-
-  .KLtitle {
-    text-align: center;
-  }
 }
 @media (min-width: 992px) {
   .singleYear {
@@ -274,15 +207,6 @@ body.orders li.orders > a.nav-link#myNav:hover, body.orders li.orders > a.nav-li
 
   .d-md-block {
     font-size: 1.3rem;
-  }
-
-  .KLlogo {
-    text-align: right;
-    font-size: 8rem;
-  }
-
-  .KLtitle {
-    text-align: right;
   }
 }
 @media (min-width: 1200px) {
@@ -293,14 +217,215 @@ body.orders li.orders > a.nav-link#myNav:hover, body.orders li.orders > a.nav-li
   .d-md-block {
     font-size: 1.5rem;
   }
+}
+/* import partials */
+/*KL Pages ------------------------------------------------------- */
+/*KL Index.html -------- */
+.KLPreface {
+  position: absolute;
+  padding: 50px;
+}
 
-  .KLlogo {
+.KLPrefaceWord {
+  color: white;
+  text-shadow: 0px 0px 3px black;
+}
+
+.KLTitle {
+  color: white;
+  text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8);
+}
+
+.KLLogo {
+  width: 58px;
+  height: 58px;
+}
+
+.KLTagline {
+  font-size: 35px;
+  bottom: 0px;
+  color: white;
+  text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8);
+  text-align: right;
+}
+
+.KLProductsCard {
+  border-color: rgba(255, 255, 255, 0);
+}
+
+/*KLcarousel ------------- */
+.carousel-caption {
+  background-color: rgba(182, 9, 9, 0.5);
+  border-radius: 3px;
+  text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8);
+  padding: 5px 20px;
+}
+
+.d-md-block {
+  font-size: 1rem;
+}
+
+.aboutWord {
+  color: rgba(4, 4, 4, 0.5);
+}
+
+@media (min-width: 0px) {
+  .KLTitle {
+    text-align: center;
+    font-size: 5rem;
+  }
+
+  .KLTagline {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 576px) {
+  .KLTitle {
+    text-align: center;
+  }
+
+  .KLTagline {
+    text-align: center;
+  }
+}
+@media (min-width: 768px) {
+  .KLTitle {
+    text-align: center;
+    font-size: 7rem;
+  }
+
+  .KLTagline {
+    text-align: center;
+  }
+}
+@media (min-width: 992px) {
+  .KLTitle {
     text-align: right;
     font-size: 8rem;
   }
 
-  .KLtitle {
+  .KLTagline {
     text-align: right;
+  }
+}
+@media (min-width: 1200px) {
+  .KLTitle {
+    text-align: right;
+    font-size: 8rem;
+  }
+
+  .KLTagline {
+    text-align: right;
+  }
+}
+/* The Modal (background) W3school example */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.3);
+  /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  border: 1px solid #888;
+  width: 80%;
+  /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: rgba(4, 4, 4, 0.3);
+  right: 2%;
+  font-size: 28px;
+  position: absolute;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* The thumbsnail */
+.KLProductsBtn {
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.KLProductsBtn:hover {
+  border-top: 1px solid #a72a17;
+  cursor: pointer;
+}
+
+@media (min-width: 0px) {
+  .close {
+    right: 4.5%;
+  }
+
+  .modal-content {
+    width: 100%;
+    top: 45%;
+  }
+}
+@media (min-width: 576px) {
+  .close {
+    right: 4.5%;
+  }
+
+  .modal-content {
+    width: 100%;
+    top: 45%;
+  }
+}
+@media (min-width: 768px) {
+  .close {
+    right: 2%;
+  }
+
+  .modal-content {
+    width: 80%;
+    top: 53%;
+  }
+}
+@media (min-width: 992px) {
+  .close {
+    right: 2%;
+  }
+
+  .modal-content {
+    width: 80%;
+    top: 53%;
+  }
+}
+@media (min-width: 1200px) {
+  .close {
+    right: 2%;
+  }
+
+  .modal-content {
+    width: 80%;
+    top: 53%;
   }
 }
 

@@ -1,0 +1,131 @@
+/*KL Pages ------------------------------------------------------- */
+/*KL Index.html -------- */
+.KLPreface{
+    // background-color:rgb(192, 39, 246);
+    position: absolute;
+    padding: 50px;
+}
+.KLPrefaceWord{
+  // background-color:rgb(192, 39, 0);
+    color:rgb(255, 255, 255);
+  text-shadow: 0px 0px 3px rgb(0, 0, 0);
+
+}
+
+.KLTitle{
+    // background-color:rgb(0, 39, 246);
+    color:rgb(255, 255, 255);
+    text-shadow: 0px 0px 15px rgba(0, 0, 0,0.8);
+}
+
+// img.KLLogo{
+//   width:58px;
+//   height:58px;
+// }
+
+.KLTagline{
+    // background-color:rgb(0, 39, 246);
+    font-size: 35px;
+    bottom:0px;
+    color:rgb(255, 255, 255);
+    text-shadow: 0px 0px 15px rgba(0, 0, 0,0.8);
+    text-align: right;
+
+}
+
+.KLProductsCard{
+  border-color:rgba(255,255,255,0)
+}
+/*KLcarousel ------------- */
+.carousel-caption{
+  background-color:rgba(182, 9, 9, 0.5);
+  border-radius: 3px;
+  text-shadow: 0px 0px 15px rgba(0, 0, 0,0.8);
+  padding: 5px 20px ;
+}
+
+.d-md-block{
+    font-size: 1rem;
+}
+
+.aboutWord{
+  color: rgba(4, 4, 4,0.5) ;
+}
+
+@media (min-width:0px) {
+  .KLTitle{
+      text-align: center;
+      font-size: 5rem;
+  }
+  .KLTagline{
+      text-align: center;
+      font-size: 1.5rem;
+  }
+  // img.KLLogo{
+  //   width:20px;
+  //   height:20px;
+  // }
+}
+
+@media (min-width:576px) {
+  .KLTitle{
+      text-align: center;
+        font-size: 5rem;
+  }
+  .KLTagline{
+      text-align: center;
+      font-size: 1.5rem;
+  }
+  // img.KLLogo{
+  //   width:20px;
+  //   height:20px;
+  // }
+}
+
+@media (min-width:768px) {
+  .KLTitle{
+      text-align: center;
+      font-size: 7rem;
+  }
+  .KLTagline{
+      text-align: center;
+      font-size: 35px;
+  }
+  // img.KLLogo{
+  //   width:50px;
+  //   height:50px;
+  // }
+}
+
+@media (min-width:992px) {
+  .KLTitle{
+      text-align: right;
+        font-size: 8rem;
+  }
+  .KLTagline{
+      text-align: right;
+      font-size: 35px;
+  }
+
+  // img.KLLogo{
+  //   width:58px;
+  //   height:58px;
+  // }
+}
+
+@media (min-width:1200px) {
+  .KLTitle{
+      text-align: right;
+      font-size: 8rem;
+  }
+  .KLTagline{
+      text-align: right;
+      font-size: 50px;
+  }
+
+  // img.KLLogo{
+  //   width:58px;
+  //   height:58px;
+  // }
+
+}

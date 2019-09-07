@@ -1,0 +1,100 @@
+/* The Modal (background) W3school example */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.3); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  top:60%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: rgba(4, 4, 4,0.3);
+  right:2%;
+  font-size: 28px;
+  // font-weight: bold;
+  position: absolute;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* The thumbsnail */
+
+.KLProductsBtn{
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.KLProductsBtn:hover{
+  border-top: 1px solid rgb(167,42,23);
+  cursor: pointer;
+}
+
+@media (min-width:0px) {
+  .close {
+    right:4.5%;
+  }
+  .modal-content{
+    width:100%;
+    top:45%;
+  }
+}
+
+@media (min-width:576px) {
+  .close {
+    right:4.5%;
+  }
+  .modal-content{
+    width:100%;
+    top:45%;
+  }
+}
+
+@media (min-width:768px) {
+  .close {
+    right:2%;
+  }
+  .modal-content{
+    width:80%;
+    top:53%;
+  }
+}
+
+@media (min-width:992px) {
+  .close {
+    right:2%;
+  }
+  .modal-content{
+    width:80%;
+    top:53%;
+  }
+}
+
+@media (min-width:1200px) {
+  .close {
+    right:2%;
+  }
+  .modal-content{
+    width:80%;
+    top:53%;
+  }
+}

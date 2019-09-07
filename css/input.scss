@@ -29,54 +29,14 @@ nav {
   padding-bottom: 2rem;
 }
 
-
-/*KL Pages ------------------------------------------------------- */
-/*KL Index.html -------- */
-.KLPreface{
-    // background-color:rgb(192, 39, 246);
-    position: absolute;
-    padding: 50px;
-}
-.KLPrefaceWord{
-  // background-color:rgb(192, 39, 0);
-    color:rgb(255, 255, 255);
-  text-shadow: 0px 0px 3px rgb(0, 0, 0);
-
-}
-
-.KLlogo{
-    // background-color:rgb(0, 39, 246);
-    color:rgb(255, 255, 255);
-    text-shadow: 0px 0px 15px rgba(0, 0, 0,0.8);
-
-}
-
-.KLtitle{
-
-    // background-color:rgb(0, 39, 246);
-    font-size: 35px;
-    bottom:0px;
-    color:rgb(255, 255, 255);
-    text-shadow: 0px 0px 15px rgba(0, 0, 0,0.8);
-    text-align: right;
-
-}
-
-/*KLcarousel ------------- */
-.carousel-caption{
-  background-color:rgba(182, 9, 9, 0.5);
-  border-radius: 3px;
-  text-shadow: 0px 0px 15px rgba(0, 0, 0,0.8);
-  padding: 5px 20px 0;
-}
-
-.d-md-block{
-    font-size: 1rem;
-}
-
-.aboutWord{
-  color: rgba(4, 4, 4,0.5) ;
-}
+// .popover{
+//   // position: relative;
+//   max-width: 100%;
+//   top: 1% !important;
+//   left: 1% !important;
+//
+//
+// }
 
 /*nav bar ------------------------------------------------------- */
 nav > button#myNavBtn{
@@ -134,7 +94,6 @@ body.demo li.demo > a.nav-link#myNav:hover {
   @extend %currentPage
 }
 
-// /* nav bar KL---------------- */
 body.about li.about> a.nav-link#myNav {
   @extend %currentPage
 }
@@ -159,9 +118,7 @@ body.orders li.orders> a.nav-link#myNav:hover {
   @extend %currentPage
 }
 
-
-
-/* animeObject ------------------------------------------------------- */
+/* anime ------------------------------------------------------- */
 .circle {
   width: 20px;
   height: 20px;
@@ -244,7 +201,6 @@ body.orders li.orders> a.nav-link#myNav:hover {
 }
 
 /* animation circle */
-
 @keyframes circleHover{
   from{
     transform: translateY(0);
@@ -281,14 +237,8 @@ body.orders li.orders> a.nav-link#myNav:hover {
       animation-fill-mode: both;
     }
   }
-  .KLlogo{
-      text-align: center;
-      font-size: 5rem;
-  }
-  .KLtitle{
-      text-align: center;
-  }
 }
+
 @media (min-width:576px) {
   .singleYear {
     font-size: 6rem;
@@ -300,12 +250,6 @@ body.orders li.orders> a.nav-link#myNav:hover {
       animation: circleHover 0.5s;
       animation-fill-mode: both;
     }
-  }
-  .KLlogo{
-      text-align: center;
-  }
-  .KLtitle{
-      text-align: center;
   }
 }
 
@@ -322,14 +266,8 @@ body.orders li.orders> a.nav-link#myNav:hover {
       animation-fill-mode: both;
     }
   }
-  .KLlogo{
-      text-align: center;
-      font-size: 7rem;
-  }
-  .KLtitle{
-      text-align: center;
-  }
 }
+
 @media (min-width:992px) {
   .singleYear {
     font-size: 8rem;
@@ -337,30 +275,20 @@ body.orders li.orders> a.nav-link#myNav:hover {
   .d-md-block{
       font-size: 1.3rem;
   }
-  .KLlogo{
-      text-align: right;
-        font-size: 8rem;
-  }
-  .KLtitle{
-      text-align: right;
-  }
+
 
 }
+
 @media (min-width:1200px) {
   .singleYear {
     font-size: 10rem;
   }
-
   .d-md-block{
       font-size: 1.5rem;
   }
-  .KLlogo{
-      text-align: right;
-      font-size: 8rem;
-  }
-  .KLtitle{
-      text-align: right;
-  }
-
 
 }
+
+/* import partials */
+@import "./KL";
+@import "./KLpopup";
