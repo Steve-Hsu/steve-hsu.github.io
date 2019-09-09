@@ -363,6 +363,10 @@ body.orders li.orders > a.nav-link#myNav:hover, body.orders li.orders > a.nav-li
     width: 58px;
     height: 58px;
   }
+
+  .d-md-block {
+    font-size: 1.5rem;
+  }
 }
 @media (min-width: 1200px) {
   .KLPreface {
@@ -386,6 +390,10 @@ body.orders li.orders > a.nav-link#myNav:hover, body.orders li.orders > a.nav-li
   img.KLLogo {
     width: 68px;
     height: 68px;
+  }
+
+  .d-md-block {
+    font-size: 1.5rem;
   }
 }
 /* The Modal (background) W3school example */
