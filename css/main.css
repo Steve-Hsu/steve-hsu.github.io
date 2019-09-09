@@ -270,11 +270,11 @@ body.orders li.orders > a.nav-link#myNav:hover, body.orders li.orders > a.nav-li
 
 @media (min-width: 0px) {
   .KLPreface {
-    padding: 25px;
+    padding: 30px 25px 25px;
   }
 
   .KLPrefacerow-2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .KLTitle {
