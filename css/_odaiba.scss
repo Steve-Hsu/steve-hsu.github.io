@@ -1,0 +1,41 @@
+.sideBar{
+  background-color: yellow;
+  height: 100vh;
+  margin-top: -9.8vh;
+}
+
+.sideBody{
+  height: 100vh;
+  margin-top: -9.8vh;
+  padding: 0px;
+}
+
+.sideBodyHeader{
+  background-color: grey;
+  height:5vh;
+  position: relative;
+  margin: 0;
+}
+
+.headerLabel{
+  background-color: grey;
+}
+
+.odaiba{
+  background-color: blue;
+}
+
+.bigSight{
+  background-color:red;
+}
+
+div.odaiba > div.sideBodyHeader> div.oda{
+    background-color: blue;
+    border-radius: 0 7px 0 0;
+
+}
+
+div.bigSight > div.sideBodyHeader> div.bigS{
+    background-color: red;
+    border-radius: 7px 7px 0 0;
+}
