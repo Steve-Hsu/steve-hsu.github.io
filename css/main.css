@@ -515,6 +515,10 @@ body.orders li.orders > a.nav-link#myNav:hover, body.orders li.orders > a.nav-li
     top: 53%;
   }
 }
+ul {
+  list-style-type: none;
+}
+
 .sideBar {
   background-color: yellow;
   height: 100vh;
@@ -554,6 +558,43 @@ div.odaiba > div.sideBodyHeader > div.oda {
 div.bigSight > div.sideBodyHeader > div.bigS {
   background-color: red;
   border-radius: 7px 7px 0 0;
+}
+
+/*CSS Grip Test Page ------------------------------------------------------- */
+.grid-container {
+  display: grid;
+  grid-template-columns: min-content 100px 100px;
+  grid-template-rows: 100px 100px 100px 100px;
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  background-color: green;
+  color: red;
+}
+
+.c1 {
+  background-color: yellow;
+  color: red;
+  grid-column: span 1;
+  grid-row: span 3;
+}
+
+.c2 {
+  background-color: pink;
+  color: grey;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.c3 {
+  background-color: purple;
+  color: white;
+}
+
+.c4 {
+  background-color: black;
+  color: white;
 }
 
 /*# sourceMappingURL=main.css.map */

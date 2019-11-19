@@ -1,4 +1,9 @@
+# my ignore items
 image/
+odaiba/
+css_grid/
+
+# ignore items adviced by github
 _site/
 .sass-cache/
 .jekyll-cache/
