@@ -1,7 +1,6 @@
 # my ignore items
 image/
-odaiba/
-css_grid/
+# css_grid/
 
 # ignore items adviced by github
 _site/

@@ -520,9 +520,13 @@ ul {
 }
 
 .sideBar {
-  background-color: yellow;
+  background-color: white;
   height: 100vh;
   margin-top: -9.8vh;
+}
+
+.sideBar a {
+  color: black;
 }
 
 .sideBody {
@@ -532,39 +536,200 @@ ul {
 }
 
 .sideBodyHeader {
-  background-color: grey;
+  background-color: #cdcdcd;
   height: 5vh;
-  position: relative;
   margin: 0;
+  position: relative;
+  text-align: center;
+}
+
+.sideBodyHeader a {
+  color: #e1e1e1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  Transform: translate(-50%, -50%);
 }
 
 .headerLabel {
-  background-color: grey;
+  background-color: #cdcdcd;
 }
 
 .odaiba {
-  background-color: blue;
+  background-color: black;
 }
 
-.bigSight {
-  background-color: red;
+.shinbashi {
+  background-color: black;
+}
+
+.ginza {
+  background-color: black;
 }
 
 div.odaiba > div.sideBodyHeader > div.oda {
-  background-color: blue;
+  background-color: black;
   border-radius: 0 7px 0 0;
 }
 
-div.bigSight > div.sideBodyHeader > div.bigS {
-  background-color: red;
+div.shinbashi > div.sideBodyHeader > div.shin {
+  background-color: black;
   border-radius: 7px 7px 0 0;
 }
 
+div.ginza > div.sideBodyHeader > div.gin {
+  background-color: black;
+  border-radius: 7px 7px 0 0;
+}
+
+.gridContainer {
+  background-color: black;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(14, 100px);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+.odaiba .p1 {
+  overflow: auto;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.odaiba .p1 img {
+  width: auto;
+  height: 100%;
+}
+
+.odaiba .p2 {
+  overflow: auto;
+  grid-column-start: 3;
+  grid-column-end: 7;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+
+.odaiba .p2 img {
+  width: auto;
+  height: 150%;
+}
+
+.odaiba .p3 {
+  overflow: auto;
+  grid-column-start: 7;
+  grid-column-end: 11;
+  grid-row-start: 2;
+  grid-row-end: 6;
+}
+
+.odaiba .p4 {
+  overflow: auto;
+  grid-column-start: 3;
+  grid-column-end: 10;
+  grid-row-start: 6;
+  grid-row-end: 11;
+}
+
+.odaiba .p5 {
+  overflow: auto;
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 11;
+  grid-row-end: 13;
+}
+
+.odaiba .p5 img {
+  width: auto;
+  height: 100%;
+}
+
+.odaiba .p6 {
+  overflow: auto;
+  grid-column-start: 2;
+  grid-column-end: 8;
+  grid-row-start: 13;
+  grid-row-end: 15;
+}
+
+.odaiba .p6 img {
+  width: auto;
+  height: 100%;
+}
+
+@media (max-width: 576px) {
+  .sideBar {
+    visibility: hidden;
+    display: none;
+  }
+
+  .sideBody {
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .gridContainer {
+    background-color: black;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 100px);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+  }
+
+  .odaiba .p1 {
+    overflow: auto;
+  }
+
+  .odaiba .p1 img {
+    width: auto;
+    height: 100%;
+  }
+
+  .odaiba .p2 {
+    overflow: auto;
+  }
+
+  .odaiba .p2 img {
+    width: auto;
+    height: 150%;
+  }
+
+  .odaiba .p3 {
+    overflow: auto;
+  }
+
+  .odaiba .p4 {
+    overflow: auto;
+  }
+
+  .odaiba .p5 {
+    overflow: auto;
+  }
+
+  .odaiba .p5 img {
+    width: auto;
+    height: 100%;
+  }
+
+  .odaiba .p6 {
+    overflow: auto;
+  }
+
+  .odaiba .p6 img {
+    width: auto;
+    height: 100%;
+  }
+}
 /*CSS Grip Test Page ------------------------------------------------------- */
 .grid-container {
   display: grid;
-  grid-template-columns: 100px 100px 100px;
-  grid-template-rows: 100px 100px 100px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   grid-column-gap: 5px;
   grid-row-gap: 5px;
   background-color: green;
