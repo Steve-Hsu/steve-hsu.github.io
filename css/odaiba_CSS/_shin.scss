@@ -1,0 +1,122 @@
+// shinbashi Photos
+.shinbashi .gridContainer{
+  background-color: black;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(8, 100px);
+}
+
+.shinbashi .p1{
+  overflow: auto;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  border-width: 0 10px 10px 0;
+  border-color: black;
+  border-style: solid;
+}
+
+.shinbashi .p1 img{
+  width: auto;
+  height: 100%;
+}
+
+.shinbashi .p2{
+  overflow: auto;
+  grid-column-start: 3;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  border-width: 0 10px 10px 0;
+  border-color: black;
+  border-style: solid;
+}
+
+.shinbashi .p2 img{
+  width: auto;
+  height: 100%;
+}
+
+.shinbashi .p3{
+  overflow: auto;
+  grid-column-start: 7;
+  grid-column-end: 11;
+  grid-row-start: 1;
+  grid-row-end: 5;
+  border-width: 0 10px 10px 0;
+  border-color: black;
+  border-style: solid;
+}
+
+.shinbashi .p3 img{
+  width: auto;
+  height: 100%;
+}
+
+.shinbashi .p4{
+  overflow: auto;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 9;
+  z-index: 1;
+  border-width: 0 10px 10px 0;
+  border-color: black;
+  border-style: solid;
+}
+
+.shinbashi .p4 img{
+  width: auto;
+  height: 100%;
+}
+
+.shinbashi .p5{
+  overflow: auto;
+  grid-column-start: 4;
+  grid-column-end: 7;
+  grid-row-start: 4;
+  grid-row-end: 6;
+  border-width: 0 10px 10px 0;
+  border-color: black;
+  border-style: solid;
+}
+
+.shinbashi .p5 img{
+  width: 100%;
+  height: auto;
+}
+
+.shinbashi .p6{
+  overflow: auto;
+  grid-column-start: 4;
+  grid-column-end: 7;
+  grid-row-start: 6;
+  grid-row-end: 9;
+  border-width: 0 10px 10px 0;
+  border-color: black;
+  border-style: solid;
+}
+
+.shinbashi .p6 img{
+  width: auto;
+  height: 100%;
+}
+
+
+.shinbashi .p7{
+  overflow: auto;
+  grid-column-start: 7;
+  grid-column-end: 11;
+  grid-row-start: 5;
+  grid-row-end: 9;
+  border-width: 0 10px 10px 0;
+  border-color: black;
+  border-style: solid;
+}
+
+.shinbashi .p7 img{
+  width: auto;
+  height: 100%;
+}

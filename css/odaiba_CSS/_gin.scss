@@ -1,0 +1,153 @@
+// ginza Photos
+.ginza .gridContainer{
+  background-color: black;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(8, 100px);
+}
+
+.ginza .p1{
+  overflow: auto;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  border-width: 0 10px 10px 0;
+  border-color: black;
+  border-style: solid;
+}
+
+.ginza .p1 img{
+  width: auto;
+  height: 100%;
+}
+
+.ginza .p2{
+  overflow: auto;
+  grid-column-start: 5;
+  grid-column-end: 8;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  border-width: 0 10px 10px 0;
+  border-color: black;
+  border-style: solid;
+}
+
+.ginza .p2 img{
+  width: auto;
+  height: 100%;
+}
+
+.ginza .p3{
+  overflow: auto;
+  grid-column-start: 8;
+  grid-column-end: 11;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  border-width: 0 10px 10px 0;
+  border-color: black;
+  border-style: solid;
+}
+
+.ginza .p3 img{
+  width: auto;
+  height: 100%;
+}
+
+.ginza .p4{
+  overflow: auto;
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 4;
+  grid-row-end: 7;
+  z-index: 1;
+  border-width: 0 10px 10px 0;
+  border-color: black;
+  border-style: solid;
+}
+
+.ginza .p4 img{
+  width: auto;
+  height: 100%;
+}
+
+.ginza .p5{
+  overflow: auto;
+  grid-column-start: 6;
+  grid-column-end: 11;
+  grid-row-start: 4;
+  grid-row-end: 6;
+  border-width: 0 10px 10px 0;
+  border-color: black;
+  border-style: solid;
+}
+
+.ginza .p5 img{
+  width: auto;
+  height: 100%;
+}
+
+.ginza .p6{
+  overflow: auto;
+  grid-column-start:1;
+  grid-column-end: 2;
+  grid-row-start: 7;
+  grid-row-end: 9;
+  border-width: 0 10px 10px 0;
+  border-color: black;
+  border-style: solid;
+}
+
+.ginza .p6 img{
+  width: auto;
+  height: 100%;
+}
+
+.ginza .p7{
+  overflow: auto;
+  grid-column-start: 2;
+  grid-column-end: 6;
+  grid-row-start: 7;
+  grid-row-end: 9;
+  border-width: 0 10px 10px 0;
+  border-color: black;
+  border-style: solid;
+}
+
+.ginza .p7 img{
+  width: auto;
+  height: 100%;
+}
+
+.ginza .p8{
+  overflow: auto;
+  grid-column-start: 6;
+  grid-column-end: 8;
+  grid-row-start: 6;
+  grid-row-end: 9;
+  border-width: 0 10px 10px 0;
+  border-color: black;
+  border-style: solid;
+}
+
+.ginza .p8 img{
+  width: 100%;
+  height: auto;
+}
+
+.ginza .p9{
+  overflow: auto;
+  grid-column-start: 8;
+  grid-column-end: 11;
+  grid-row-start: 6;
+  grid-row-end: 9;
+  border-width: 0 10px 10px 0;
+  border-color: black;
+  border-style: solid;
+}
+
+.ginza .p9 img{
+  width: 100%;
+  height: auto;
+}

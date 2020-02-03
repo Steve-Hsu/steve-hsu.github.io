@@ -1,0 +1,45 @@
+.photoDisplay{
+  display: none;
+  background-color:rgba(255, 255, 255, 0.7);
+  height: 100%;
+  left:50%;
+  position: fixed;
+  top:50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  z-index: 10;
+}
+
+.photo-content {
+  background-color: black;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  border: 1px solid #888;
+  max-height: 80vh;
+  min-width: 100vw;
+  position: absolute;
+  text-align: center;
+  overflow: auto;
+}
+
+#odaibaPhoto{
+  max-height:77vh;
+  max-width: 100vw;
+}
+
+.closeDisplay{
+  right:10px;
+  color:white;
+  position: fixed;
+  z-index: 11;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 0 7px 0;
+  border-radius: 2px;
+}
+
+.closeDisplay:hover{
+  color:black;
+  background-color: white;
+}

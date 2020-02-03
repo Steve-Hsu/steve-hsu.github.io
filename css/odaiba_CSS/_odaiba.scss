@@ -1,0 +1,263 @@
+ul{
+  list-style-type: none;
+}
+
+.main{
+  display: flex;
+}
+
+.sideBarContiner{
+  position: fixed
+}
+.odaibaSteveLogo{
+  margin: 16px;
+}
+
+.sideBar{
+  background-color:white;
+  margin-top: -5rem;
+  height: 100vh;
+  flex: 1 1 0;
+}
+
+.sideBar a{
+  color:rgb(150, 150, 150);
+}
+
+.sideBarList a:hover{
+  text-decoration: none;
+  color:black;
+}
+
+.sideBarList{
+  background-color: white;
+  padding-left: 15px;
+}
+
+
+.sideBody{
+  height: 100vh;
+  margin-top: -5rem;
+  padding: 0px;
+  background-color: black;
+  flex: 1 1 50%;
+}
+
+.sideBodyHeader{
+  background-color: white;
+  height:5vh;
+  margin: 0;
+  position: relative;
+  text-align: center;
+}
+
+
+
+.sideBodyHeader a{
+  color:rgb(225, 225, 225);
+  position: absolute;
+  top:50%;
+  left:50%;
+  Transform: translate( -50%, -50%);
+}
+
+.sideBodyHeader a:hover{
+  text-decoration: none;
+}
+
+.headerLabel{
+  background-color: white;
+}
+
+.headerLabel:hover{
+  background-color: rgb(200, 200, 200);
+  border-radius: 7px 7px 0 0;
+}
+
+
+// color of side body
+.odaiba{
+  background-color: black;
+}
+
+.shinbashi{
+  background-color: black;
+}
+
+.ginza{
+  background-color: black;
+}
+
+// Siderbar style when the page is selected
+%Selected_sidebar_word{
+  -webkit-animation: wordChange 0.3s forwards;
+  -webkit-animation-timing-function: ease-out;
+}
+
+@-webkit-keyframes wordChange{
+  from {
+    // font-size: 10px;
+  }
+  to {
+    font-size: 50px;
+    font-style: oblique;
+    color:black;
+  }
+}
+
+div.odaiba div.sideBar div.sideOdai a{
+  @extend %Selected_sidebar_word;
+}
+
+div.shinbashi div.sideBar div.sideShin a{
+  @extend %Selected_sidebar_word;
+}
+
+div.ginza div.sideBar div.sideGin a{
+  @extend %Selected_sidebar_word;
+}
+
+// header color of side body
+div.odaiba > div.sideBody > div.sideBodyHeader> div.oda{
+    background-color: black;
+    border-radius: 7px 7px 0 0;
+}
+
+div.shinbashi > div.sideBody > div.sideBodyHeader> div.shin{
+    background-color: black;
+    border-radius: 7px 7px 0 0;
+}
+
+div.ginza > div.sideBody > div.sideBodyHeader> div.gin{
+    background-color: black;
+    border-radius: 7px 7px 0 0;
+}
+
+// Odaiba Photos
+.odaiba .gridContainer{
+  background-color: black;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(9, 100px);
+}
+
+.odaiba .p1{
+  overflow: auto;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  border-width: 0 10px 10px 0;
+  border-color: black;
+  border-style: solid;
+}
+
+.odaiba .p1 img{
+  width: auto;
+  height: 100%;
+}
+
+.odaiba .p2{
+  overflow: auto;
+  grid-column-start: 3;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  border-width: 0 10px 10px 0;
+  border-color: black;
+  border-style: solid;
+}
+
+.odaiba .p2 img{
+  width: auto;
+  height: 100%;
+}
+
+.odaiba .p3{
+  overflow: auto;
+  grid-column-start: 7;
+  grid-column-end: 11;
+  grid-row-start: 1;
+  grid-row-end: 5;
+  border-width: 0 10px 10px 0;
+  border-color: black;
+  border-style: solid;
+}
+
+.odaiba .p3 img{
+  width: auto;
+  height: 100%;
+}
+
+.odaiba .p4{
+  overflow: auto;
+  grid-column-start: 1;
+  grid-column-end: 7;
+  grid-row-start: 3;
+  grid-row-end: 8;
+  z-index: 1;
+  border-width: 0 10px 10px 0;
+  border-color: black;
+  border-style: solid;
+}
+
+.odaiba .p4 img{
+  width: auto;
+  height: 100%;
+}
+
+.odaiba .p5{
+  overflow: auto;
+  grid-column-start: 7;
+  grid-column-end: 11;
+  grid-row-start: 5;
+  grid-row-end: 7;
+  border-width: 0 10px 10px 0;
+  border-color: black;
+  border-style: solid;
+}
+
+.odaiba .p5 img{
+  width: auto;
+  height: 100%;
+}
+
+.odaiba .p6{
+  overflow: auto;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 8;
+  grid-row-end: 10;
+  border-width: 0 10px 10px 0;
+  border-color: black;
+  border-style: solid;
+}
+
+.odaiba .p6 img{
+  width: auto;
+  height: 100%;
+}
+
+
+.odaiba .p7{
+  overflow: auto;
+  grid-column-start: 5;
+  grid-column-end: 11;
+  grid-row-start: 7;
+  grid-row-end: 10;
+  border-width: 0 10px 10px 0;
+  border-color: black;
+  border-style: solid;
+}
+
+.odaiba .p7 img{
+  width: auto;
+  height: 100%;
+}
+
+
+@import "./shin";
+@import "./gin";
+@import "./odaiba_@media";
+@import "./photoDisplay";

@@ -408,24 +408,24 @@ body.orders li.orders > a.nav-link#myNav:hover, body.orders li.orders > a.nav-li
 }
 /* The Modal (background) W3school example */
 .modal {
-  display: none;
-  /* Hidden by default */
-  position: fixed;
-  /* Stay in place */
-  z-index: 1;
-  /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%;
-  /* Full width */
-  height: 100%;
-  /* Full height */
-  overflow: auto;
-  /* Enable scroll if needed */
   background-color: black;
   /* Fallback color */
   background-color: rgba(0, 0, 0, 0.3);
   /* Black w/ opacity */
+  display: none;
+  /* Hidden by default */
+  height: 100%;
+  /* Full height */
+  left: 0;
+  overflow: auto;
+  /* Enable scroll if needed */
+  position: fixed;
+  /* Stay in place */
+  top: 0;
+  width: 100%;
+  /* Full width */
+  z-index: 1;
+  /* Sit on top */
 }
 
 /* Modal Content/Box */
@@ -519,24 +519,49 @@ ul {
   list-style-type: none;
 }
 
+.main {
+  display: flex;
+}
+
+.sideBarContiner {
+  position: fixed;
+}
+
+.odaibaSteveLogo {
+  margin: 16px;
+}
+
 .sideBar {
   background-color: white;
+  margin-top: -5rem;
   height: 100vh;
-  margin-top: -9.8vh;
+  flex: 1 1 0;
 }
 
 .sideBar a {
+  color: #969696;
+}
+
+.sideBarList a:hover {
+  text-decoration: none;
   color: black;
+}
+
+.sideBarList {
+  background-color: white;
+  padding-left: 15px;
 }
 
 .sideBody {
   height: 100vh;
-  margin-top: -9.8vh;
+  margin-top: -5rem;
   padding: 0px;
+  background-color: black;
+  flex: 1 1 50%;
 }
 
 .sideBodyHeader {
-  background-color: #cdcdcd;
+  background-color: white;
   height: 5vh;
   margin: 0;
   position: relative;
@@ -551,8 +576,17 @@ ul {
   Transform: translate(-50%, -50%);
 }
 
+.sideBodyHeader a:hover {
+  text-decoration: none;
+}
+
 .headerLabel {
-  background-color: #cdcdcd;
+  background-color: white;
+}
+
+.headerLabel:hover {
+  background-color: #c8c8c8;
+  border-radius: 7px 7px 0 0;
 }
 
 .odaiba {
@@ -567,29 +601,39 @@ ul {
   background-color: black;
 }
 
-div.odaiba > div.sideBodyHeader > div.oda {
-  background-color: black;
-  border-radius: 0 7px 0 0;
+div.ginza div.sideBar div.sideGin a, div.shinbashi div.sideBar div.sideShin a, div.odaiba div.sideBar div.sideOdai a {
+  -webkit-animation: wordChange 0.3s forwards;
+  -webkit-animation-timing-function: ease-out;
 }
 
-div.shinbashi > div.sideBodyHeader > div.shin {
+@-webkit-keyframes wordChange {
+  to {
+    font-size: 50px;
+    font-style: oblique;
+    color: black;
+  }
+}
+div.odaiba > div.sideBody > div.sideBodyHeader > div.oda {
   background-color: black;
   border-radius: 7px 7px 0 0;
 }
 
-div.ginza > div.sideBodyHeader > div.gin {
+div.shinbashi > div.sideBody > div.sideBodyHeader > div.shin {
   background-color: black;
   border-radius: 7px 7px 0 0;
 }
 
-.gridContainer {
+div.ginza > div.sideBody > div.sideBodyHeader > div.gin {
+  background-color: black;
+  border-radius: 7px 7px 0 0;
+}
+
+.odaiba .gridContainer {
   background-color: black;
   padding: 10px;
   display: grid;
   grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: repeat(14, 100px);
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
+  grid-template-rows: repeat(9, 100px);
 }
 
 .odaiba .p1 {
@@ -598,6 +642,9 @@ div.ginza > div.sideBodyHeader > div.gin {
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 3;
+  border-width: 0 10px 10px 0;
+  border-color: black;
+  border-style: solid;
 }
 
 .odaiba .p1 img {
@@ -609,37 +656,60 @@ div.ginza > div.sideBodyHeader > div.gin {
   overflow: auto;
   grid-column-start: 3;
   grid-column-end: 7;
-  grid-row-start: 2;
-  grid-row-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  border-width: 0 10px 10px 0;
+  border-color: black;
+  border-style: solid;
 }
 
 .odaiba .p2 img {
   width: auto;
-  height: 150%;
+  height: 100%;
 }
 
 .odaiba .p3 {
   overflow: auto;
   grid-column-start: 7;
   grid-column-end: 11;
-  grid-row-start: 2;
-  grid-row-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 5;
+  border-width: 0 10px 10px 0;
+  border-color: black;
+  border-style: solid;
+}
+
+.odaiba .p3 img {
+  width: auto;
+  height: 100%;
 }
 
 .odaiba .p4 {
   overflow: auto;
-  grid-column-start: 3;
-  grid-column-end: 10;
-  grid-row-start: 6;
-  grid-row-end: 11;
+  grid-column-start: 1;
+  grid-column-end: 7;
+  grid-row-start: 3;
+  grid-row-end: 8;
+  z-index: 1;
+  border-width: 0 10px 10px 0;
+  border-color: black;
+  border-style: solid;
+}
+
+.odaiba .p4 img {
+  width: auto;
+  height: 100%;
 }
 
 .odaiba .p5 {
   overflow: auto;
-  grid-column-start: 1;
-  grid-column-end: 6;
-  grid-row-start: 11;
-  grid-row-end: 13;
+  grid-column-start: 7;
+  grid-column-end: 11;
+  grid-row-start: 5;
+  grid-row-end: 7;
+  border-width: 0 10px 10px 0;
+  border-color: black;
+  border-style: solid;
 }
 
 .odaiba .p5 img {
@@ -649,10 +719,13 @@ div.ginza > div.sideBodyHeader > div.gin {
 
 .odaiba .p6 {
   overflow: auto;
-  grid-column-start: 2;
-  grid-column-end: 8;
-  grid-row-start: 13;
-  grid-row-end: 15;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 8;
+  grid-row-end: 10;
+  border-width: 0 10px 10px 0;
+  border-color: black;
+  border-style: solid;
 }
 
 .odaiba .p6 img {
@@ -660,29 +733,335 @@ div.ginza > div.sideBodyHeader > div.gin {
   height: 100%;
 }
 
-@media (max-width: 576px) {
-  .sideBar {
-    visibility: hidden;
-    display: none;
+.odaiba .p7 {
+  overflow: auto;
+  grid-column-start: 5;
+  grid-column-end: 11;
+  grid-row-start: 7;
+  grid-row-end: 10;
+  border-width: 0 10px 10px 0;
+  border-color: black;
+  border-style: solid;
+}
+
+.odaiba .p7 img {
+  width: auto;
+  height: 100%;
+}
+
+.shinbashi .gridContainer {
+  background-color: black;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(8, 100px);
+}
+
+.shinbashi .p1 {
+  overflow: auto;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  border-width: 0 10px 10px 0;
+  border-color: black;
+  border-style: solid;
+}
+
+.shinbashi .p1 img {
+  width: auto;
+  height: 100%;
+}
+
+.shinbashi .p2 {
+  overflow: auto;
+  grid-column-start: 3;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  border-width: 0 10px 10px 0;
+  border-color: black;
+  border-style: solid;
+}
+
+.shinbashi .p2 img {
+  width: auto;
+  height: 100%;
+}
+
+.shinbashi .p3 {
+  overflow: auto;
+  grid-column-start: 7;
+  grid-column-end: 11;
+  grid-row-start: 1;
+  grid-row-end: 5;
+  border-width: 0 10px 10px 0;
+  border-color: black;
+  border-style: solid;
+}
+
+.shinbashi .p3 img {
+  width: auto;
+  height: 100%;
+}
+
+.shinbashi .p4 {
+  overflow: auto;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 9;
+  z-index: 1;
+  border-width: 0 10px 10px 0;
+  border-color: black;
+  border-style: solid;
+}
+
+.shinbashi .p4 img {
+  width: auto;
+  height: 100%;
+}
+
+.shinbashi .p5 {
+  overflow: auto;
+  grid-column-start: 4;
+  grid-column-end: 7;
+  grid-row-start: 4;
+  grid-row-end: 6;
+  border-width: 0 10px 10px 0;
+  border-color: black;
+  border-style: solid;
+}
+
+.shinbashi .p5 img {
+  width: 100%;
+  height: auto;
+}
+
+.shinbashi .p6 {
+  overflow: auto;
+  grid-column-start: 4;
+  grid-column-end: 7;
+  grid-row-start: 6;
+  grid-row-end: 9;
+  border-width: 0 10px 10px 0;
+  border-color: black;
+  border-style: solid;
+}
+
+.shinbashi .p6 img {
+  width: auto;
+  height: 100%;
+}
+
+.shinbashi .p7 {
+  overflow: auto;
+  grid-column-start: 7;
+  grid-column-end: 11;
+  grid-row-start: 5;
+  grid-row-end: 9;
+  border-width: 0 10px 10px 0;
+  border-color: black;
+  border-style: solid;
+}
+
+.shinbashi .p7 img {
+  width: auto;
+  height: 100%;
+}
+
+.ginza .gridContainer {
+  background-color: black;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(8, 100px);
+}
+
+.ginza .p1 {
+  overflow: auto;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  border-width: 0 10px 10px 0;
+  border-color: black;
+  border-style: solid;
+}
+
+.ginza .p1 img {
+  width: auto;
+  height: 100%;
+}
+
+.ginza .p2 {
+  overflow: auto;
+  grid-column-start: 5;
+  grid-column-end: 8;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  border-width: 0 10px 10px 0;
+  border-color: black;
+  border-style: solid;
+}
+
+.ginza .p2 img {
+  width: auto;
+  height: 100%;
+}
+
+.ginza .p3 {
+  overflow: auto;
+  grid-column-start: 8;
+  grid-column-end: 11;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  border-width: 0 10px 10px 0;
+  border-color: black;
+  border-style: solid;
+}
+
+.ginza .p3 img {
+  width: auto;
+  height: 100%;
+}
+
+.ginza .p4 {
+  overflow: auto;
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 4;
+  grid-row-end: 7;
+  z-index: 1;
+  border-width: 0 10px 10px 0;
+  border-color: black;
+  border-style: solid;
+}
+
+.ginza .p4 img {
+  width: auto;
+  height: 100%;
+}
+
+.ginza .p5 {
+  overflow: auto;
+  grid-column-start: 6;
+  grid-column-end: 11;
+  grid-row-start: 4;
+  grid-row-end: 6;
+  border-width: 0 10px 10px 0;
+  border-color: black;
+  border-style: solid;
+}
+
+.ginza .p5 img {
+  width: auto;
+  height: 100%;
+}
+
+.ginza .p6 {
+  overflow: auto;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 7;
+  grid-row-end: 9;
+  border-width: 0 10px 10px 0;
+  border-color: black;
+  border-style: solid;
+}
+
+.ginza .p6 img {
+  width: auto;
+  height: 100%;
+}
+
+.ginza .p7 {
+  overflow: auto;
+  grid-column-start: 2;
+  grid-column-end: 6;
+  grid-row-start: 7;
+  grid-row-end: 9;
+  border-width: 0 10px 10px 0;
+  border-color: black;
+  border-style: solid;
+}
+
+.ginza .p7 img {
+  width: auto;
+  height: 100%;
+}
+
+.ginza .p8 {
+  overflow: auto;
+  grid-column-start: 6;
+  grid-column-end: 8;
+  grid-row-start: 6;
+  grid-row-end: 9;
+  border-width: 0 10px 10px 0;
+  border-color: black;
+  border-style: solid;
+}
+
+.ginza .p8 img {
+  width: 100%;
+  height: auto;
+}
+
+.ginza .p9 {
+  overflow: auto;
+  grid-column-start: 8;
+  grid-column-end: 11;
+  grid-row-start: 6;
+  grid-row-end: 9;
+  border-width: 0 10px 10px 0;
+  border-color: black;
+  border-style: solid;
+}
+
+.ginza .p9 img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 1080px) {
+  .odaiba .p4 img {
+    width: auto;
+    height: 100%;
   }
 
   .sideBody {
+    flex: 1 1 50%;
+  }
+}
+@media (max-width: 576px) {
+  .sideBar {
+    background-color: white;
     height: 100vh;
-    width: 100vw;
+    flex: 1 1 0;
   }
 
-  .gridContainer {
+  .sideBody {
+    flex: 1 1 65%;
+  }
+
+  .sideBarList {
+    display: none;
+  }
+
+  .odaiba .gridContainer {
     background-color: black;
     padding: 10px;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(6, 100px);
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
+    grid-template-rows: repeat(7, 100px);
   }
 
   .odaiba .p1 {
     overflow: auto;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
   }
 
   .odaiba .p1 img {
@@ -692,23 +1071,49 @@ div.ginza > div.sideBodyHeader > div.gin {
 
   .odaiba .p2 {
     overflow: auto;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
   }
 
   .odaiba .p2 img {
     width: auto;
-    height: 150%;
+    height: 100%;
   }
 
   .odaiba .p3 {
     overflow: auto;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+
+  .odaiba .p3 img {
+    width: auto;
+    height: 100%;
   }
 
   .odaiba .p4 {
     overflow: auto;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
+
+  .odaiba .p4 img {
+    width: 100%;
+    height: auto;
   }
 
   .odaiba .p5 {
     overflow: auto;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 6;
   }
 
   .odaiba .p5 img {
@@ -718,13 +1123,76 @@ div.ginza > div.sideBodyHeader > div.gin {
 
   .odaiba .p6 {
     overflow: auto;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 6;
+    grid-row-end: 7;
   }
 
   .odaiba .p6 img {
     width: auto;
     height: 100%;
   }
+
+  .odaiba .p7 {
+    overflow: auto;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 7;
+    grid-row-end: 8;
+  }
+
+  .odaiba .p7 img {
+    width: auto;
+    height: 100%;
+  }
 }
+.photoDisplay {
+  display: none;
+  background-color: rgba(255, 255, 255, 0.7);
+  height: 100%;
+  left: 50%;
+  position: fixed;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  z-index: 10;
+}
+
+.photo-content {
+  background-color: black;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  border: 1px solid #888;
+  max-height: 80vh;
+  min-width: 100vw;
+  position: absolute;
+  text-align: center;
+  overflow: auto;
+}
+
+#odaibaPhoto {
+  max-height: 77vh;
+  max-width: 100vw;
+}
+
+.closeDisplay {
+  right: 10px;
+  color: white;
+  position: fixed;
+  z-index: 11;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 0 7px 0;
+  border-radius: 2px;
+}
+
+.closeDisplay:hover {
+  color: black;
+  background-color: white;
+}
+
 /*CSS Grip Test Page ------------------------------------------------------- */
 .grid-container {
   display: grid;

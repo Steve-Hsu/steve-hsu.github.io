@@ -286,8 +286,7 @@ body.orders li.orders> a.nav-link#myNav:hover {
 }
 
 /* import partials */
-@import "./KL";
-@import "./KLpopup";
-@import "./odaiba";
-@import "./mul-table";
+@import "./KL_CSS/KL";
+@import "./KL_CSS/KLpopup";
+@import "./odaiba_CSS/odaiba";
 @import "./CSS-grip";

@@ -1,14 +1,23 @@
-<div class="sideBar col-3">
+<div class="sideBar">
+  <div class="sideBarContiner">
+    <div class="odaibaSteveLogo">
+      <a class="" href="/">
+        <img src="/bigS.ico" height="30" width="30" alt="">
+      </a>
+    </div>
 
-  <div class="" >
-    <ul>
-      <li><a href="/odaiba">Odaiba</a></li>
-      <li><a href="/odaiba/shinbashi">Shinbashi</a></li>
-      <li><a href="/odaiba/ginza">Ginza</a></li>
-    </ul>
-
-    <div class="" style='color: green'>
-      for test
+    <div class="sideBarList">
+      <div class="sideOdai">
+        <a href="/odaiba">Odaiba</a>
+      </div>
+      <div class="sideShin">
+        <a href="/odaiba/shinbashi">Shinbashi</a>
+      </div>
+      <div class="sideGin">
+        <a href="/odaiba/ginza">Ginza</a>
+      </div>
     </div>
   </div>
 </div>
+
+{% include odaibaPhotoDisplay.html %}
