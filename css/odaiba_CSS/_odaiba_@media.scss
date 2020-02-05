@@ -1,18 +1,15 @@
-// Photos in Phones
-@media (max-width:1080px) {
-  .odaiba .p4 img{
-    width: auto;
-    height: 100%;
-  }
+// Mac Book-------------------------------------------------------
+@media (max-width:1500px) {
   .sideBody{
-  flex: 1 1 50%;
+    padding: 0px;
+    flex: 1 1 50%;
   }
 }
 
-@media (max-width:576px) {
+// iPad and iPad mini-------------------------------------------------------
+@media (max-width:1024px) {
   .sideBar{
   background-color: white;
-  height: 100vh;
   flex: 1 1 0;
   }
 
@@ -21,23 +18,27 @@
   }
 
   .sideBarList{
-    display: none;
+    position: absolute;
+    top: 62px;
+    margin: 0 0 0 3px;
   }
+
+
 
   .odaiba .gridContainer{
     background-color: black;
     padding: 10px;
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(7, 100px);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(8, 15vh);
   }
 
   .odaiba .p1{
     overflow: auto;
     grid-column-start:1;
-    grid-column-end: 1;
+    grid-column-end: 2;
     grid-row-start: 1;
-    grid-row-end: 1;
+    grid-row-end: 2;
   }
 
   .odaiba .p1 img{
@@ -60,10 +61,10 @@
 
   .odaiba .p3{
     overflow: auto;
-    grid-column-start: 1;
+    grid-column-start: 2;
     grid-column-end: 3;
-    grid-row-start:3;
-    grid-row-end: 4;
+    grid-row-start:1;
+    grid-row-end: 2;
   }
 
   .odaiba .p3 img{
@@ -75,8 +76,8 @@
     overflow: auto;
     grid-column-start: 1;
     grid-column-end: 3;
-    grid-row-start: 4;
-    grid-row-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 6;
   }
 
   .odaiba .p4 img{
@@ -86,9 +87,9 @@
   .odaiba .p5{
     overflow: auto;
     grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 5;
-    grid-row-end: 6;
+    grid-column-end: 2;
+    grid-row-start: 6;
+    grid-row-end: 7;
   }
 
   .odaiba .p5 img{
@@ -98,7 +99,7 @@
 
   .odaiba .p6{
     overflow: auto;
-    grid-column-start: 1;
+    grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 6;
     grid-row-end: 7;
@@ -115,7 +116,137 @@
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 7;
+    grid-row-end: 9;
+  }
+
+  .odaiba .p7 img{
+    width: auto;
+    height: 100%;
+  }
+}
+
+// iPhone-------------------------------------------------------
+@media (max-width:576px) {
+  .odaibaSteveLogo{
+    // margin: 50vw;
+    margin: 16px 0 0 ;
+    position: absolute;
+    left: 8.75vw;
+    transform: translate(-50%, 0);
+  }
+  
+  .sideBar{
+  background-color: white;
+  flex: 1 1 0;
+  }
+
+  .sideBody{
+  flex: 1 1 65%;
+  }
+
+  .sideBarList{
+    display: none;
+  }
+
+  .odaiba .gridContainer{
+    background-color: black;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(7, 15vh);
+  }
+
+  .odaiba .p1{
+    overflow: auto;
+    grid-column-start:1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    border-width: 0 5px 5px 0;
+  }
+
+  .odaiba .p1 img{
+    width: auto;
+    height: 100%;
+  }
+
+  .odaiba .p2{
+    overflow: auto;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    border-width: 0 5px 5px 0;
+  }
+
+  .odaiba .p2 img{
+    width: auto;
+    height: 100%;
+  }
+
+  .odaiba .p3{
+    overflow: auto;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start:1;
+    grid-row-end: 2;
+    border-width: 0 5px 5px 0;
+  }
+
+  .odaiba .p3 img{
+    width: auto;
+    height: 100%;
+  }
+
+  .odaiba .p4{
+    overflow: auto;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    border-width: 0 5px 5px 0;
+  }
+
+  .odaiba .p4 img{
+    width: 100%;
+    height: auto;
+  }
+  .odaiba .p5{
+    overflow: auto;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    border-width: 0 5px 5px 0;
+  }
+
+  .odaiba .p5 img{
+    width: auto;
+    height: 100%;
+  }
+
+  .odaiba .p6{
+    overflow: auto;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    border-width: 0 5px 5px 0;
+  }
+
+  .odaiba .p6 img{
+    width: auto;
+    height: 100%;
+  }
+
+
+  .odaiba .p7{
+    overflow: auto;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 6;
     grid-row-end: 8;
+    border-width: 0 5px 5px 0;
   }
 
   .odaiba .p7 img{
