@@ -13,11 +13,13 @@
     grid-column-end: 5;
     grid-row-start: 1;
     grid-row-end: 5;
+    background-color: black;
     z-index: 4;
   }
 
   .ginza .p1 img{
     width: 100%;
+    height: auto;
   }
 
   .ginza .p2{
@@ -143,6 +145,7 @@
     grid-row-start: 1;
     grid-row-end: 5;
     border-width: 0 5px 5px 0;
+    background-color: black;
     z-index: 4;
   }
 
