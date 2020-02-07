@@ -1,0 +1,169 @@
+// shinshuku Photos
+.shinshuku .gridContainer{
+  background-color: black;
+  padding: 10px 0 0 10px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(9, 7vw);
+}
+
+.shinshuku .p1{
+  overflow: auto;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  border-width: 0 10px 10px 0;
+  border-color: black;
+  border-style: solid;
+}
+
+.shinshuku .p1 img{
+  width: auto;
+  height: 100%;
+}
+
+.shinshuku .p2{
+  overflow: auto;
+  grid-column-start: 4;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  border-width: 0 10px 10px 0;
+  border-color: black;
+  border-style: solid;
+}
+
+.shinshuku .p2 img{
+  width: 100%;
+  height: auto;
+}
+
+.shinshuku .p3{
+  overflow: auto;
+  grid-column-start: 7;
+  grid-column-end: 10;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  border-width: 0 10px 10px 0;
+  border-color: black;
+  border-style: solid;
+}
+
+.shinshuku .p3 img{
+  width: 100%;
+  height: auto;
+}
+
+.shinshuku .p4{
+  overflow: auto;
+  grid-column-start: 10;
+  grid-column-end: 13;
+  grid-row-start: 1;
+  grid-row-end: 6;
+  z-index: 1;
+  border-width: 0 10px 10px 0;
+  border-color: black;
+  border-style: solid;
+}
+
+.shinshuku .p4 img{
+  width: auto;
+  height: 100%;
+}
+
+.shinshuku .p5{
+  overflow: auto;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 6;
+  border-width: 0 10px 10px 0;
+  border-color: black;
+  border-style: solid;
+}
+
+.shinshuku .p5 img{
+  width: 100%;
+  height: auto;
+}
+
+.shinshuku .p6{
+  overflow: auto;
+  grid-column-start:4;
+  grid-column-end: 7;
+  grid-row-start: 3;
+  grid-row-end: 6;
+  border-width: 0 10px 10px 0;
+  border-color: black;
+  border-style: solid;
+}
+
+.shinshuku .p6 img{
+  width: auto;
+  height: 100%;
+}
+
+.shinshuku .p7{
+  overflow: auto;
+  grid-column-start: 7;
+  grid-column-end: 10;
+  grid-row-start: 3;
+  grid-row-end: 6;
+  border-width: 0 10px 10px 0;
+  border-color: black;
+  border-style: solid;
+}
+
+.shinshuku .p7 img{
+  width: auto;
+  height: 100%;
+}
+
+.shinshuku .p8{
+  overflow: auto;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 6;
+  grid-row-end: 10;
+  border-width: 0 10px 10px 0;
+  border-color: black;
+  border-style: solid;
+}
+
+.shinshuku .p8 img{
+  width: auto;
+  height: 100%;
+}
+
+.shinshuku .p9{
+  overflow: auto;
+  grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row-start: 6;
+  grid-row-end: 10;
+  border-width: 0 10px 10px 0;
+  border-color: black;
+  border-style: solid;
+}
+
+.shinshuku .p9 img{
+  width: auto;
+  height: 100%;
+}
+
+.shinshuku .p10{
+  overflow: auto;
+  grid-column-start: 9;
+  grid-column-end: 13;
+  grid-row-start: 6;
+  grid-row-end: 10;
+  border-width: 0 10px 10px 0;
+  border-color: black;
+  border-style: solid;
+}
+
+.shinshuku .p10 img{
+  width: auto;
+  height: 100%;
+}

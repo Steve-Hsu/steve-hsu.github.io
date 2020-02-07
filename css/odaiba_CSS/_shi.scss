@@ -1,0 +1,153 @@
+// shinagawa Photos
+.shinagawa .gridContainer{
+  background-color: black;
+  padding: 10px 0 0 10px;
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  grid-template-rows: repeat(13, 7vw);
+}
+
+.shinagawa .p1{
+  overflow: auto;
+  grid-column-start: 1;
+  grid-column-end: 12;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  border-width: 0 10px 10px 0;
+  border-color: black;
+  border-style: solid;
+}
+
+.shinagawa .p1 img{
+  width: 100%;
+  height: auto;
+}
+
+.shinagawa .p2{
+  overflow: auto;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 7;
+  border-width: 0 10px 10px 0;
+  border-color: black;
+  border-style: solid;
+}
+
+.shinagawa .p2 img{
+  width: 100%;
+  height: auto;
+}
+
+.shinagawa .p3{
+  overflow: auto;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 7;
+  grid-row-end: 9;
+  border-width: 0 10px 10px 0;
+  border-color: black;
+  border-style: solid;
+}
+
+.shinagawa .p3 img{
+  width: 100%;
+  height: auto;
+}
+
+.shinagawa .p4{
+  overflow: auto;
+  grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row-start: 3;
+  grid-row-end: 5;
+  z-index: 1;
+  border-width: 0 10px 10px 0;
+  border-color: black;
+  border-style: solid;
+}
+
+.shinagawa .p4 img{
+  width: 150%;
+  height: auto;
+}
+
+.shinagawa .p5{
+  overflow: auto;
+  grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row-start: 5;
+  grid-row-end: 9;
+  border-width: 0 10px 10px 0;
+  border-color: black;
+  border-style: solid;
+}
+
+.shinagawa .p5 img{
+  width: 100%;
+  height: auto;
+}
+
+.shinagawa .p6{
+  overflow: auto;
+  grid-column-start:9;
+  grid-column-end: 12;
+  grid-row-start: 3;
+  grid-row-end: 8;
+  border-width: 0 10px 10px 0;
+  border-color: black;
+  border-style: solid;
+}
+
+.shinagawa .p6 img{
+  width: auto;
+  height: 100%;
+}
+
+.shinagawa .p7{
+  overflow: auto;
+  grid-column-start: 9;
+  grid-column-end: 12;
+  grid-row-start: 8;
+  grid-row-end: 11;
+  border-width: 0 10px 10px 0;
+  border-color: black;
+  border-style: solid;
+}
+
+.shinagawa .p7 img{
+  width: 100%;
+  height: auto;
+}
+
+.shinagawa .p8{
+  overflow: auto;
+  grid-column-start: 1;
+  grid-column-end: 9;
+  grid-row-start: 9;
+  grid-row-end: 11;
+  border-width: 0 10px 10px 0;
+  border-color: black;
+  border-style: solid;
+}
+
+.shinagawa .p8 img{
+  width: 100%;
+  height: auto;
+}
+
+.shinagawa .p9{
+  overflow: auto;
+  grid-column-start: 1;
+  grid-column-end: 12;
+  grid-row-start: 11;
+  grid-row-end: 14;
+  border-width: 0 10px 10px 0;
+  border-color: black;
+  border-style: solid;
+}
+
+.shinagawa .p9 img{
+  width: 100%;
+  height: auto;
+}

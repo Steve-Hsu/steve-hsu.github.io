@@ -27,6 +27,14 @@ ul{
   @extend %each_content;
 }
 
+.shinagawa{
+    @extend %each_content;
+}
+
+.shinshuku{
+    @extend %each_content;
+}
+
 //Fotter of each page------------------------
 .odaibaFooter{
   position: absolute;
@@ -64,38 +72,44 @@ ul{
   background-color: white;
   height:5vh;
   margin: 0;
-  position: relative;
-  text-align: center;
+  display: flex;
 }
 
 .sideBodyHeader a{
-  color:rgb(225, 225, 225);
-  position: absolute;
-  top:50%;
-  left:50%;
-  Transform: translate( -50%, -50%);
+  color:rgb(200, 200, 200);
+  font-family: 'Kosugi Maru', sans-serif;
+  display: block;
+  text-align: center;
+}
+
+.sideBodyHeader a div{
+  margin-top:2.5vh;
+  transform: translate(0, -50%);
 }
 
 .sideBodyHeader a:hover{
-  text-decoration: none;
+  text-decoration:none;
 }
 
 .headerLabel{
   background-color: white;
-  font-size: calc(14px + (16 - 14) * ((100vw - 300px) / (1600 - 300)));
+  font-size: calc(14px + (18 - 14) * ((100vw - 300px) / (1600 - 300)));
+  -ms-flex: 0 0 20%;
+  flex: 0 0 20%;
+  max-width: 20%;
 }
 
 .headerLabel:hover{
-  background-color: rgb(200, 200, 200);
+  background-color: rgba(200, 200, 200, 0.5);
   border-radius: 7px 7px 0 0;
 }
-
 
 
 // Siderbar style when the page is selected
 %Selected_sidebar_word{
   -webkit-animation: wordChange 0.3s forwards;
   -webkit-animation-timing-function: ease-out;
+  font-family: 'Voltaire', sans-serif;
 }
 
 @-webkit-keyframes wordChange{
@@ -103,7 +117,7 @@ ul{
     // font-size: 10px;
   }
   to {
-    font-size: calc(14px + (55 - 14) * ((100vw - 300px) / (1600 - 300)));
+    font-size: calc(14px + (50 - 14) * ((100vw - 300px) / (1600 - 300)));
     color:black;
   }
 }
@@ -120,27 +134,46 @@ div.ginza div.sideBar div.sideGin a{
   @extend %Selected_sidebar_word;
 }
 
+div.shinagawa div.sideBar div.sideShi a{
+  @extend %Selected_sidebar_word;
+}
+
+div.shinshuku div.sideBar div.sideShinshuku a{
+  @extend %Selected_sidebar_word;
+}
+
 // header color of side body
-div.odaiba > div.sideBody > div.sideBodyHeader> div.oda{
+div.odaiba > div.sideBody > div.sideBodyHeader> a.oda{
     background-color: black;
     border-radius: 7px 7px 0 0;
 }
 
-div.shinbashi > div.sideBody > div.sideBodyHeader> div.shin{
+div.shinbashi > div.sideBody > div.sideBodyHeader> a.shin{
     background-color: black;
     border-radius: 7px 7px 0 0;
 }
 
-div.ginza > div.sideBody > div.sideBodyHeader> div.gin{
+div.ginza > div.sideBody > div.sideBodyHeader> a.gin{
     background-color: black;
     border-radius: 7px 7px 0 0;
 }
+
+div.shinagawa > div.sideBody > div.sideBodyHeader> a.shi{
+    background-color: black;
+    border-radius: 7px 7px 0 0;
+}
+
+div.shinshuku > div.sideBody > div.sideBodyHeader> a.shuku{
+    background-color: black;
+    border-radius: 7px 7px 0 0;
+}
+
 
 
 // Odaiba Photos
 .odaiba .gridContainer{
   background-color: black;
-  padding: 10px;
+  padding: 10px 0 0 10px;
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: repeat(9, 7vw);
@@ -293,7 +326,11 @@ div.ginza > div.sideBody > div.sideBodyHeader> div.gin{
 
 @import "./shin";
 @import "./gin";
+@import "./shi";
+@import "./shinshuku";
 @import "./odaiba_@media";
 @import "./shin_@media";
 @import "./gin_@media";
+@import "./shi_@media";
+@import "./shinshuku_@media";
 @import "./photoDisplay";

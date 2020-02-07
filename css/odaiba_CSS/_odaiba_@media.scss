@@ -27,10 +27,10 @@
 
   .odaiba .gridContainer{
     background-color: black;
-    padding: 10px;
+    padding: 10px 0 0 10px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(8, 15vh);
+    grid-template-rows: repeat(16, 7vw);
   }
 
   .odaiba .p1{
@@ -38,25 +38,25 @@
     grid-column-start:1;
     grid-column-end: 2;
     grid-row-start: 1;
-    grid-row-end: 2;
+    grid-row-end: 4;
   }
 
   .odaiba .p1 img{
     width: auto;
-    height: 100%;
+    height: 110%;
   }
 
   .odaiba .p2{
     overflow: auto;
     grid-column-start: 1;
     grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 6;
   }
 
   .odaiba .p2 img{
-    width: auto;
-    height: 100%;
+    width: 110%;
+    height: auto;
   }
 
   .odaiba .p3{
@@ -64,50 +64,51 @@
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start:1;
-    grid-row-end: 2;
+    grid-row-end: 4;
   }
 
   .odaiba .p3 img{
     width: auto;
-    height: 100%;
+    height: 120%;
   }
 
   .odaiba .p4{
     overflow: auto;
     grid-column-start: 1;
     grid-column-end: 3;
-    grid-row-start: 3;
-    grid-row-end: 6;
+    grid-row-start: 6;
+    grid-row-end: 11;
   }
 
   .odaiba .p4 img{
     width: 100%;
     height: auto;
   }
+
   .odaiba .p5{
     overflow: auto;
     grid-column-start: 1;
     grid-column-end: 2;
-    grid-row-start: 6;
-    grid-row-end: 7;
+    grid-row-start: 11;
+    grid-row-end: 13;
   }
 
   .odaiba .p5 img{
     width: auto;
-    height: 100%;
+    height: 130%;
   }
 
   .odaiba .p6{
     overflow: auto;
     grid-column-start: 2;
     grid-column-end: 3;
-    grid-row-start: 6;
-    grid-row-end: 7;
+    grid-row-start: 11;
+    grid-row-end: 13;
   }
 
   .odaiba .p6 img{
     width: auto;
-    height: 100%;
+    height: 135%;
   }
 
 
@@ -115,13 +116,13 @@
     overflow: auto;
     grid-column-start: 1;
     grid-column-end: 3;
-    grid-row-start: 7;
-    grid-row-end: 9;
+    grid-row-start: 13;
+    grid-row-end: 17;
   }
 
   .odaiba .p7 img{
-    width: auto;
-    height: 100%;
+    width: 150%;
+    height: auto;
   }
 }
 
@@ -134,7 +135,7 @@
     left: 8.75vw;
     transform: translate(-50%, 0);
   }
-  
+
   .sideBar{
   background-color: white;
   flex: 1 1 0;
@@ -150,7 +151,7 @@
 
   .odaiba .gridContainer{
     background-color: black;
-    padding: 5px;
+    padding: 5px 0 0 5px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(7, 15vh);
@@ -208,8 +209,8 @@
   }
 
   .odaiba .p4 img{
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 150%;
   }
   .odaiba .p5{
     overflow: auto;
