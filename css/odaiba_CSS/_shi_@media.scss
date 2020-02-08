@@ -160,7 +160,7 @@
     padding: 5px 0 0 5px;
     display: grid;
     grid-template-columns: repeat(11, 1fr);
-    grid-template-rows: repeat(15, 15vw);
+    grid-template-rows: repeat(14, 15vw);
   }
 
   .shinagawa .p1{
@@ -247,16 +247,16 @@
   .shinagawa .p6{
     overflow: auto;
     grid-column-start:1;
-    grid-column-end: 12;
+    grid-column-end: 4;
     grid-row-start: 9;
-    grid-row-end: 10;
+    grid-row-end: 11;
     border-width: 0 5px 5px 0;
     border-color: black;
     border-style: solid;
   }
 
   .shinagawa .p6 img{
-    width: 110%;
+    width: 150%;
     height: auto;
   }
 
@@ -264,8 +264,8 @@
     overflow: auto;
     grid-column-start: 9;
     grid-column-end: 12;
-    grid-row-start: 10;
-    grid-row-end: 12;
+    grid-row-start: 9;
+    grid-row-end: 11;
     border-width: 0 5px 5px 0;
     border-color: black;
     border-style: solid;
@@ -278,10 +278,10 @@
 
   .shinagawa .p8{
     overflow: auto;
-    grid-column-start: 1;
+    grid-column-start: 4;
     grid-column-end: 9;
-    grid-row-start: 10;
-    grid-row-end: 12;
+    grid-row-start: 9;
+    grid-row-end: 11;
     border-width: 0 5px 5px 0;
     border-color: black;
     border-style: solid;
@@ -296,8 +296,8 @@
     overflow: auto;
     grid-column-start: 1;
     grid-column-end: 12;
-    grid-row-start: 12;
-    grid-row-end: 16;
+    grid-row-start: 11;
+    grid-row-end: 15;
     border-width: 0 5px 5px 0;
     border-color: black;
     border-style: solid;
