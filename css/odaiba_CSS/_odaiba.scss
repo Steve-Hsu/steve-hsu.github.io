@@ -77,7 +77,7 @@ ul{
 
 .sideBodyHeader a{
   color:rgb(200, 200, 200);
-  font-family: 'Kosugi Maru', sans-serif;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
   display: block;
   text-align: center;
 }
@@ -93,7 +93,7 @@ ul{
 
 .headerLabel{
   background-color: white;
-  font-size: calc(14px + (18 - 14) * ((100vw - 300px) / (1600 - 300)));
+  font-size: calc(14px + (16 - 14) * ((100vw - 300px) / (1600 - 300)));
   -ms-flex: 0 0 20%;
   flex: 0 0 20%;
   max-width: 20%;
@@ -112,35 +112,6 @@ ul{
   font-family: 'Voltaire', sans-serif;
 }
 
-@-webkit-keyframes wordChange{
-  from {
-    // font-size: 10px;
-  }
-  to {
-    font-size: calc(14px + (50 - 14) * ((100vw - 300px) / (1600 - 300)));
-    color:black;
-  }
-}
-
-div.odaiba div.sideBar div.sideOdai a{
-  @extend %Selected_sidebar_word;
-}
-
-div.shinbashi div.sideBar div.sideShin a{
-  @extend %Selected_sidebar_word;
-}
-
-div.ginza div.sideBar div.sideGin a{
-  @extend %Selected_sidebar_word;
-}
-
-div.shinagawa div.sideBar div.sideShi a{
-  @extend %Selected_sidebar_word;
-}
-
-div.shinshuku div.sideBar div.sideShinshuku a{
-  @extend %Selected_sidebar_word;
-}
 
 // header color of side body
 div.odaiba > div.sideBody > div.sideBodyHeader> a.oda{
@@ -304,6 +275,7 @@ div.shinshuku > div.sideBody > div.sideBodyHeader> a.shuku{
 }
 .sideBar a{
   color:rgb(150, 150, 150);
+  font-weight: 100;
 }
 
 .sideBarContiner{
@@ -323,6 +295,35 @@ div.shinshuku > div.sideBody > div.sideBodyHeader> a.shuku{
   padding-left: 15px;
 }
 
+@-webkit-keyframes wordChange{
+  from {
+    // font-size: 10px;
+  }
+  to {
+    font-size: calc(14px + (50 - 14) * ((100vw - 300px) / (1600 - 300)));
+    color:black;
+  }
+}
+
+div.odaiba div.sideBar div.sideOdai a{
+  @extend %Selected_sidebar_word;
+}
+
+div.shinbashi div.sideBar div.sideShin a{
+  @extend %Selected_sidebar_word;
+}
+
+div.ginza div.sideBar div.sideGin a{
+  @extend %Selected_sidebar_word;
+}
+
+div.shinagawa div.sideBar div.sideShi a{
+  @extend %Selected_sidebar_word;
+}
+
+div.shinshuku div.sideBar div.sideShinshuku a{
+  @extend %Selected_sidebar_word;
+}
 
 @import "./shin";
 @import "./gin";

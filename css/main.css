@@ -567,7 +567,7 @@ ul {
 
 .sideBodyHeader a {
   color: #c8c8c8;
-  font-family: "Kosugi Maru", sans-serif;
+  font-family: "M PLUS Rounded 1c", sans-serif;
   display: block;
   text-align: center;
 }
@@ -583,7 +583,7 @@ ul {
 
 .headerLabel {
   background-color: white;
-  font-size: calc(14px + (18 - 14) * ((100vw - 300px) / (1600 - 300)));
+  font-size: calc(14px + (16 - 14) * ((100vw - 300px) / (1600 - 300)));
   -ms-flex: 0 0 20%;
   flex: 0 0 20%;
   max-width: 20%;
@@ -600,12 +600,6 @@ div.shinshuku div.sideBar div.sideShinshuku a, div.shinagawa div.sideBar div.sid
   font-family: "Voltaire", sans-serif;
 }
 
-@-webkit-keyframes wordChange {
-  to {
-    font-size: calc(14px + (50 - 14) * ((100vw - 300px) / (1600 - 300)));
-    color: black;
-  }
-}
 div.odaiba > div.sideBody > div.sideBodyHeader > a.oda {
   background-color: black;
   border-radius: 7px 7px 0 0;
@@ -759,6 +753,7 @@ div.shinshuku > div.sideBody > div.sideBodyHeader > a.shuku {
 
 .sideBar a {
   color: #969696;
+  font-weight: 100;
 }
 
 .sideBarContiner {
@@ -778,6 +773,12 @@ div.shinshuku > div.sideBody > div.sideBodyHeader > a.shuku {
   padding-left: 15px;
 }
 
+@-webkit-keyframes wordChange {
+  to {
+    font-size: calc(14px + (50 - 14) * ((100vw - 300px) / (1600 - 300)));
+    color: black;
+  }
+}
 .shinbashi .gridContainer {
   background-color: black;
   padding: 10px 0 0 10px;
