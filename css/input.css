@@ -2789,41 +2789,451 @@ div.shinshuku > div.sideBody > div.sideBodyHeader > a.shuku {
   background-color: white;
 }
 
-/*CSS Grip Test Page ------------------------------------------------------- */
-.grid-container {
+.chet_header {
+  margin-top: -5rem;
+  background-color: none;
+  height: 10rem;
+  position: fixed;
+  width: 100vw;
+}
+
+.chet_S_logo {
+  position: absolute;
+  margin: 30px;
+  right: 10px;
+}
+
+.chet_CB_logo {
+  position: absolute;
+  margin-top: -2rem;
+  top: 30px;
+  left: 30px;
+  font-family: "Bungee Inline", cursive;
+  font-size: 5rem;
+  index: 20;
+}
+
+.chet_L1 {
+  margin-top: -5rem;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.chet_L2 {
+  background-color: grey;
+  scroll-snap-align: start;
+  height: 100vh;
+}
+
+.fun-valentine {
+  background-color: white;
+  padding: 10px 0 0 10px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-column-gap: 5px;
-  grid-row-gap: 5px;
-  background-color: green;
-  color: red;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: repeat(20, 5vh);
 }
 
-.c1 {
-  background-color: yellow;
-  color: red;
-  grid-column: span 1;
-  grid-row: span 3;
-}
-
-.c2 {
-  background-color: pink;
-  color: grey;
-  grid-column-start: 2;
-  grid-column-end: 4;
+.s1_title {
+  font-size: 7rem;
+  grid-column-start: 9;
+  grid-column-end: 20;
   grid-row-start: 2;
-  grid-row-end: 3;
+  grid-row-end: 5;
+  z-index: 2;
+  font-family: "East Sea Dokdo", cursive;
 }
 
-.c3 {
-  background-color: purple;
+.s1_w1 {
+  grid-column-start: 4;
+  grid-column-end: 10;
+  grid-row-start: 5;
+  grid-row-end: 8;
+  z-index: 1;
+  font-size: 1.25rem;
+  font-family: "Gaegu", cursive;
+}
+
+.s1_w2 {
+  grid-column-start: 4;
+  grid-column-end: 10;
+  grid-row-start: 9;
+  grid-row-end: 13;
+  z-index: 1;
+  font-size: 1.25rem;
+  font-family: "Gaegu", cursive;
+}
+
+.s1_w3 {
+  grid-column-start: 4;
+  grid-column-end: 10;
+  grid-row-start: 13;
+  grid-row-end: 20;
+  z-index: 1;
+  font-size: 1.25rem;
+  font-family: "Gaegu", cursive;
+}
+
+.s1_author {
+  grid-column-start: 4;
+  grid-column-end: 20;
+  grid-row-start: 19;
+  grid-row-end: 20;
+  z-index: 1;
+  color: #a8a5a5;
+  font-size: 0.8rem;
+}
+
+.s1_p1 {
+  grid-column-start: 9;
+  grid-column-end: 20;
+  grid-row-start: 5;
+  grid-row-end: 18;
+}
+.s1_p1 img {
+  height: 100%;
+}
+
+.fall-in-love {
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: repeat(20, 5vh);
+}
+
+.s2_title {
+  font-size: 2.6rem;
+  grid-column-start: 3;
+  grid-column-end: 20;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  z-index: 2;
+  font-family: "Gloria Hallelujah", cursive;
+}
+
+.s2_w1 {
+  grid-column-start: 7;
+  grid-column-end: 12;
+  grid-row-start: 6;
+  grid-row-end: 9;
+  z-index: 1;
+  font-size: 1.25rem;
+  font-family: "Gaegu", cursive;
+}
+
+.s2_w2 {
+  grid-column-start: 7;
+  grid-column-end: 12;
+  grid-row-start: 10;
+  grid-row-end: 14;
+  z-index: 1;
+  font-size: 1.25rem;
+  font-family: "Gaegu", cursive;
+}
+
+.s2_w3 {
+  grid-column-start: 7;
+  grid-column-end: 12;
+  grid-row-start: 14;
+  grid-row-end: 21;
+  z-index: 1;
+  font-size: 1.25rem;
+  font-family: "Gaegu", cursive;
+}
+
+.s2_author {
+  grid-column-start: 3;
+  grid-column-end: 20;
+  grid-row-start: 18;
+  grid-row-end: 20;
+  z-index: 1;
+  color: #a8a5a5;
+  font-size: 0.8rem;
+}
+
+.s2_p1 {
+  grid-column-start: 13;
+  grid-column-end: 20;
+  grid-row-start: 1;
+  grid-row-end: 21;
+}
+.s2_p1 img {
+  height: 100%;
+  width: auto;
+}
+
+.s2_p2 {
+  grid-column-start: 3;
+  grid-column-end: 6;
+  grid-row-start: 6;
+  grid-row-end: 11;
+  overflow: auto;
+}
+.s2_p2 img {
+  width: 100%;
+  height: auto;
+}
+
+.s2_p3 {
+  grid-column-start: 3;
+  grid-column-end: 6;
+  grid-row-start: 12;
+  grid-row-end: 17;
+  overflow: auto;
+}
+.s2_p3 img {
+  width: 100%;
+  height: auto;
+}
+
+.not-for-me {
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: repeat(20, 5vh);
+}
+
+.s3_title {
+  font-size: 4rem;
+  grid-column-start: 5;
+  grid-column-end: 18;
+  grid-row-start: 3;
+  grid-row-end: 5;
+  z-index: 2;
+  font-family: "Sriracha", cursive;
+}
+
+.s3_w1 {
+  grid-column-start: 6;
+  grid-column-end: 12;
+  grid-row-start: 5;
+  grid-row-end: 9;
+  z-index: 1;
+  font-size: 1.25rem;
+  font-family: "Gaegu", cursive;
+  color: black;
+  text-shadow: 1px 1px white;
+}
+
+.s3_w2 {
+  grid-column-start: 6;
+  grid-column-end: 13;
+  grid-row-start: 7;
+  grid-row-end: 9;
+  z-index: 1;
+  font-size: 1.25rem;
+  font-family: "Gaegu", cursive;
+  color: black;
+  text-shadow: 1px 1px white;
+}
+
+.s3_w3 {
+  grid-column-start: 7;
+  grid-column-end: 18;
+  grid-row-start: 9;
+  grid-row-end: 21;
+  z-index: 1;
+  font-size: 1.25rem;
+  font-family: "Gaegu", cursive;
+  color: black;
+  text-shadow: 1px 1px white;
+}
+
+.s3_w4 {
+  grid-column-start: 9;
+  grid-column-end: 18;
+  grid-row-start: 11;
+  grid-row-end: 21;
+  z-index: 1;
+  font-size: 1.25rem;
+  font-family: "Gaegu", cursive;
+  color: black;
+  text-shadow: 1px 1px white;
+}
+
+.s3_w5 {
+  grid-column-start: 6;
+  grid-column-end: 18;
+  grid-row-start: 13;
+  grid-row-end: 21;
+  z-index: 1;
+  font-size: 1.25rem;
+  font-family: "Gaegu", cursive;
   color: white;
+  text-shadow: 1px 1px black;
 }
 
-.c4 {
-  background-color: black;
-  color: white;
+.s3_w6 {
+  grid-column-start: 6;
+  grid-column-end: 18;
+  grid-row-start: 14;
+  grid-row-end: 21;
+  z-index: 1;
+  font-size: 1.25rem;
+  font-family: "Gaegu", cursive;
+  color: black;
+  text-shadow: 1px 1px white;
 }
 
-/*# sourceMappingURL=main.css.map */
+.s3_w7 {
+  grid-column-start: 6;
+  grid-column-end: 18;
+  grid-row-start: 15;
+  grid-row-end: 21;
+  z-index: 1;
+  font-size: 1.25rem;
+  font-family: "Gaegu", cursive;
+  color: black;
+  text-shadow: 1px 1px white;
+}
+
+.s3_w8 {
+  grid-column-start: 6;
+  grid-column-end: 18;
+  grid-row-start: 17;
+  grid-row-end: 21;
+  z-index: 1;
+  font-size: 1.25rem;
+  font-family: "Gaegu", cursive;
+  color: black;
+  text-shadow: 1px 1px white;
+}
+
+.s3_author {
+  grid-column-start: 2;
+  grid-column-end: 20;
+  grid-row-start: 20;
+  grid-row-end: 21;
+  z-index: 1;
+  color: #a8a5a5;
+  font-size: 0.8rem;
+}
+
+.s3_p1 {
+  grid-column-start: 1;
+  grid-column-end: 21;
+  grid-row-start: 1;
+  grid-row-end: 21;
+}
+.s3_p1 img {
+  height: 100%;
+  width: auto;
+}
+
+.s3_p2 {
+  grid-column-start: 3;
+  grid-column-end: 6;
+  grid-row-start: 6;
+  grid-row-end: 11;
+  overflow: auto;
+}
+.s3_p2 img {
+  width: 100%;
+  height: auto;
+}
+
+.s3_p3 {
+  grid-column-start: 3;
+  grid-column-end: 6;
+  grid-row-start: 12;
+  grid-row-end: 17;
+  overflow: auto;
+}
+.s3_p3 img {
+  width: 100%;
+  height: auto;
+}
+
+.what-love-is {
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: repeat(20, 5vh);
+}
+
+.s4_title {
+  font-size: 2.6rem;
+  grid-column-start: 3;
+  grid-column-end: 20;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  z-index: 2;
+  font-family: "Gloria Hallelujah", cursive;
+}
+
+.s4_w1 {
+  grid-column-start: 7;
+  grid-column-end: 12;
+  grid-row-start: 6;
+  grid-row-end: 9;
+  z-index: 1;
+  font-size: 1.25rem;
+  font-family: "Gaegu", cursive;
+}
+
+.s4_w2 {
+  grid-column-start: 7;
+  grid-column-end: 12;
+  grid-row-start: 10;
+  grid-row-end: 14;
+  z-index: 1;
+  font-size: 1.25rem;
+  font-family: "Gaegu", cursive;
+}
+
+.s4_w3 {
+  grid-column-start: 7;
+  grid-column-end: 12;
+  grid-row-start: 14;
+  grid-row-end: 21;
+  z-index: 1;
+  font-size: 1.25rem;
+  font-family: "Gaegu", cursive;
+}
+
+.s4_author {
+  grid-column-start: 3;
+  grid-column-end: 20;
+  grid-row-start: 18;
+  grid-row-end: 20;
+  z-index: 1;
+  color: #a8a5a5;
+  font-size: 0.8rem;
+}
+
+.s4_p1 {
+  grid-column-start: 13;
+  grid-column-end: 20;
+  grid-row-start: 1;
+  grid-row-end: 21;
+}
+.s4_p1 img {
+  height: 100%;
+  width: auto;
+}
+
+.s4_p2 {
+  grid-column-start: 3;
+  grid-column-end: 6;
+  grid-row-start: 6;
+  grid-row-end: 11;
+  overflow: auto;
+}
+.s4_p2 img {
+  width: 100%;
+  height: auto;
+}
+
+.s4_p3 {
+  grid-column-start: 3;
+  grid-column-end: 6;
+  grid-row-start: 12;
+  grid-row-end: 17;
+  overflow: auto;
+}
+.s4_p3 img {
+  width: 100%;
+  height: auto;
+}
+
+/*# sourceMappingURL=input.css.map */

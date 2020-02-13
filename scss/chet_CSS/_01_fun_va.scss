@@ -1,0 +1,83 @@
+.fun-valentine{
+  background-color: white;
+  padding: 10px 0 0 10px;
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: repeat(20, 5vh);
+}
+
+.s1_title{
+  font-size: 7rem;
+  grid-column-start:9;
+  grid-column-end: 20;
+  grid-row-start: 2;
+  grid-row-end: 5;
+  z-index: 2;
+  font-family: 'East Sea Dokdo', cursive;
+}
+
+.s1_w1{
+  grid-column-start:4;
+  grid-column-end: 10;
+  grid-row-start: 5;
+  grid-row-end: 8;
+  z-index: 1;
+
+  font-size: 1.25rem;
+  font-family: 'Gaegu', cursive;
+}
+.s1_w2{
+  grid-column-start:4;
+  grid-column-end: 10;
+  grid-row-start: 9;
+  grid-row-end: 13;
+  z-index: 1;
+
+  font-size: 1.25rem;
+  font-family: 'Gaegu', cursive;
+}
+.s1_w3{
+  grid-column-start:4;
+  grid-column-end: 10;
+  grid-row-start: 13;
+  grid-row-end: 20;
+  z-index: 1;
+
+  font-size: 1.25rem;
+  font-family: 'Gaegu', cursive;
+}
+// .s1_w4{
+//   grid-column-start:9;
+//   grid-column-end: 20;
+//   grid-row-start: 14;
+//   grid-row-end: 20;
+//   z-index: 1;
+//   display: none;
+// }
+// .s1_w5{
+//   grid-column-start:13;
+//   grid-column-end: 20;
+//   grid-row-start: 15;
+//   grid-row-end: 20;
+//   z-index: 1;
+//   display: none;
+// }
+.s1_author{
+  grid-column-start:4;
+  grid-column-end: 20;
+  grid-row-start: 19;
+  grid-row-end: 20;
+  z-index: 1;
+  color:rgb(168, 165, 165);
+  font-size:0.8rem;
+}
+
+.s1_p1{
+  grid-column-start:9;
+  grid-column-end: 20;
+  grid-row-start: 5;
+  grid-row-end: 18;
+  img {
+    height:100%;
+  }
+}
