@@ -2,24 +2,39 @@
   // for I've already set the main body padding 5rem
   margin-top:-5rem;
   background-color:none;
-  height: 10rem;
+  height: calc(40px + (100 - 40) * ((100vw - 300px) / (1600 - 300)));
   position: fixed;
   width:100vw;
 }
 
+@-webkit-keyframes headerHovered{
+  from {
+    // font-size: 10px;
+  }
+  to {
+    background-color: white;
+  }
+}
+
+.chet_header:hover{
+  -webkit-animation: headerHovered 0.5s forwards;
+  -webkit-animation-timing-function: ease-out;
+}
+
+
 .chet_S_logo{
   position: absolute;
-  margin: 30px;
-  right:10px;
+  margin: calc(1px + (30 - 1) * ((100vw - 300px) / (1600 - 300)));
+  right:1px;
 }
 
 .chet_CB_logo{
   position: absolute;
-  margin-top:-2rem;
-  top:30px;
-  left:30px;
+  margin-top:calc(1px + (36 - 1) * ((100vw - 300px) / (1600 - 300)) * -1);
+  top:calc(1px + (30 - 1) * ((100vw - 300px) / (1600 - 300)));
+  left:calc(1px + (30 - 1) * ((100vw - 300px) / (1600 - 300)));
   font-family: 'Bungee Inline', cursive;
-  font-size: 5rem;
+  font-size: calc(25px + (70 - 25) * ((100vw - 300px) / (1600 - 300)));
   index:20;
 }
 
@@ -44,3 +59,13 @@
 @import "./02_fall_in";
 @import "./03_not_for";
 @import "./04_what_love";
+@import "./05_fool_to";
+@import "./06_almost_blue";
+@import "./07_all_we_know";
+@import "./01_@media";
+@import "./02_@media";
+@import "./03_@media";
+@import "./04_@media";
+@import "./05_@media";
+@import "./06_@media";
+@import "./07_@media";
