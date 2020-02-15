@@ -1,6 +1,177 @@
 @media (max-width:1024px) {
+  .s7_w1{
+    grid-column-start:9;
+    grid-column-end: 20;
+    grid-row-start: 4;
+    grid-row-end: 20;
+    z-index: 1;
 
+    font-size: calc(14px + (19 - 14) * ((100vw - 300px) / (1600 - 300)));
+    font-family: 'Marvel', sans-serif;
+      color:rgba(0,0,0,0.7);
+
+  }
+  .s7_w2{
+    grid-column-start:9;
+    grid-column-end: 20;
+    grid-row-start: 10;
+    grid-row-end: 20;
+    z-index: 1;
+    font-size: calc(14px + (19 - 14) * ((100vw - 300px) / (1600 - 300)));
+    font-family: 'Marvel', sans-serif;
+    color:rgba(0,0,0,0.7);
+  }
+
+  .s7_w3{
+    grid-column-start:9;
+    grid-column-end: 20;
+    grid-row-start: 13;
+    grid-row-end: 20;
+    z-index: 1;
+    font-size: calc(14px + (19 - 14) * ((100vw - 300px) / (1600 - 300)));
+    font-family: 'Marvel', sans-serif;
+    color:rgba(0,0,0,0.7);
+
+    margin:0 0 0 0;
+  }
+
+  .s7_author{
+    grid-column-start:14;
+    grid-column-end: 21;
+  }
+  .s7_p1{
+    grid-column-start:1;
+    grid-column-end:7;
+    grid-row-start: 1;
+    grid-row-end: 21;
+    overflow: auto;
+    img {
+      height:100%;
+      width:auto;
+    }
+  }
+
+  .s7_p2{
+    grid-column-start:16;
+    grid-column-end: 20;
+    grid-row-start: 13;
+    grid-row-end: 20;
+    overflow: auto;
+    img {
+      width:100%;
+      height:auto;
+    }
+  }
 }
 @media (max-width:576px) {
+  .s7_title{
+    font-size: calc(14px + (200 - 14) * ((100vw - 300px) / (1600 - 300)));
+    grid-column-start:4;
+    grid-column-end: 21;
+    grid-row-start: 2;
+    grid-row-end: 15;
+    z-index: 2;
+    font-family: 'Raleway', sans-serif;
+  }
+  .s7_w1{
+    grid-column-start:4;
+    grid-column-end: 20;
+    grid-row-start: 4;
+    grid-row-end: 20;
+    z-index: 1;
+
+    font-size: calc(14px + (24 - 14) * ((100vw - 300px) / (1600 - 300)));
+    font-family: 'Marvel', sans-serif;
+    color:rgba(0,0,0,0.7);
+    text-shadow: 1px 1px white;
+    line-height: calc(14px + (30 - 14) * ((100vw - 300px) / (1600 - 300)));
+
+  }
+  .s7_w2{
+    grid-column-start:4;
+    grid-column-end: 20;
+    grid-row-start: 10;
+    grid-row-end: 20;
+    z-index: 1;
+    font-size: calc(14px + (24 - 14) * ((100vw - 300px) / (1600 - 300)));
+    font-family: 'Marvel', sans-serif;
+    color:rgba(0,0,0,0.7);
+    text-shadow: 1px 1px white;
+    line-height: calc(14px + (30 - 14) * ((100vw - 300px) / (1600 - 300)));
+  }
+
+  .s7_w3{
+    grid-column-start:4;
+    grid-column-end: 20;
+    grid-row-start: 13;
+    grid-row-end: 20;
+    z-index: 1;
+    font-size: calc(14px + (24 - 14) * ((100vw - 300px) / (1600 - 300)));
+    font-family: 'Marvel', sans-serif;
+    color:rgba(0,0,0,0.7);
+    text-shadow: 1px 1px white;
+    line-height: calc(14px + (30 - 14) * ((100vw - 300px) / (1600 - 300)));
+
+    margin:0 0 0 0;
+  }
+
+  .s7_author{
+    grid-column-start:14;
+    grid-column-end: 21;
+  }
+  .s7_p1{
+    grid-column-start:1;
+    grid-column-end:3;
+    grid-row-start: 1;
+    grid-row-end: 21;
+    overflow: auto;
+    img {
+      height:100%;
+      width:auto;
+    }
+  }
+
+  .s7_p2{
+    grid-column-start:13;
+    grid-column-end: 20;
+    grid-row-start: 10;
+    grid-row-end: 20;
+    overflow: auto;
+    img {
+      width:100%;
+      height:auto;
+    }
+  }
+
+  .s7_author{
+    grid-column-start:2;
+    grid-column-end: 21;
+    font-size:calc(10px + (12 - 10) * ((100vw - 300px) / (1600 - 300)));
+  }
+}
+
+@media (max-width:375px) {
+
+  .s7_w1{
+    grid-column-start:4;
+    grid-column-end: 20;
+    grid-row-start: 4;
+    grid-row-end: 20;
+    z-index: 1;
+
+  }
+  .s7_w2{
+    grid-column-start:4;
+    grid-column-end: 20;
+    grid-row-start: 11;
+    grid-row-end: 20;
+  }
+
+  .s7_w3{
+    grid-column-start:4;
+    grid-column-end: 20;
+    grid-row-start: 14;
+    grid-row-end: 20;
+  }
 
 }

@@ -7,13 +7,14 @@
 }
 
 .s1_title{
-  font-size: calc(14px + (120 - 14) * ((100vw - 300px) / (1600 - 300)));
+  font-size: calc(14px + (87 - 14) * ((100vw - 300px) / (1600 - 300)));
   grid-column-start:9;
   grid-column-end: 20;
-  grid-row-start: 2;
+  grid-row-start: 3;
   grid-row-end: 5;
   z-index: 2;
-  font-family: 'East Sea Dokdo', cursive;
+  font-weight: 100;
+
 }
 
 .s1_w1{
@@ -47,13 +48,14 @@
   font-family: 'Gaegu', cursive;
 }
 .s1_author{
-  grid-column-start:3;
+  grid-column-start:9;
   grid-column-end: 20;
-  grid-row-start: 19;
+  grid-row-start: 18;
   grid-row-end: 20;
   z-index: 1;
   color:rgb(168, 165, 165);
   font-size:0.8rem;
+  font-weight: 100;
 }
 
 .s1_p1{
