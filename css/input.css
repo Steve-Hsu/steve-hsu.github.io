@@ -2861,7 +2861,8 @@ div.shinshuku > div.sideBody > div.sideBodyHeader > a.shuku {
   grid-row-end: 8;
   z-index: 1;
   font-size: calc(14px + (22 - 14) * ((100vw - 300px) / (1600 - 300)));
-  font-family: "Gaegu", cursive;
+  font-family: "Harmattan", sans-serif;
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .s1_w2 {
@@ -2871,7 +2872,8 @@ div.shinshuku > div.sideBody > div.sideBodyHeader > a.shuku {
   grid-row-end: 13;
   z-index: 1;
   font-size: calc(14px + (22 - 14) * ((100vw - 300px) / (1600 - 300)));
-  font-family: "Gaegu", cursive;
+  font-family: "Harmattan", sans-serif;
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .s1_w3 {
@@ -2881,7 +2883,8 @@ div.shinshuku > div.sideBody > div.sideBodyHeader > a.shuku {
   grid-row-end: 20;
   z-index: 1;
   font-size: calc(14px + (22 - 14) * ((100vw - 300px) / (1600 - 300)));
-  font-family: "Gaegu", cursive;
+  font-family: "Harmattan", sans-serif;
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .s1_author {
@@ -2931,7 +2934,8 @@ div.shinshuku > div.sideBody > div.sideBodyHeader > a.shuku {
   grid-row-end: 9;
   z-index: 1;
   font-size: calc(14px + (22 - 14) * ((100vw - 300px) / (1600 - 300)));
-  font-family: "Gaegu", cursive;
+  font-family: "Harmattan", sans-serif;
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .s2_w2 {
@@ -2941,7 +2945,8 @@ div.shinshuku > div.sideBody > div.sideBodyHeader > a.shuku {
   grid-row-end: 14;
   z-index: 1;
   font-size: calc(14px + (22 - 14) * ((100vw - 300px) / (1600 - 300)));
-  font-family: "Gaegu", cursive;
+  font-family: "Harmattan", sans-serif;
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .s2_w3 {
@@ -2951,7 +2956,8 @@ div.shinshuku > div.sideBody > div.sideBodyHeader > a.shuku {
   grid-row-end: 21;
   z-index: 1;
   font-size: calc(14px + (22 - 14) * ((100vw - 300px) / (1600 - 300)));
-  font-family: "Gaegu", cursive;
+  font-family: "Harmattan", sans-serif;
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .s2_author {
@@ -3026,8 +3032,8 @@ div.shinshuku > div.sideBody > div.sideBodyHeader > a.shuku {
   grid-row-end: 9;
   z-index: 1;
   font-size: calc(14px + (22 - 14) * ((100vw - 300px) / (1600 - 300)));
-  font-family: "Gaegu", cursive;
-  color: black;
+  font-family: "Harmattan", sans-serif;
+  color: rgba(0, 0, 0, 0.7);
   text-shadow: 1px 1px white;
 }
 
@@ -3038,8 +3044,8 @@ div.shinshuku > div.sideBody > div.sideBodyHeader > a.shuku {
   grid-row-end: 9;
   z-index: 1;
   font-size: calc(14px + (22 - 14) * ((100vw - 300px) / (1600 - 300)));
-  font-family: "Gaegu", cursive;
-  color: black;
+  font-family: "Harmattan", sans-serif;
+  color: rgba(0, 0, 0, 0.7);
   text-shadow: 1px 1px white;
 }
 
@@ -3050,8 +3056,8 @@ div.shinshuku > div.sideBody > div.sideBodyHeader > a.shuku {
   grid-row-end: 21;
   z-index: 1;
   font-size: calc(14px + (22 - 14) * ((100vw - 300px) / (1600 - 300)));
-  font-family: "Gaegu", cursive;
-  color: black;
+  font-family: "Harmattan", sans-serif;
+  color: rgba(0, 0, 0, 0.7);
   text-shadow: 1px 1px white;
 }
 
@@ -3062,8 +3068,8 @@ div.shinshuku > div.sideBody > div.sideBodyHeader > a.shuku {
   grid-row-end: 21;
   z-index: 1;
   font-size: calc(14px + (22 - 14) * ((100vw - 300px) / (1600 - 300)));
-  font-family: "Gaegu", cursive;
-  color: black;
+  font-family: "Harmattan", sans-serif;
+  color: rgba(0, 0, 0, 0.7);
   text-shadow: 1px 1px white;
 }
 
@@ -3074,7 +3080,7 @@ div.shinshuku > div.sideBody > div.sideBodyHeader > a.shuku {
   grid-row-end: 21;
   z-index: 1;
   font-size: calc(14px + (22 - 14) * ((100vw - 300px) / (1600 - 300)));
-  font-family: "Gaegu", cursive;
+  font-family: "Harmattan", sans-serif;
   color: white;
   text-shadow: 1px 1px black;
 }
@@ -3086,8 +3092,8 @@ div.shinshuku > div.sideBody > div.sideBodyHeader > a.shuku {
   grid-row-end: 21;
   z-index: 1;
   font-size: calc(14px + (22 - 14) * ((100vw - 300px) / (1600 - 300)));
-  font-family: "Gaegu", cursive;
-  color: black;
+  font-family: "Harmattan", sans-serif;
+  color: rgba(0, 0, 0, 0.7);
   text-shadow: 1px 1px white;
 }
 
@@ -3098,8 +3104,8 @@ div.shinshuku > div.sideBody > div.sideBodyHeader > a.shuku {
   grid-row-end: 21;
   z-index: 1;
   font-size: calc(14px + (22 - 14) * ((100vw - 300px) / (1600 - 300)));
-  font-family: "Gaegu", cursive;
-  color: black;
+  font-family: "Harmattan", sans-serif;
+  color: rgba(0, 0, 0, 0.7);
   text-shadow: 1px 1px white;
 }
 
@@ -3110,8 +3116,8 @@ div.shinshuku > div.sideBody > div.sideBodyHeader > a.shuku {
   grid-row-end: 21;
   z-index: 1;
   font-size: calc(14px + (22 - 14) * ((100vw - 300px) / (1600 - 300)));
-  font-family: "Gaegu", cursive;
-  color: black;
+  font-family: "Harmattan", sans-serif;
+  color: rgba(0, 0, 0, 0.7);
   text-shadow: 1px 1px white;
 }
 
@@ -3162,7 +3168,8 @@ div.shinshuku > div.sideBody > div.sideBodyHeader > a.shuku {
   grid-row-end: 9;
   z-index: 1;
   font-size: calc(14px + (22 - 14) * ((100vw - 300px) / (1600 - 300)));
-  font-family: "Gaegu", cursive;
+  font-family: "Buda", cursive;
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .s4_w2 {
@@ -3172,7 +3179,8 @@ div.shinshuku > div.sideBody > div.sideBodyHeader > a.shuku {
   grid-row-end: 14;
   z-index: 1;
   font-size: calc(14px + (22 - 14) * ((100vw - 300px) / (1600 - 300)));
-  font-family: "Gaegu", cursive;
+  font-family: "Buda", cursive;
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .s4_w3 {
@@ -3182,7 +3190,8 @@ div.shinshuku > div.sideBody > div.sideBodyHeader > a.shuku {
   grid-row-end: 21;
   z-index: 1;
   font-size: calc(14px + (22 - 14) * ((100vw - 300px) / (1600 - 300)));
-  font-family: "Gaegu", cursive;
+  font-family: "Buda", cursive;
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .s4_w4 {
@@ -3192,7 +3201,8 @@ div.shinshuku > div.sideBody > div.sideBodyHeader > a.shuku {
   grid-row-end: 21;
   z-index: 1;
   font-size: calc(14px + (22 - 14) * ((100vw - 300px) / (1600 - 300)));
-  font-family: "Gaegu", cursive;
+  font-family: "Buda", cursive;
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .s4_author {
@@ -3464,6 +3474,7 @@ div.shinshuku > div.sideBody > div.sideBodyHeader > a.shuku {
   font-size: calc(14px + (19 - 14) * ((100vw - 300px) / (1600 - 300)));
   font-family: "Marvel", sans-serif;
   color: rgba(0, 0, 0, 0.7);
+  margin-left: calc(14px + (19 - 14) * ((100vw - 300px) / (1600 - 300)));
 }
 
 .s7_w2 {
@@ -3475,6 +3486,7 @@ div.shinshuku > div.sideBody > div.sideBodyHeader > a.shuku {
   font-size: calc(14px + (19 - 14) * ((100vw - 300px) / (1600 - 300)));
   font-family: "Marvel", sans-serif;
   color: rgba(0, 0, 0, 0.7);
+  margin-left: calc(14px + (19 - 14) * ((100vw - 300px) / (1600 - 300)));
 }
 
 .s7_w3 {
@@ -3542,7 +3554,6 @@ div.shinshuku > div.sideBody > div.sideBodyHeader > a.shuku {
     grid-row-end: 8;
     z-index: 1;
     font-size: calc(14px + (32 - 14) * ((100vw - 300px) / (1600 - 300)));
-    font-family: "Gaegu", cursive;
     text-shadow: 1px 1px white;
   }
 
@@ -3553,7 +3564,6 @@ div.shinshuku > div.sideBody > div.sideBodyHeader > a.shuku {
     grid-row-end: 11;
     z-index: 1;
     font-size: calc(14px + (32 - 14) * ((100vw - 300px) / (1600 - 300)));
-    font-family: "Gaegu", cursive;
     text-shadow: 1px 1px white;
   }
 
@@ -3564,7 +3574,6 @@ div.shinshuku > div.sideBody > div.sideBodyHeader > a.shuku {
     grid-row-end: 20;
     z-index: 1;
     font-size: calc(14px + (32 - 14) * ((100vw - 300px) / (1600 - 300)));
-    font-family: "Gaegu", cursive;
     text-shadow: 1px 1px white;
   }
 
@@ -3633,7 +3642,6 @@ div.shinshuku > div.sideBody > div.sideBodyHeader > a.shuku {
     grid-row-end: 15;
     z-index: 1;
     font-size: calc(14px + (32 - 14) * ((100vw - 300px) / (1600 - 300)));
-    font-family: "Gaegu", cursive;
     text-shadow: 1px 1px white;
     line-height: calc(10px + (50 - 10) * ((100vh - 300px) / (1600 - 300)));
   }
@@ -3645,7 +3653,6 @@ div.shinshuku > div.sideBody > div.sideBodyHeader > a.shuku {
     grid-row-end: 16;
     z-index: 1;
     font-size: calc(14px + (32 - 14) * ((100vw - 300px) / (1600 - 300)));
-    font-family: "Gaegu", cursive;
     text-shadow: 1px 1px white;
     line-height: calc(10px + (50 - 10) * ((100vh - 300px) / (1600 - 300)));
   }
@@ -3657,7 +3664,6 @@ div.shinshuku > div.sideBody > div.sideBodyHeader > a.shuku {
     grid-row-end: 20;
     z-index: 1;
     font-size: calc(14px + (32 - 14) * ((100vw - 300px) / (1600 - 300)));
-    font-family: "Gaegu", cursive;
     text-shadow: 1px 1px white;
     line-height: calc(10px + (50 - 10) * ((100vh - 300px) / (1600 - 300)));
   }
@@ -3775,7 +3781,6 @@ div.shinshuku > div.sideBody > div.sideBodyHeader > a.shuku {
     grid-row-end: 9;
     z-index: 1;
     font-size: calc(14px + (32 - 14) * ((100vw - 300px) / (1600 - 300)));
-    font-family: "Gaegu", cursive;
   }
 
   .s2_w2 {
@@ -3785,7 +3790,6 @@ div.shinshuku > div.sideBody > div.sideBodyHeader > a.shuku {
     grid-row-end: 12;
     z-index: 1;
     font-size: calc(14px + (32 - 14) * ((100vw - 300px) / (1600 - 300)));
-    font-family: "Gaegu", cursive;
   }
 
   .s2_w3 {
@@ -3795,7 +3799,6 @@ div.shinshuku > div.sideBody > div.sideBodyHeader > a.shuku {
     grid-row-end: 21;
     z-index: 1;
     font-size: calc(14px + (32 - 14) * ((100vw - 300px) / (1600 - 300)));
-    font-family: "Gaegu", cursive;
   }
 
   .s2_author {
@@ -3959,7 +3962,6 @@ div.shinshuku > div.sideBody > div.sideBodyHeader > a.shuku {
     grid-row-end: 10;
     z-index: 5;
     font-size: calc(14px + (32 - 14) * ((100vw - 300px) / (1600 - 300)));
-    font-family: "Gaegu", cursive;
     text-shadow: 1px 1px white;
     line-height: calc(10px + (70 - 10) * ((100vh - 300px) / (1600 - 300)));
   }
@@ -3971,7 +3973,6 @@ div.shinshuku > div.sideBody > div.sideBodyHeader > a.shuku {
     grid-row-end: 14;
     z-index: 5;
     font-size: calc(14px + (32 - 14) * ((100vw - 300px) / (1600 - 300)));
-    font-family: "Gaegu", cursive;
     text-shadow: 1px 1px white;
     line-height: calc(10px + (70 - 10) * ((100vh - 300px) / (1600 - 300)));
   }
@@ -3983,7 +3984,6 @@ div.shinshuku > div.sideBody > div.sideBodyHeader > a.shuku {
     grid-row-end: 21;
     z-index: 5;
     font-size: calc(14px + (32 - 14) * ((100vw - 300px) / (1600 - 300)));
-    font-family: "Gaegu", cursive;
     text-shadow: 1px 1px white;
     line-height: calc(10px + (70 - 10) * ((100vh - 300px) / (1600 - 300)));
   }
@@ -4133,8 +4133,6 @@ div.shinshuku > div.sideBody > div.sideBodyHeader > a.shuku {
     grid-row-end: 8;
     z-index: 1;
     font-size: calc(14px + (22 - 14) * ((100vw - 300px) / (1600 - 300)));
-    font-family: "Gaegu", cursive;
-    color: black;
     text-shadow: 1px 1px white;
   }
 
@@ -4145,8 +4143,6 @@ div.shinshuku > div.sideBody > div.sideBodyHeader > a.shuku {
     grid-row-end: 8;
     z-index: 1;
     font-size: calc(14px + (22 - 14) * ((100vw - 300px) / (1600 - 300)));
-    font-family: "Gaegu", cursive;
-    color: black;
     text-shadow: 1px 1px white;
   }
 
@@ -4157,8 +4153,6 @@ div.shinshuku > div.sideBody > div.sideBodyHeader > a.shuku {
     grid-row-end: 21;
     z-index: 1;
     font-size: calc(14px + (22 - 14) * ((100vw - 300px) / (1600 - 300)));
-    font-family: "Gaegu", cursive;
-    color: black;
     text-shadow: 1px 1px white;
   }
 
@@ -4169,8 +4163,6 @@ div.shinshuku > div.sideBody > div.sideBodyHeader > a.shuku {
     grid-row-end: 21;
     z-index: 1;
     font-size: calc(14px + (22 - 14) * ((100vw - 300px) / (1600 - 300)));
-    font-family: "Gaegu", cursive;
-    color: black;
     text-shadow: 1px 1px white;
   }
 
@@ -4181,8 +4173,6 @@ div.shinshuku > div.sideBody > div.sideBodyHeader > a.shuku {
     grid-row-end: 21;
     z-index: 1;
     font-size: calc(14px + (22 - 14) * ((100vw - 300px) / (1600 - 300)));
-    font-family: "Gaegu", cursive;
-    color: white;
     text-shadow: 1px 1px black;
   }
 
@@ -4193,8 +4183,6 @@ div.shinshuku > div.sideBody > div.sideBodyHeader > a.shuku {
     grid-row-end: 21;
     z-index: 1;
     font-size: calc(14px + (22 - 14) * ((100vw - 300px) / (1600 - 300)));
-    font-family: "Gaegu", cursive;
-    color: black;
     text-shadow: 1px 1px white;
   }
 
@@ -4205,8 +4193,6 @@ div.shinshuku > div.sideBody > div.sideBodyHeader > a.shuku {
     grid-row-end: 21;
     z-index: 1;
     font-size: calc(14px + (22 - 14) * ((100vw - 300px) / (1600 - 300)));
-    font-family: "Gaegu", cursive;
-    color: black;
     text-shadow: 1px 1px white;
   }
 
@@ -4217,8 +4203,6 @@ div.shinshuku > div.sideBody > div.sideBodyHeader > a.shuku {
     grid-row-end: 21;
     z-index: 1;
     font-size: calc(14px + (22 - 14) * ((100vw - 300px) / (1600 - 300)));
-    font-family: "Gaegu", cursive;
-    color: black;
     text-shadow: 1px 1px white;
   }
 
@@ -4318,7 +4302,7 @@ div.shinshuku > div.sideBody > div.sideBodyHeader > a.shuku {
     grid-row-end: 20;
     font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
     line-height: calc(10px + (50 - 10) * ((100vw - 300px) / (1600 - 300)));
-    color: black;
+    color: rgba(0, 0, 0, 0.7);
     text-shadow: 1px 1px white;
   }
 
@@ -5104,6 +5088,7 @@ div.shinshuku > div.sideBody > div.sideBodyHeader > a.shuku {
     font-size: calc(14px + (19 - 14) * ((100vw - 300px) / (1600 - 300)));
     font-family: "Marvel", sans-serif;
     color: rgba(0, 0, 0, 0.7);
+    margin-left: 0;
   }
 
   .s7_w2 {
@@ -5115,6 +5100,7 @@ div.shinshuku > div.sideBody > div.sideBodyHeader > a.shuku {
     font-size: calc(14px + (19 - 14) * ((100vw - 300px) / (1600 - 300)));
     font-family: "Marvel", sans-serif;
     color: rgba(0, 0, 0, 0.7);
+    margin-left: 0;
   }
 
   .s7_w3 {

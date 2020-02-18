@@ -25,7 +25,9 @@
   z-index: 1;
 
   font-size: calc(14px + (22 - 14) * ((100vw - 300px) / (1600 - 300)));
-  font-family: 'Gaegu', cursive;
+  // font-family: 'Gaegu', cursive;
+  font-family: 'Harmattan', sans-serif;
+  color:rgba(0,0,0,0.7);
 }
 .s1_w2{
   grid-column-start:3;
@@ -35,7 +37,9 @@
   z-index: 1;
 
   font-size: calc(14px + (22 - 14) * ((100vw - 300px) / (1600 - 300)));
-  font-family: 'Gaegu', cursive;
+  // font-family: 'Gaegu', cursive;
+  font-family: 'Harmattan', sans-serif;
+  color:rgba(0,0,0,0.7);
 }
 .s1_w3{
   grid-column-start:3;
@@ -45,7 +49,9 @@
   z-index: 1;
 
   font-size: calc(14px + (22 - 14) * ((100vw - 300px) / (1600 - 300)));
-  font-family: 'Gaegu', cursive;
+  // font-family: 'Gaegu', cursive;
+  font-family: 'Harmattan', sans-serif;
+  color:rgba(0,0,0,0.7);
 }
 .s1_author{
   grid-column-start:9;
