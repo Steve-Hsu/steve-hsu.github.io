@@ -63,6 +63,36 @@
   }
 
 }
+
+
+/* iPad Mini-1 */
+@media (max-width:1024px) and (max-height:768px) {
+  .s1_title{
+    font-size: calc(14px + (120 - 14) * ((100vw - 300px) / (1600 - 300)));
+    grid-column-start:3;
+    grid-column-end: 20;
+    grid-row-start:2;
+    grid-row-end: 5;
+    z-index: 2;
+  }
+  .s1_w1{
+    grid-row-start: 5;
+    grid-row-end: 15;
+    line-height: calc(10px + (50 - 10) * ((100vw - 300px) / (1600 - 300)));
+  }
+  .s1_w2{
+    grid-row-start: 11;
+    grid-row-end: 18;
+    line-height: calc(10px + (50 - 10) * ((100vw - 300px) / (1600 - 300)));
+  }
+  .s1_w3{
+    grid-row-start: 15;
+    grid-row-end: 21;
+    line-height: calc(10px + (50 - 10) * ((100vw - 300px) / (1600 - 300)));
+  }
+}
+
+
 @media (max-width:576px) {
   .s1_title{
     font-size: calc(14px + (100 - 14) * ((100vh - 300px) / (1600 - 300)));
@@ -83,6 +113,7 @@
     font-size: calc(14px + (32 - 14) * ((100vw - 300px) / (1600 - 300)));
     font-family: 'Gaegu', cursive;
     text-shadow: 1px 1px white;
+    line-height: calc(10px + (50 - 10) * ((100vh - 300px) / (1600 - 300)));
   }
   .s1_w2{
     grid-column-start:3;
@@ -94,6 +125,7 @@
     font-size: calc(14px + (32 - 14) * ((100vw - 300px) / (1600 - 300)));
     font-family: 'Gaegu', cursive;
     text-shadow: 1px 1px white;
+    line-height: calc(10px + (50 - 10) * ((100vh - 300px) / (1600 - 300)));
   }
   .s1_w3{
     grid-column-start:3;
@@ -105,6 +137,7 @@
     font-size: calc(14px + (32 - 14) * ((100vw - 300px) / (1600 - 300)));
     font-family: 'Gaegu', cursive;
     text-shadow: 1px 1px white;
+    line-height: calc(10px + (50 - 10) * ((100vh - 300px) / (1600 - 300)));
   }
   .s1_author{
     grid-column-start:2;
@@ -123,4 +156,91 @@
     grid-row-end: 11;
     overflow:auto;
   }
+}
+
+@media (max-width:375px) {
+  .s1_title{
+    font-size: calc(20px + (60 - 20) * ((100vh - 300px) / (1600 - 300)));
+  }
+}
+
+
+/* iPhone 6 above_horizental */
+@media (max-width:736px) and (max-height:414px) {
+  .fun-valentine{
+    background-color: white;
+    padding: 10px 0 0 10px;
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(20, 5vh);
+  }
+
+
+    .s1_title{
+      font-size: calc(14px + (100 - 14) * ((100vw - 300px) / (1600 - 300)));
+      grid-column-start:2;
+      grid-column-end: 20;
+      grid-row-start:1;
+      grid-row-end: 5;
+      z-index: 2;
+    }
+
+    .s1_w1{
+      grid-column-start:2;
+      grid-column-end: 10;
+      grid-row-start: 5;
+      grid-row-end: 12;
+      z-index: 1;
+
+      font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+      line-height: calc(10px + (50 - 10) * ((100vw - 300px) / (1600 - 300)));
+    }
+    .s1_w2{
+      grid-column-start:2;
+      grid-column-end: 10;
+      grid-row-start: 14;
+      grid-row-end: 21;
+      z-index: 1;
+
+      font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+      line-height: calc(10px + (50 - 10) * ((100vw - 300px) / (1600 - 300)));
+    }
+    .s1_w3{
+      grid-column-start:11;
+      grid-column-end: 21;
+      grid-row-start: 5;
+      grid-row-end: 20;
+      z-index: 1;
+
+      font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+      line-height: calc(10px + (50 - 10) * ((100vw - 300px) / (1600 - 300)));
+    }
+
+    .s1_author{
+      grid-column-start:11;
+      grid-column-end: 20;
+      grid-row-start: 19;
+      grid-row-end: 20;
+      z-index: 1;
+      color:rgb(168, 165, 165);
+      font-size:calc(10px + (12 - 10) * ((100vw - 300px) / (1600 - 300)));
+    }
+
+    .s1_p1{
+      display: none;
+    }
+
+    .chet_CB_logo{
+      display: none;
+
+    }
+
+}
+
+/* iPhone SE */
+@media (max-width:568px) and (max-height:320px) {
+  .s1_w1, .s1_w2, .s1_w3{
+    font-size: calc(14px + (20 - 14) * ((100vw - 300px) / (1600 - 300)));
+  }
+
 }

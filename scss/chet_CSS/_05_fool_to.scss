@@ -99,3 +99,10 @@
 
   }
 }
+
+
+@media (max-height:746px) and (max-width:694px)  {
+  .s5_w1, .s5_w2, .s5_w3, .s5_w4{
+    line-height: calc(10px + (20 - 10) * ((100vw - 300px) / (1600 - 300)));
+  }
+}

@@ -3318,6 +3318,11 @@ div.shinshuku > div.sideBody > div.sideBodyHeader > a.shuku {
   height: auto;
 }
 
+@media (max-height: 746px) and (max-width: 694px) {
+  .s5_w1, .s5_w2, .s5_w3, .s5_w4 {
+    line-height: calc(10px + (20 - 10) * ((100vw - 300px) / (1600 - 300)));
+  }
+}
 .almost-blue {
   background-color: white;
   display: grid;
@@ -3582,6 +3587,35 @@ div.shinshuku > div.sideBody > div.sideBodyHeader > a.shuku {
     overflow: auto;
   }
 }
+/* iPad Mini-1 */
+@media (max-width: 1024px) and (max-height: 768px) {
+  .s1_title {
+    font-size: calc(14px + (120 - 14) * ((100vw - 300px) / (1600 - 300)));
+    grid-column-start: 3;
+    grid-column-end: 20;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    z-index: 2;
+  }
+
+  .s1_w1 {
+    grid-row-start: 5;
+    grid-row-end: 15;
+    line-height: calc(10px + (50 - 10) * ((100vw - 300px) / (1600 - 300)));
+  }
+
+  .s1_w2 {
+    grid-row-start: 11;
+    grid-row-end: 18;
+    line-height: calc(10px + (50 - 10) * ((100vw - 300px) / (1600 - 300)));
+  }
+
+  .s1_w3 {
+    grid-row-start: 15;
+    grid-row-end: 21;
+    line-height: calc(10px + (50 - 10) * ((100vw - 300px) / (1600 - 300)));
+  }
+}
 @media (max-width: 576px) {
   .s1_title {
     font-size: calc(14px + (100 - 14) * ((100vh - 300px) / (1600 - 300)));
@@ -3601,6 +3635,7 @@ div.shinshuku > div.sideBody > div.sideBodyHeader > a.shuku {
     font-size: calc(14px + (32 - 14) * ((100vw - 300px) / (1600 - 300)));
     font-family: "Gaegu", cursive;
     text-shadow: 1px 1px white;
+    line-height: calc(10px + (50 - 10) * ((100vh - 300px) / (1600 - 300)));
   }
 
   .s1_w2 {
@@ -3612,6 +3647,7 @@ div.shinshuku > div.sideBody > div.sideBodyHeader > a.shuku {
     font-size: calc(14px + (32 - 14) * ((100vw - 300px) / (1600 - 300)));
     font-family: "Gaegu", cursive;
     text-shadow: 1px 1px white;
+    line-height: calc(10px + (50 - 10) * ((100vh - 300px) / (1600 - 300)));
   }
 
   .s1_w3 {
@@ -3623,6 +3659,7 @@ div.shinshuku > div.sideBody > div.sideBodyHeader > a.shuku {
     font-size: calc(14px + (32 - 14) * ((100vw - 300px) / (1600 - 300)));
     font-family: "Gaegu", cursive;
     text-shadow: 1px 1px white;
+    line-height: calc(10px + (50 - 10) * ((100vh - 300px) / (1600 - 300)));
   }
 
   .s1_author {
@@ -3641,6 +3678,84 @@ div.shinshuku > div.sideBody > div.sideBodyHeader > a.shuku {
     grid-row-start: 4;
     grid-row-end: 11;
     overflow: auto;
+  }
+}
+@media (max-width: 375px) {
+  .s1_title {
+    font-size: calc(20px + (60 - 20) * ((100vh - 300px) / (1600 - 300)));
+  }
+}
+/* iPhone 6 above_horizental */
+@media (max-width: 736px) and (max-height: 414px) {
+  .fun-valentine {
+    background-color: white;
+    padding: 10px 0 0 10px;
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(20, 5vh);
+  }
+
+  .s1_title {
+    font-size: calc(14px + (100 - 14) * ((100vw - 300px) / (1600 - 300)));
+    grid-column-start: 2;
+    grid-column-end: 20;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    z-index: 2;
+  }
+
+  .s1_w1 {
+    grid-column-start: 2;
+    grid-column-end: 10;
+    grid-row-start: 5;
+    grid-row-end: 12;
+    z-index: 1;
+    font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+    line-height: calc(10px + (50 - 10) * ((100vw - 300px) / (1600 - 300)));
+  }
+
+  .s1_w2 {
+    grid-column-start: 2;
+    grid-column-end: 10;
+    grid-row-start: 14;
+    grid-row-end: 21;
+    z-index: 1;
+    font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+    line-height: calc(10px + (50 - 10) * ((100vw - 300px) / (1600 - 300)));
+  }
+
+  .s1_w3 {
+    grid-column-start: 11;
+    grid-column-end: 21;
+    grid-row-start: 5;
+    grid-row-end: 20;
+    z-index: 1;
+    font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+    line-height: calc(10px + (50 - 10) * ((100vw - 300px) / (1600 - 300)));
+  }
+
+  .s1_author {
+    grid-column-start: 11;
+    grid-column-end: 20;
+    grid-row-start: 19;
+    grid-row-end: 20;
+    z-index: 1;
+    color: rgb(168, 165, 165);
+    font-size: calc(10px + (12 - 10) * ((100vw - 300px) / (1600 - 300)));
+  }
+
+  .s1_p1 {
+    display: none;
+  }
+
+  .chet_CB_logo {
+    display: none;
+  }
+}
+/* iPhone SE */
+@media (max-width: 568px) and (max-height: 320px) {
+  .s1_w1, .s1_w2, .s1_w3 {
+    font-size: calc(14px + (20 - 14) * ((100vw - 300px) / (1600 - 300)));
   }
 }
 @media (max-width: 1024px) {
@@ -3729,15 +3844,112 @@ div.shinshuku > div.sideBody > div.sideBodyHeader > a.shuku {
     width: auto;
   }
 }
+/* iPad Mini-1 */
+@media (max-width: 1024px) and (max-height: 768px) {
+  .s2_title {
+    font-size: calc(25px + (35 - 25) * ((300vh - 300px) / (1600 - 300)));
+    grid-column-start: 5;
+    grid-column-end: 20;
+    grid-row-start: 4;
+    grid-row-end: 8;
+    z-index: 2;
+  }
+
+  .s2_w1 {
+    grid-row-start: 6;
+    grid-row-end: 10;
+    line-height: calc(10px + (50 - 10) * ((100vw - 300px) / (1600 - 300)));
+  }
+
+  .s2_w2 {
+    grid-row-start: 11;
+    grid-row-end: 14;
+    line-height: calc(10px + (50 - 10) * ((100vw - 300px) / (1600 - 300)));
+  }
+
+  .s2_w3 {
+    grid-row-start: 16;
+    grid-row-end: 21;
+    line-height: calc(10px + (50 - 10) * ((100vw - 300px) / (1600 - 300)));
+  }
+}
+/* iPhone 6 above_horizental */
+@media (max-width: 750px) and (max-height: 450px) {
+  .fun-valentine {
+    background-color: white;
+    padding: 10px 0 0 10px;
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(20, 5vh);
+  }
+
+  .s2_title {
+    font-size: calc(14px + (100 - 14) * ((100vw - 300px) / (1600 - 300)));
+    grid-column-start: 2;
+    grid-column-end: 20;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    margin-top: calc(1px + (30 - 1) * ((100vw - 300px) / (1600 - 300)));
+  }
+
+  .s2_w1 {
+    grid-column-start: 2;
+    grid-column-end: 10;
+    grid-row-start: 5;
+    grid-row-end: 12;
+    z-index: 1;
+    font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+    line-height: calc(10px + (70 - 10) * ((100vw - 300px) / (1600 - 300)));
+  }
+
+  .s2_w2 {
+    grid-column-start: 2;
+    grid-column-end: 10;
+    grid-row-start: 12;
+    grid-row-end: 21;
+    z-index: 1;
+    font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+    line-height: calc(10px + (70 - 10) * ((100vw - 300px) / (1600 - 300)));
+  }
+
+  .s2_w3 {
+    grid-column-start: 11;
+    grid-column-end: 21;
+    grid-row-start: 5;
+    grid-row-end: 20;
+    z-index: 1;
+    font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+    line-height: calc(10px + (70 - 10) * ((100vw - 300px) / (1600 - 300)));
+  }
+
+  .s2_author {
+    grid-column-start: 11;
+    grid-column-end: 20;
+    grid-row-start: 19;
+    grid-row-end: 20;
+    z-index: 1;
+    color: #a8a5a5;
+    font-size: calc(10px + (12 - 10) * ((100vw - 300px) / (1600 - 300)));
+  }
+
+  .s2_p1, .s2_p2, .s2_p3 {
+    display: none;
+  }
+
+  .chet_CB_logo {
+    display: none;
+  }
+}
 @media (max-width: 576px) {
   .s2_title {
-    font-size: calc(25px + (60 - 25) * ((100vw - 300px) / (1600 - 300)));
+    font-size: calc(25px + (100 - 25) * ((100vw - 300px) / (1600 - 300)));
     grid-column-start: 3;
     grid-column-end: 21;
     grid-row-start: 4;
     grid-row-end: 8;
     z-index: 5;
     text-shadow: 1px 1px white;
+    line-height: calc(10px + (50 - 10) * ((100vh - 300px) / (1600 - 300)));
   }
 
   .s2_w1 {
@@ -3749,6 +3961,7 @@ div.shinshuku > div.sideBody > div.sideBodyHeader > a.shuku {
     font-size: calc(14px + (32 - 14) * ((100vw - 300px) / (1600 - 300)));
     font-family: "Gaegu", cursive;
     text-shadow: 1px 1px white;
+    line-height: calc(10px + (70 - 10) * ((100vh - 300px) / (1600 - 300)));
   }
 
   .s2_w2 {
@@ -3760,6 +3973,7 @@ div.shinshuku > div.sideBody > div.sideBodyHeader > a.shuku {
     font-size: calc(14px + (32 - 14) * ((100vw - 300px) / (1600 - 300)));
     font-family: "Gaegu", cursive;
     text-shadow: 1px 1px white;
+    line-height: calc(10px + (70 - 10) * ((100vh - 300px) / (1600 - 300)));
   }
 
   .s2_w3 {
@@ -3771,6 +3985,7 @@ div.shinshuku > div.sideBody > div.sideBodyHeader > a.shuku {
     font-size: calc(14px + (32 - 14) * ((100vw - 300px) / (1600 - 300)));
     font-family: "Gaegu", cursive;
     text-shadow: 1px 1px white;
+    line-height: calc(10px + (70 - 10) * ((100vh - 300px) / (1600 - 300)));
   }
 
   .s2_author {
@@ -3820,6 +4035,75 @@ div.shinshuku > div.sideBody > div.sideBodyHeader > a.shuku {
   .s2_p3 img {
     height: 120%;
     width: auto;
+  }
+}
+/* iPhone SE */
+@media (max-width: 568px) and (max-height: 320px) {
+  .fun-valentine {
+    background-color: white;
+    padding: 10px 0 0 10px;
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(20, 5vh);
+  }
+
+  .s2_title {
+    font-size: calc(14px + (100 - 14) * ((100vw - 300px) / (1600 - 300)));
+    grid-column-start: 2;
+    grid-column-end: 20;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    margin-top: calc(1px + (30 - 1) * ((100vw - 300px) / (1600 - 300)));
+  }
+
+  .s2_w1 {
+    grid-column-start: 2;
+    grid-column-end: 10;
+    grid-row-start: 5;
+    grid-row-end: 12;
+    z-index: 1;
+    font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+    line-height: calc(10px + (70 - 10) * ((100vw - 300px) / (1600 - 300)));
+  }
+
+  .s2_w2 {
+    grid-column-start: 2;
+    grid-column-end: 10;
+    grid-row-start: 12;
+    grid-row-end: 21;
+    z-index: 1;
+    font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+    line-height: calc(10px + (70 - 10) * ((100vw - 300px) / (1600 - 300)));
+  }
+
+  .s2_w3 {
+    grid-column-start: 11;
+    grid-column-end: 21;
+    grid-row-start: 5;
+    grid-row-end: 20;
+    z-index: 1;
+    font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+    line-height: calc(10px + (70 - 10) * ((100vw - 300px) / (1600 - 300)));
+  }
+
+  .s2_author {
+    grid-column-start: 11;
+    grid-column-end: 20;
+    grid-row-start: 19;
+    grid-row-end: 20;
+    font-size: calc(5px + (20 - 5) * ((100vw - 300px) / (1600 - 300)));
+  }
+
+  .s2_p1, .s2_p2, .s2_p3 {
+    display: none;
+  }
+
+  .chet_CB_logo {
+    display: none;
+  }
+
+  .s2_w1, .s2_w2, .s2_w3 {
+    font-size: calc(14px + (20 - 14) * ((100vw - 300px) / (1600 - 300)));
   }
 }
 @media (max-width: 1024px) {
@@ -3961,6 +4245,143 @@ div.shinshuku > div.sideBody > div.sideBodyHeader > a.shuku {
     width: auto;
   }
 }
+@media (max-width: 375px) {
+  .s3_title {
+    font-size: calc(20px + (45 - 20) * ((100vh - 300px) / (1600 - 300)));
+  }
+
+  .s3_w1, .s3_w2, .s3_w3, .s3_w4, .s3_w5, .s3_w6, .s3_w7, .s3_w8 {
+    line-height: calc(10px + (25 - 10) * ((100vh - 300px) / (1600 - 300)));
+    grid-column-start: 5;
+    grid-column-end: 19;
+  }
+}
+/* iPhone 6 above_horizental */
+@media (max-width: 750px) and (max-height: 450px) {
+  .fun-valentine {
+    background-color: white;
+    padding: 10px 0 0 10px;
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(20, 5vh);
+  }
+
+  .s3_title {
+    font-size: calc(14px + (100 - 14) * ((100vw - 300px) / (1600 - 300)));
+    grid-column-start: 2;
+    grid-column-end: 20;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    margin-top: calc(1px + (30 - 1) * ((100vw - 300px) / (1600 - 300)));
+  }
+
+  .s3_w1 {
+    grid-column-start: 2;
+    grid-column-end: 10;
+    grid-row-start: 5;
+    grid-row-end: 12;
+    font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+    line-height: calc(10px + (50 - 10) * ((100vw - 300px) / (1600 - 300)));
+  }
+
+  .s3_w2 {
+    grid-column-start: 2;
+    grid-column-end: 10;
+    grid-row-start: 8;
+    grid-row-end: 21;
+    font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+    line-height: calc(10px + (50 - 10) * ((100vw - 300px) / (1600 - 300)));
+  }
+
+  .s3_w3 {
+    grid-column-start: 2;
+    grid-column-end: 10;
+    grid-row-start: 11;
+    grid-row-end: 21;
+    font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+    line-height: calc(10px + (50 - 10) * ((100vw - 300px) / (1600 - 300)));
+  }
+
+  .s3_w4 {
+    grid-column-start: 2;
+    grid-column-end: 10;
+    grid-row-start: 16;
+    grid-row-end: 20;
+    font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+    line-height: calc(10px + (50 - 10) * ((100vw - 300px) / (1600 - 300)));
+  }
+
+  .s3_w5 {
+    grid-column-start: 11;
+    grid-column-end: 20;
+    grid-row-start: 5;
+    grid-row-end: 20;
+    font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+    line-height: calc(10px + (50 - 10) * ((100vw - 300px) / (1600 - 300)));
+    color: black;
+    text-shadow: 1px 1px white;
+  }
+
+  .s3_w6 {
+    grid-column-start: 11;
+    grid-column-end: 20;
+    grid-row-start: 8;
+    grid-row-end: 20;
+    font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+    line-height: calc(10px + (50 - 10) * ((100vw - 300px) / (1600 - 300)));
+  }
+
+  .s3_w7 {
+    grid-column-start: 11;
+    grid-column-end: 20;
+    grid-row-start: 10;
+    grid-row-end: 20;
+    font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+    line-height: calc(10px + (50 - 10) * ((100vw - 300px) / (1600 - 300)));
+  }
+
+  .s3_w8 {
+    grid-column-start: 11;
+    grid-column-end: 20;
+    grid-row-start: 13;
+    grid-row-end: 20;
+    font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+    line-height: calc(10px + (50 - 10) * ((100vw - 300px) / (1600 - 300)));
+  }
+
+  .s3_author {
+    grid-column-start: 11;
+    grid-column-end: 20;
+    grid-row-start: 19;
+    grid-row-end: 20;
+    z-index: 1;
+    color: #a8a5a5;
+    font-size: calc(10px + (12 - 10) * ((100vw - 300px) / (1600 - 300)));
+  }
+
+  .s3_p1 {
+    display: none;
+  }
+
+  .chet_CB_logo {
+    display: none;
+  }
+}
+/* iPhone SE_Horizental */
+@media (max-width: 568px) and (max-height: 320px) {
+  .s3_w1, .s3_w2, .s3_w3 {
+    font-size: calc(14px + (20 - 14) * ((100vw - 300px) / (1600 - 300)));
+  }
+
+  .s3_w8 {
+    grid-row-start: 14;
+    grid-row-end: 20;
+  }
+
+  .s3_author {
+    font-size: calc(5px + (20 - 5) * ((100vw - 300px) / (1600 - 300)));
+  }
+}
 @media (max-width: 1024px) {
   .s4_title {
     grid-column-start: 7;
@@ -4044,6 +4465,103 @@ div.shinshuku > div.sideBody > div.sideBodyHeader > a.shuku {
     width: auto;
   }
 }
+@media (max-width: 375px) {
+  .s4_title {
+    font-size: calc(20px + (30 - 20) * ((100vw - 300px) / (1600 - 300)));
+  }
+
+  .s4_w1, .s4_w2, .s4_w3, .s4_w4 {
+    line-height: calc(10px + (30 - 10) * ((100vh - 300px) / (1600 - 300)));
+  }
+}
+/* iPhone 6 above_horizental */
+@media (max-width: 750px) and (max-height: 450px) {
+  .fun-valentine {
+    background-color: white;
+    padding: 10px 0 0 10px;
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(20, 5vh);
+  }
+
+  .s4_title {
+    font-size: calc(14px + (90 - 14) * ((100vw - 300px) / (1600 - 300)));
+    grid-column-start: 2;
+    grid-column-end: 20;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    z-index: 2;
+    margin-top: calc(1px + (30 - 1) * ((100vw - 300px) / (1600 - 300)));
+  }
+
+  .s4_w1 {
+    grid-column-start: 2;
+    grid-column-end: 10;
+    grid-row-start: 5;
+    grid-row-end: 12;
+    z-index: 1;
+    font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+    line-height: calc(10px + (50 - 10) * ((100vw - 300px) / (1600 - 300)));
+  }
+
+  .s4_w2 {
+    grid-column-start: 2;
+    grid-column-end: 10;
+    grid-row-start: 13;
+    grid-row-end: 21;
+    z-index: 1;
+    font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+    line-height: calc(10px + (50 - 10) * ((100vw - 300px) / (1600 - 300)));
+  }
+
+  .s4_w3 {
+    grid-column-start: 11;
+    grid-column-end: 20;
+    grid-row-start: 5;
+    grid-row-end: 20;
+    z-index: 1;
+    font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+    line-height: calc(10px + (50 - 10) * ((100vw - 300px) / (1600 - 300)));
+  }
+
+  .s4_w4 {
+    grid-column-start: 11;
+    grid-column-end: 20;
+    grid-row-start: 11;
+    grid-row-end: 20;
+    z-index: 1;
+    font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+    line-height: calc(10px + (50 - 10) * ((100vw - 300px) / (1600 - 300)));
+  }
+
+  .s4_author {
+    grid-column-start: 11;
+    grid-column-end: 20;
+    grid-row-start: 19;
+    grid-row-end: 20;
+    z-index: 1;
+    color: #a8a5a5;
+    font-size: calc(10px + (12 - 10) * ((100vw - 300px) / (1600 - 300)));
+  }
+
+  .s4_p1 {
+    display: none;
+  }
+
+  .chet_CB_logo {
+    display: none;
+  }
+}
+/* iPhone SE_Horizental */
+@media (max-width: 568px) and (max-height: 320px) {
+  .s4_w1, .s4_w2, .s4_w3 {
+    font-size: calc(14px + (20 - 14) * ((100vw - 300px) / (1600 - 300)));
+  }
+
+  .s4_author {
+    font-size: calc(5px + (20 - 5) * ((100vw - 300px) / (1600 - 300)));
+  }
+}
 @media (max-width: 1024px) {
   .s5_title {
     font-size: calc(25px + (60 - 25) * ((100vw - 300px) / (1600 - 300)));
@@ -4111,11 +4629,38 @@ div.shinshuku > div.sideBody > div.sideBodyHeader > a.shuku {
     padding-top: 2rem;
   }
 }
+/* iPad Mini-1 */
+@media (max-width: 1024px) and (max-height: 768px) {
+  .s5_title {
+    font-size: calc(14px + (50 - 14) * ((100vw - 300px) / (1600 - 300)));
+    grid-row-start: 7;
+  }
+
+  .s5_w1, .s5_w2, .s5_w3, .s5_w4 {
+    line-height: calc(10px + (20 - 10) * ((100vw - 300px) / (1600 - 300)));
+    font-size: calc(14px + (20 - 14) * ((100vw - 300px) / (1600 - 300)));
+  }
+}
+@media (max-width: 694px) and (max-height: 768px) {
+  .s5_w1, .s5_w2, .s5_w3, .s5_w4 {
+    line-height: calc(10px + (30 - 10) * ((100vw - 300px) / (1600 - 300)));
+    font-size: calc(14px + (20 - 14) * ((100vw - 300px) / (1600 - 300)));
+  }
+}
 @media (max-width: 576px) {
+  .s5_title {
+    font-size: calc(14px + (120 - 14) * ((100vw - 300px) / (1600 - 300)));
+    grid-column-start: 2;
+    grid-column-end: 20;
+    grid-row-start: 7;
+    grid-row-end: 20;
+    margin-top: calc(1px + (30 - 1) * ((100vw - 300px) / (1600 - 300)));
+  }
+
   .s5_w1 {
     grid-column-start: 2;
     grid-column-end: 21;
-    grid-row-start: 9;
+    grid-row-start: 8;
     grid-row-end: 20;
     line-height: calc(10px + (75 - 10) * ((100vw - 300px) / (1600 - 300)));
   }
@@ -4125,7 +4670,7 @@ div.shinshuku > div.sideBody > div.sideBodyHeader > a.shuku {
     grid-column-end: 21;
     grid-row-start: 13;
     grid-row-end: 20;
-    line-height: calc(10px + (80 - 10) * ((100vw - 300px) / (1600 - 300)));
+    line-height: calc(10px + (75 - 10) * ((100vw - 300px) / (1600 - 300)));
   }
 
   .s5_w3 {
@@ -4133,7 +4678,7 @@ div.shinshuku > div.sideBody > div.sideBodyHeader > a.shuku {
     grid-column-end: 21;
     grid-row-start: 16;
     grid-row-end: 20;
-    line-height: calc(10px + (80 - 10) * ((100vw - 300px) / (1600 - 300)));
+    line-height: calc(10px + (75 - 10) * ((100vw - 300px) / (1600 - 300)));
   }
 
   .s5_w4 {
@@ -4141,7 +4686,7 @@ div.shinshuku > div.sideBody > div.sideBodyHeader > a.shuku {
     grid-column-end: 21;
     grid-row-start: 18;
     grid-row-end: 20;
-    line-height: calc(10px + (80 - 10) * ((100vw - 300px) / (1600 - 300)));
+    line-height: calc(10px + (75 - 10) * ((100vw - 300px) / (1600 - 300)));
   }
 
   .s5_author {
@@ -4157,6 +4702,94 @@ div.shinshuku > div.sideBody > div.sideBodyHeader > a.shuku {
   .s5_w4, .s5_w3, .s5_w2, .s5_w1 {
     line-height: calc(10px + (100 - 10) * ((100vw - 300px) / (1600 - 300)));
     font-size: calc(10px + (11 - 10) * ((100vw - 300px) / (1600 - 300)));
+  }
+}
+/* iPhone 6 above_horizental */
+@media (max-width: 750px) and (max-height: 450px) {
+  .fun-valentine {
+    background-color: white;
+    padding: 10px 0 0 10px;
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(20, 5vh);
+  }
+
+  .s5_title {
+    font-size: calc(14px + (100 - 14) * ((100vw - 300px) / (1600 - 300)));
+    grid-column-start: 2;
+    grid-column-end: 20;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    z-index: 2;
+    margin-top: calc(1px + (30 - 1) * ((100vw - 300px) / (1600 - 300)));
+  }
+
+  .s5_w1 {
+    grid-column-start: 2;
+    grid-column-end: 10;
+    grid-row-start: 5;
+    grid-row-end: 12;
+    z-index: 1;
+    font-size: calc(12px + (20 - 12) * ((100vw - 300px) / (1600 - 300)));
+    line-height: calc(10px + (50 - 10) * ((100vw - 300px) / (1600 - 300)));
+  }
+
+  .s5_w2 {
+    grid-column-start: 11;
+    grid-column-end: 20;
+    grid-row-start: 5;
+    grid-row-end: 20;
+    z-index: 1;
+    font-size: calc(12px + (20 - 12) * ((100vw - 300px) / (1600 - 300)));
+    line-height: calc(10px + (50 - 10) * ((100vw - 300px) / (1600 - 300)));
+  }
+
+  .s5_w3 {
+    grid-column-start: 11;
+    grid-column-end: 20;
+    grid-row-start: 11;
+    grid-row-end: 20;
+    z-index: 1;
+    font-size: calc(12px + (20 - 12) * ((100vw - 300px) / (1600 - 300)));
+    line-height: calc(10px + (50 - 10) * ((100vw - 300px) / (1600 - 300)));
+  }
+
+  .s5_w4 {
+    grid-column-start: 11;
+    grid-column-end: 21;
+    grid-row-start: 17;
+    grid-row-end: 20;
+    z-index: 1;
+    font-size: calc(12px + (20 - 12) * ((100vw - 300px) / (1600 - 300)));
+    line-height: calc(10px + (50 - 10) * ((100vw - 300px) / (1600 - 300)));
+  }
+
+  .s5_author {
+    grid-column-start: 11;
+    grid-column-end: 20;
+    grid-row-start: 18;
+    grid-row-end: 20;
+    z-index: 1;
+    color: #a8a5a5;
+    font-size: calc(10px + (12 - 10) * ((100vw - 300px) / (1600 - 300)));
+  }
+
+  .s5_p1, .s5_p2 {
+    display: none;
+  }
+
+  .chet_CB_logo {
+    display: none;
+  }
+}
+/* iPhone SE_Horizental */
+@media (max-width: 568px) and (max-height: 320px) {
+  .s5_w1, .s5_w2, .s5_w3, .s5_w4 {
+    font-size: calc(10px + (18 - 10) * ((100vw - 300px) / (1600 - 300)));
+  }
+
+  .s5_author {
+    font-size: calc(5px + (20 - 5) * ((100vw - 300px) / (1600 - 300)));
   }
 }
 @media (max-width: 1024px) {
@@ -4380,6 +5013,87 @@ div.shinshuku > div.sideBody > div.sideBodyHeader > a.shuku {
     width: auto;
   }
 }
+/* iPhone 6 above_horizental */
+@media (max-width: 750px) and (max-height: 450px) {
+  .fun-valentine {
+    background-color: white;
+    padding: 10px 0 0 10px;
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(20, 5vh);
+  }
+
+  .s6_title {
+    font-size: calc(14px + (100 - 14) * ((100vw - 300px) / (1600 - 300)));
+    grid-column-start: 2;
+    grid-column-end: 20;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    z-index: 2;
+    margin-top: calc(1px + (30 - 1) * ((100vw - 300px) / (1600 - 300)));
+  }
+
+  .s6_w1 {
+    grid-column-start: 2;
+    grid-column-end: 10;
+    grid-row-start: 5;
+    grid-row-end: 12;
+    z-index: 1;
+    font-size: calc(12px + (20 - 12) * ((100vw - 300px) / (1600 - 300)));
+    line-height: calc(10px + (40 - 10) * ((100vw - 300px) / (1600 - 300)));
+    padding: 0;
+  }
+
+  .s6_w2 {
+    grid-column-start: 2;
+    grid-column-end: 10;
+    grid-row-start: 13;
+    grid-row-end: 20;
+    z-index: 1;
+    font-size: calc(12px + (20 - 12) * ((100vw - 300px) / (1600 - 300)));
+    line-height: calc(10px + (40 - 10) * ((100vw - 300px) / (1600 - 300)));
+    padding: 0;
+  }
+
+  .s6_w3 {
+    grid-column-start: 11;
+    grid-column-end: 20;
+    grid-row-start: 5;
+    grid-row-end: 20;
+    z-index: 1;
+    font-size: calc(12px + (20 - 12) * ((100vw - 300px) / (1600 - 300)));
+    line-height: calc(10px + (40 - 10) * ((100vw - 300px) / (1600 - 300)));
+    padding: 0;
+  }
+
+  .s6_author {
+    grid-column-start: 11;
+    grid-column-end: 20;
+    grid-row-start: 19;
+    grid-row-end: 20;
+    z-index: 1;
+    color: #a8a5a5;
+    font-size: calc(10px + (12 - 10) * ((100vw - 300px) / (1600 - 300)));
+  }
+
+  .s6_p1, .s6_p2, .s6_p3, .s6_p4 {
+    display: none;
+  }
+
+  .chet_CB_logo {
+    display: none;
+  }
+}
+/* iPhone SE_Horizental */
+@media (max-width: 568px) and (max-height: 320px) {
+  .s6_w1, .s6_w2, .s6_w3 {
+    font-size: calc(10px + (18 - 10) * ((100vw - 300px) / (1600 - 300)));
+  }
+
+  .s6_author {
+    font-size: calc(5px + (20 - 5) * ((100vw - 300px) / (1600 - 300)));
+  }
+}
 @media (max-width: 1024px) {
   .s7_w1 {
     grid-column-start: 9;
@@ -4442,6 +5156,16 @@ div.shinshuku > div.sideBody > div.sideBodyHeader > a.shuku {
   .s7_p2 img {
     width: 100%;
     height: auto;
+  }
+}
+/* iPad Mini_horizental */
+@media (max-width: 1024px) and (max-height: 768px) {
+  .s7_title {
+    font-size: calc(14px + (80 - 14) * ((100vw - 300px) / (1600 - 300)));
+  }
+
+  .s7_w1, .s7_w2, .s7_w3 {
+    line-height: calc(10px + (30 - 10) * ((100vw - 300px) / (1600 - 300)));
   }
 }
 @media (max-width: 576px) {
@@ -4551,6 +5275,84 @@ div.shinshuku > div.sideBody > div.sideBodyHeader > a.shuku {
     grid-column-end: 20;
     grid-row-start: 14;
     grid-row-end: 20;
+  }
+}
+/* iPhone SE_Horizental */
+@media (max-width: 568px) and (max-height: 320px) {
+  .s7_w1, .s7_w2, .s7_w3 {
+    font-size: calc(10px + (18 - 10) * ((100vw - 300px) / (1600 - 300)));
+  }
+
+  .s7_author {
+    font-size: calc(5px + (20 - 5) * ((100vw - 300px) / (1600 - 300)));
+  }
+}
+/* iPhone 6 above_horizental */
+@media (max-width: 750px) and (max-height: 450px) {
+  .fun-valentine {
+    background-color: white;
+    padding: 10px 0 0 10px;
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(20, 5vh);
+  }
+
+  .s7_title {
+    font-size: calc(14px + (100 - 14) * ((100vw - 300px) / (1600 - 300)));
+    grid-column-start: 2;
+    grid-column-end: 20;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    z-index: 2;
+    margin-top: calc(1px + (30 - 1) * ((100vw - 300px) / (1600 - 300)));
+  }
+
+  .s7_w1 {
+    grid-column-start: 2;
+    grid-column-end: 10;
+    grid-row-start: 5;
+    grid-row-end: 12;
+    z-index: 1;
+    font-size: calc(12px + (22 - 12) * ((100vw - 300px) / (1600 - 300)));
+    line-height: calc(10px + (37 - 10) * ((100vw - 300px) / (1600 - 300)));
+  }
+
+  .s7_w2 {
+    grid-column-start: 2;
+    grid-column-end: 10;
+    grid-row-start: 15;
+    grid-row-end: 20;
+    z-index: 1;
+    font-size: calc(12px + (22 - 12) * ((100vw - 300px) / (1600 - 300)));
+    line-height: calc(10px + (37 - 10) * ((100vw - 300px) / (1600 - 300)));
+  }
+
+  .s7_w3 {
+    grid-column-start: 11;
+    grid-column-end: 20;
+    grid-row-start: 5;
+    grid-row-end: 20;
+    z-index: 1;
+    font-size: calc(12px + (22 - 12) * ((100vw - 300px) / (1600 - 300)));
+    line-height: calc(10px + (37 - 10) * ((100vw - 300px) / (1600 - 300)));
+  }
+
+  .s7_author {
+    grid-column-start: 11;
+    grid-column-end: 20;
+    grid-row-start: 19;
+    grid-row-end: 20;
+    z-index: 1;
+    color: #a8a5a5;
+    font-size: calc(10px + (12 - 10) * ((100vw - 300px) / (1600 - 300)));
+  }
+
+  .s7_p1, .s7_p2 {
+    display: none;
+  }
+
+  .chet_CB_logo {
+    display: none;
   }
 }
 

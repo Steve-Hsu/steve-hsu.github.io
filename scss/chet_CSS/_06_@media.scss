@@ -47,6 +47,9 @@
     }
   }
 }
+
+
+
 @media (max-width:576px) {
   .s6_title{
     font-size: calc(14px + (120 - 14) * ((100vw - 300px) / (1600 - 300)));
@@ -163,6 +166,7 @@
   }
 }
 
+
 @media (max-width:375px) {
   .s6_w1{
     grid-column-start:2;
@@ -221,5 +225,94 @@
       height:100%;
       width:auto;
     }
+  }
+}
+
+
+/* iPhone 6 above_horizental */
+@media (max-width:750px) and (max-height:450px) {
+  .fun-valentine{
+    background-color: white;
+    padding: 10px 0 0 10px;
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(20, 5vh);
+  }
+
+
+    .s6_title{
+      font-size: calc(14px + (100 - 14) * ((100vw - 300px) / (1600 - 300)));
+      grid-column-start:2;
+      grid-column-end: 20;
+      grid-row-start:1;
+      grid-row-end: 5;
+      z-index: 2;
+
+      margin-top: calc(1px + (30 - 1) * ((100vw - 300px) / (1600 - 300)));
+    }
+
+    .s6_w1{
+      grid-column-start:2;
+      grid-column-end: 10;
+      grid-row-start: 5;
+      grid-row-end: 12;
+      z-index: 1;
+
+      font-size: calc(12px + (20 - 12) * ((100vw - 300px) / (1600 - 300)));
+      line-height: calc(10px + (40 - 10) * ((100vw - 300px) / (1600 - 300)));
+      padding: 0;
+    }
+    .s6_w2{
+      grid-column-start:2;
+      grid-column-end: 10;
+      grid-row-start: 13;
+      grid-row-end: 20;
+      z-index: 1;
+
+      font-size: calc(12px + (20 - 12) * ((100vw - 300px) / (1600 - 300)));
+      line-height: calc(10px + (40 - 10) * ((100vw - 300px) / (1600 - 300)));
+      padding: 0;
+    }
+    .s6_w3{
+      grid-column-start:11;
+      grid-column-end: 20;
+      grid-row-start: 5;
+      grid-row-end: 20;
+      z-index: 1;
+
+      font-size: calc(12px + (20 - 12) * ((100vw - 300px) / (1600 - 300)));
+      line-height: calc(10px + (40 - 10) * ((100vw - 300px) / (1600 - 300)));
+      padding: 0;
+    }
+
+    .s6_author{
+      grid-column-start:11;
+      grid-column-end: 20;
+      grid-row-start: 19;
+      grid-row-end: 20;
+      z-index: 1;
+      color:rgb(168, 165, 165);
+      font-size:calc(10px + (12 - 10) * ((100vw - 300px) / (1600 - 300)));
+    }
+
+    .s6_p1, .s6_p2, .s6_p3, .s6_p4{
+      display: none;
+    }
+
+    .chet_CB_logo{
+      display: none;
+
+    }
+
+}
+
+/* iPhone SE_Horizental */
+@media (max-width:568px) and  (max-height:320px) {
+  .s6_w1, .s6_w2, .s6_w3{
+    font-size: calc(10px + (18 - 10) * ((100vw - 300px) / (1600 - 300)));
+  }
+
+  .s6_author{
+    font-size:calc(5px + (20 - 5) * ((100vw - 300px) / (1600 - 300)));
   }
 }
