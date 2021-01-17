@@ -646,12 +646,12 @@ div.shinshuku > div.sideBody > div.sideBodyHeader > a.shuku {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #888;
+  background: black;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: white;
 }
 
 .odaiba .p1 {

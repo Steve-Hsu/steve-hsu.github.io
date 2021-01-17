@@ -152,17 +152,17 @@ div.shinshuku > div.sideBody > div.sideBodyHeader > a.shuku {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: black;
+  background: rgba(0, 0, 0, 1);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #888;
+  background: black;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: white;
 }
 .odaiba .p1 {
   overflow: auto;
