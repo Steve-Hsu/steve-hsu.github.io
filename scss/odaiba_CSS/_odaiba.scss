@@ -1,97 +1,95 @@
-.JP_body{
+.JP_body {
   background-color: black;
   padding: 0;
 }
 
-
-ul{
+ul {
   list-style-type: none;
 }
 
 // 1st Level-------------------------
 // Content of Each Page
-%each_content{
+%each_content {
   background-color: white;
   display: flex;
 }
 
-.odaiba{
+.odaiba {
   @extend %each_content;
 }
 
-.shinbashi{
+.shinbashi {
   @extend %each_content;
 }
 
-.ginza{
+.ginza {
   @extend %each_content;
 }
 
-.shinagawa{
-    @extend %each_content;
+.shinagawa {
+  @extend %each_content;
 }
 
-.shinshuku{
-    @extend %each_content;
+.shinshuku {
+  @extend %each_content;
 }
 
 //Fotter of each page------------------------
-.odaibaFooter{
+.odaibaFooter {
   position: absolute;
   width: 100vw;
   padding-top: 10px;
-  background-color:black;
+  background-color: black;
   height: 110px;
   text-align: center;
-  color:rgba(200, 200, 200, 0.6);
+  color: rgba(200, 200, 200, 0.6);
 }
 
-.mediaLogo{
+.mediaLogo {
   margin: 5px;
   font-size: 16px;
-  color:rgba(200, 200, 200, 0.6);
+  color: rgba(200, 200, 200, 0.6);
 }
 
-.mediaLogo:hover{
-  color:white;
+.mediaLogo:hover {
+  color: white;
 }
 
-.copyright{
+.copyright {
   font-size: calc(8px + (10 - 8) * ((100vw - 300px) / (1600 - 300)));
 }
 
-
 //SideBody--------
 // For biggest monitor
-.sideBody{
+.sideBody {
   padding: 0px;
   flex: 1 1 35%;
 }
 
-.sideBodyHeader{
+.sideBodyHeader {
   background-color: white;
-  height:5vh;
+  height: 5vh;
   margin: 0;
   display: flex;
 }
 
-.sideBodyHeader a{
-  color:rgb(200, 200, 200);
+.sideBodyHeader a {
+  color: rgb(200, 200, 200);
   font-family: 'M PLUS Rounded 1c', sans-serif;
   display: block;
   text-align: center;
 }
 
-.sideBodyHeader a div{
-  margin-top:2.5vh;
+.sideBodyHeader a div {
+  margin-top: 2.5vh;
   transform: translate(0, -50%);
 }
 
-.sideBodyHeader a:hover{
-  text-decoration:none;
+.sideBodyHeader a:hover {
+  text-decoration: none;
 }
 
-.headerLabel{
+.headerLabel {
   background-color: white;
   font-size: calc(14px + (16 - 14) * ((100vw - 300px) / (1600 - 300)));
   -ms-flex: 0 0 20%;
@@ -99,58 +97,74 @@ ul{
   max-width: 20%;
 }
 
-.headerLabel:hover{
+.headerLabel:hover {
   background-color: rgba(200, 200, 200, 0.5);
   border-radius: 7px 7px 0 0;
 }
 
-
 // Siderbar style when the page is selected
-%Selected_sidebar_word{
+%Selected_sidebar_word {
   -webkit-animation: wordChange 0.3s forwards;
   -webkit-animation-timing-function: ease-out;
   font-family: 'Voltaire', sans-serif;
 }
 
-
 // header color of side body
-div.odaiba > div.sideBody > div.sideBodyHeader> a.oda{
-    background-color: black;
-    border-radius: 7px 7px 0 0;
+div.odaiba > div.sideBody > div.sideBodyHeader > a.oda {
+  background-color: black;
+  border-radius: 7px 7px 0 0;
 }
 
-div.shinbashi > div.sideBody > div.sideBodyHeader> a.shin{
-    background-color: black;
-    border-radius: 7px 7px 0 0;
+div.shinbashi > div.sideBody > div.sideBodyHeader > a.shin {
+  background-color: black;
+  border-radius: 7px 7px 0 0;
 }
 
-div.ginza > div.sideBody > div.sideBodyHeader> a.gin{
-    background-color: black;
-    border-radius: 7px 7px 0 0;
+div.ginza > div.sideBody > div.sideBodyHeader > a.gin {
+  background-color: black;
+  border-radius: 7px 7px 0 0;
 }
 
-div.shinagawa > div.sideBody > div.sideBodyHeader> a.shi{
-    background-color: black;
-    border-radius: 7px 7px 0 0;
+div.shinagawa > div.sideBody > div.sideBodyHeader > a.shi {
+  background-color: black;
+  border-radius: 7px 7px 0 0;
 }
 
-div.shinshuku > div.sideBody > div.sideBodyHeader> a.shuku{
-    background-color: black;
-    border-radius: 7px 7px 0 0;
+div.shinshuku > div.sideBody > div.sideBodyHeader > a.shuku {
+  background-color: black;
+  border-radius: 7px 7px 0 0;
 }
-
-
 
 // Odaiba Photos
-.odaiba .gridContainer{
+.odaiba .gridContainer {
   background-color: black;
   padding: 10px 0 0 10px;
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: repeat(9, 7vw);
 }
+// Scroll bar
+/* width */
+::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+}
 
-.odaiba .p1{
+/* Track */
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.odaiba .p1 {
   overflow: auto;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -161,12 +175,12 @@ div.shinshuku > div.sideBody > div.sideBodyHeader> a.shuku{
   border-style: solid;
 }
 
-.odaiba .p1 img{
+.odaiba .p1 img {
   height: 100%;
   width: auto;
 }
 
-.odaiba .p2{
+.odaiba .p2 {
   overflow: auto;
   grid-column-start: 3;
   grid-column-end: 7;
@@ -177,12 +191,12 @@ div.shinshuku > div.sideBody > div.sideBodyHeader> a.shuku{
   border-style: solid;
 }
 
-.odaiba .p2 img{
+.odaiba .p2 img {
   height: 100%;
   width: auto;
 }
 
-.odaiba .p3{
+.odaiba .p3 {
   overflow: auto;
   grid-column-start: 7;
   grid-column-end: 11;
@@ -193,12 +207,12 @@ div.shinshuku > div.sideBody > div.sideBodyHeader> a.shuku{
   border-style: solid;
 }
 
-.odaiba .p3 img{
+.odaiba .p3 img {
   height: 100%;
   width: auto;
 }
 
-.odaiba .p4{
+.odaiba .p4 {
   overflow: auto;
   grid-column-start: 1;
   grid-column-end: 7;
@@ -210,12 +224,12 @@ div.shinshuku > div.sideBody > div.sideBodyHeader> a.shuku{
   border-style: solid;
 }
 
-.odaiba .p4 img{
+.odaiba .p4 img {
   height: 100%;
   width: auto;
 }
 
-.odaiba .p5{
+.odaiba .p5 {
   overflow: auto;
   grid-column-start: 7;
   grid-column-end: 11;
@@ -226,12 +240,12 @@ div.shinshuku > div.sideBody > div.sideBodyHeader> a.shuku{
   border-style: solid;
 }
 
-.odaiba .p5 img{
+.odaiba .p5 img {
   height: 100%;
   width: auto;
 }
 
-.odaiba .p6{
+.odaiba .p6 {
   overflow: auto;
   grid-column-start: 1;
   grid-column-end: 5;
@@ -242,13 +256,12 @@ div.shinshuku > div.sideBody > div.sideBodyHeader> a.shuku{
   border-style: solid;
 }
 
-.odaiba .p6 img{
+.odaiba .p6 img {
   height: 100%;
   width: auto;
 }
 
-
-.odaiba .p7{
+.odaiba .p7 {
   overflow: auto;
   grid-column-start: 5;
   grid-column-end: 11;
@@ -259,7 +272,7 @@ div.shinshuku > div.sideBody > div.sideBodyHeader> a.shuku{
   border-style: solid;
 }
 
-.odaiba .p7 img{
+.odaiba .p7 img {
   height: 100%;
   width: auto;
 }
@@ -267,71 +280,70 @@ div.shinshuku > div.sideBody > div.sideBodyHeader> a.shuku{
 // 2nd Level-----------------------
 //below .odaiba, .shinbashi, .ginza {}
 //SideBar--------
-.sideBar{
+.sideBar {
   // background-color:green;
   height: auto;
   flex: 1 1 0;
-
 }
-.sideBar a{
-  color:rgb(150, 150, 150);
+.sideBar a {
+  color: rgb(150, 150, 150);
   font-weight: 100;
 }
 
-.sideBarContiner{
+.sideBarContiner {
   position: fixed;
 }
 
-.odaibaSteveLogo{
+.odaibaSteveLogo {
   margin: 16px;
 }
 
-.sideBarList a:hover{
+.sideBarList a:hover {
   text-decoration: none;
-  color:black;
+  color: black;
 }
 
-.sideBarList{
+.sideBarList {
   padding-left: 15px;
 }
 
-@-webkit-keyframes wordChange{
+@-webkit-keyframes wordChange {
   from {
     // font-size: 10px;
   }
   to {
     font-size: calc(14px + (50 - 14) * ((100vw - 300px) / (1600 - 300)));
-    color:black;
+    color: black;
   }
 }
 
-div.odaiba div.sideBar div.sideOdai a{
+div.odaiba div.sideBar div.sideOdai a {
   @extend %Selected_sidebar_word;
 }
 
-div.shinbashi div.sideBar div.sideShin a{
+div.shinbashi div.sideBar div.sideShin a {
   @extend %Selected_sidebar_word;
 }
 
-div.ginza div.sideBar div.sideGin a{
+div.ginza div.sideBar div.sideGin a {
   @extend %Selected_sidebar_word;
 }
 
-div.shinagawa div.sideBar div.sideShi a{
+div.shinagawa div.sideBar div.sideShi a {
   @extend %Selected_sidebar_word;
 }
 
-div.shinshuku div.sideBar div.sideShinshuku a{
+div.shinshuku div.sideBar div.sideShinshuku a {
   @extend %Selected_sidebar_word;
 }
 
-@import "./shin";
-@import "./gin";
-@import "./shi";
-@import "./shinshuku";
-@import "./odaiba_@media";
-@import "./shin_@media";
-@import "./gin_@media";
-@import "./shi_@media";
-@import "./shinshuku_@media";
-@import "./photoDisplay";
+@import './shin';
+@import './gin';
+@import './shi';
+@import './shinshuku';
+@import './odaiba_@media';
+@import './shin_@media';
+@import './gin_@media';
+@import './shi_@media';
+@import './shinshuku_@media';
+@import './photoDisplay';
