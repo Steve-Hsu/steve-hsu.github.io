@@ -19,49 +19,46 @@ nav {
 }
 
 .title {
-  font-family: 'Palanquin Dark', sans-serif;
+  font-family: "Palanquin Dark", sans-serif;
   font-size: 1.5rem;
-
 }
 
-#HCard{
-  border-color: rgba(255, 255, 255,0);
+#HCard {
+  border-color: rgba(255, 255, 255, 0);
 }
 
-.preface{
+.preface {
   text-align: center;
 }
 
 .singleYear {
   font-size: 4rem;
-  font-family: 'Palanquin Dark', sans-serif;
+  font-family: "Palanquin Dark", sans-serif;
   padding-bottom: 2rem;
 }
 
 /*nav bar ------------------------------------------------------- */
-nav > button#myNavBtn{
-    background-color: rgba(0, 0, 0, 0.2);
+nav > button#myNavBtn {
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
-nav > button#myNavBtn:hover{
-    background-color: rgba(0, 0, 0, 0.5);
+nav > button#myNavBtn:hover {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
-#myNav{
-  color: rgba(4, 4, 4,0.5) ;
-
+#myNav {
+  color: rgba(4, 4, 4, 0.5);
 }
 
-#myNav:hover{
+#myNav:hover {
   color: rgb(4, 4, 4);
 }
 
-li >a.dropdown-toggle #myNav #dropdown01{
-  color: rgba(4, 4, 4,0.5)!important;
-
+li > a.dropdown-toggle #myNav #dropdown01 {
+  color: rgba(4, 4, 4, 0.5) !important;
 }
 
-li>a#myNav #dropdown01:hover{
+li > a#myNav #dropdown01:hover {
   color: rgb(4, 4, 4);
 }
 
@@ -71,51 +68,51 @@ li>a#myNav #dropdown01:hover{
 }
 
 body.home li.home > a.nav-link#myNav {
-  @extend %currentPage
+  @extend %currentPage;
 }
 
 body.home li.home > a.nav-link#myNav:hover {
-  @extend %currentPage
+  @extend %currentPage;
 }
 
 body.resume li.resume > a.nav-link#myNav {
-  @extend %currentPage
+  @extend %currentPage;
 }
 
 body.resume li.resume > a.nav-link#myNav:hover {
-  @extend %currentPage
+  @extend %currentPage;
 }
 
 body.demo li.demo > a.nav-link#myNav {
-  @extend %currentPage
+  @extend %currentPage;
 }
 
 body.demo li.demo > a.nav-link#myNav:hover {
-  @extend %currentPage
+  @extend %currentPage;
 }
 
-body.about li.about> a.nav-link#myNav {
-  @extend %currentPage
+body.about li.about > a.nav-link#myNav {
+  @extend %currentPage;
 }
 
-body.about li.about> a.nav-link#myNav:hover {
-  @extend %currentPage
+body.about li.about > a.nav-link#myNav:hover {
+  @extend %currentPage;
 }
 
-body.products li.products> a.nav-link#myNav {
-  @extend %currentPage
+body.products li.products > a.nav-link#myNav {
+  @extend %currentPage;
 }
 
-body.products li.products> a.nav-link#myNav:hover {
-  @extend %currentPage
+body.products li.products > a.nav-link#myNav:hover {
+  @extend %currentPage;
 }
 
-body.orders li.orders> a.nav-link#myNav {
-  @extend %currentPage
+body.orders li.orders > a.nav-link#myNav {
+  @extend %currentPage;
 }
 
-body.orders li.orders> a.nav-link#myNav:hover {
-  @extend %currentPage
+body.orders li.orders > a.nav-link#myNav:hover {
+  @extend %currentPage;
 }
 
 /* anime ------------------------------------------------------- */
@@ -129,164 +126,173 @@ body.orders li.orders> a.nav-link#myNav:hover {
 }
 
 /* trigrams ------------------------------------------------------- */
-.trigrams{
+.trigrams {
   position: absolute;
   display: flex;
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
   background-color: rgba(255, 255, 255, 0);
-  border-radius: .25rem
-
+  border-radius: 0.25rem;
 }
-.tri{
+.tri {
   background-color: rgba(255, 255, 255, 0);
   display: inline-block;
   height: 20px;
   position: relative;
   //fullWidth:88px * 2
   width: 20px;
-  border-radius: 50%
+  border-radius: 50%;
 }
 
-.triGap{
+.triGap {
   background-color: white;
   // display: inline-block;
   height: 0px;
-  width:0px;
+  width: 0px;
   transform: translate(79px);
   // top: 50%;
   // left: 50%;
 }
 
-.triGapBlack{
+.triGapBlack {
   background-color: black;
 }
 
 /* animation ------------------------------------------------------- */
-%homeCardHovered{
+%homeCardHovered {
   animation: homecard 0.5s;
   animation-fill-mode: both;
-  .circle{
+  .circle {
     animation: circleHover 0.5s;
     animation-fill-mode: both;
   }
 }
 
-%homeCardNotHovered{
+%homeCardNotHovered {
   animation: Rhomecard 0.5s;
   animation-fill-mode: both;
-  .circle{
+  .circle {
     animation: RcircleHover 0.5s;
     animation-fill-mode: both;
   }
 }
 
-.homeCard:hover,{
-  @extend %homeCardHovered
+.homeCard:hover {
+  @extend %homeCardHovered;
 }
 
-.homeCard:not(:hover){
-  @extend %homeCardNotHovered
+.homeCard:not(:hover) {
+  @extend %homeCardNotHovered;
 }
 
-@keyframes homecard{
-  from{ background-color: rgb(255, 255, 255); color:rgb(0, 0, 0)}
-  to{background-color: black; color:rgb(255, 255, 255); box-shadow: 0 5px 7px grey}
-}
-
-
-@keyframes Rhomecard{
-  from{ background-color: black; color:rgb(255, 255, 255);box-shadow: 0 5px 7px grey}
-  to{background-color: rgb(255, 255, 255); color:rgb(0, 0, 0)}
+@keyframes homecard {
+  from {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
   }
+  to {
+    background-color: black;
+    color: rgb(255, 255, 255);
+    box-shadow: 0 5px 7px grey;
+  }
+}
+
+@keyframes Rhomecard {
+  from {
+    background-color: black;
+    color: rgb(255, 255, 255);
+    box-shadow: 0 5px 7px grey;
+  }
+  to {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+  }
+}
 
 /* animation circle */
-@keyframes circleHover{
-  from{
+@keyframes circleHover {
+  from {
     transform: translateY(0);
   }
-  to{
+  to {
     transform: translateY(120px);
   }
 }
 
-@keyframes RcircleHover{
-  from{
+@keyframes RcircleHover {
+  from {
     transform: translateY(120px);
   }
-  to{
+  to {
     transform: translateX(0);
   }
 }
 
 /* media screen size change -------------------------------------------------------*/
-@media (min-width:0px) {
+@media (min-width: 0px) {
   .singleYear {
     font-size: 3rem;
   }
-  .homeCard:hover{
+  .homeCard:hover {
     animation: homecard 0.5s;
     animation-fill-mode: both;
-    .circle{
+    .circle {
       animation: circleHover 0.5s;
       animation-fill-mode: both;
     }
   }
 }
 
-@media (min-width:576px) {
+@media (min-width: 576px) {
   .singleYear {
     font-size: 5rem;
   }
-  .homeCard:hover{
+  .homeCard:hover {
     animation: homecard 0.5s;
     animation-fill-mode: both;
-    .circle{
+    .circle {
       animation: circleHover 0.5s;
       animation-fill-mode: both;
     }
   }
 }
 
-@media (min-width:768px) {
+@media (min-width: 768px) {
   .singleYear {
     font-size: 7rem;
   }
-  .homeCard:hover{
+  .homeCard:hover {
     animation: homecard 0.5s;
     animation-fill-mode: both;
-    cursor:pointer;
-    .circle{
+    cursor: pointer;
+    .circle {
       animation: circleHover 0.5s;
       animation-fill-mode: both;
     }
   }
 }
 
-@media (min-width:992px) {
+@media (min-width: 992px) {
   .singleYear {
     font-size: 8rem;
   }
-  .d-md-block{
-      font-size: 1.3rem;
+  .d-md-block {
+    font-size: 1.3rem;
   }
-
-
 }
 
-@media (min-width:1200px) {
+@media (min-width: 1200px) {
   .singleYear {
     font-size: 10rem;
   }
-  .d-md-block{
-      font-size: 1.5rem;
+  .d-md-block {
+    font-size: 1.5rem;
   }
-
 }
 
 /* import partials */
 @import "./KL_CSS/KL";
 @import "./KL_CSS/KLpopup";
 @import "./odaiba_CSS/odaiba";
-@import "./chet_CSS/chet"
+@import "./chet_CSS/chet";

@@ -75,7 +75,7 @@ ul {
 
 .sideBodyHeader a {
   color: rgb(200, 200, 200);
-  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-family: "M PLUS Rounded 1c", sans-serif;
   display: block;
   text-align: center;
 }
@@ -106,7 +106,7 @@ ul {
 %Selected_sidebar_word {
   -webkit-animation: wordChange 0.3s forwards;
   -webkit-animation-timing-function: ease-out;
-  font-family: 'Voltaire', sans-serif;
+  font-family: "Voltaire", sans-serif;
 }
 
 // header color of side body
@@ -152,12 +152,12 @@ div.shinshuku > div.sideBody > div.sideBodyHeader > a.shuku {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, 1);
+  background: white;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: black;
+  background: white;
 }
 
 /* Handle on hover */
@@ -337,13 +337,13 @@ div.shinshuku div.sideBar div.sideShinshuku a {
   @extend %Selected_sidebar_word;
 }
 
-@import './shin';
-@import './gin';
-@import './shi';
-@import './shinshuku';
-@import './odaiba_@media';
-@import './shin_@media';
-@import './gin_@media';
-@import './shi_@media';
-@import './shinshuku_@media';
-@import './photoDisplay';
+@import "./shin";
+@import "./gin";
+@import "./shi";
+@import "./shinshuku";
+@import "./odaiba_@media";
+@import "./shin_@media";
+@import "./gin_@media";
+@import "./shi_@media";
+@import "./shinshuku_@media";
+@import "./photoDisplay";

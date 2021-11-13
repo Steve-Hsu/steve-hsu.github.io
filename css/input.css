@@ -641,12 +641,12 @@ div.shinshuku > div.sideBody > div.sideBodyHeader > a.shuku {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: black;
+  background: white;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: black;
+  background: white;
 }
 
 /* Handle on hover */
