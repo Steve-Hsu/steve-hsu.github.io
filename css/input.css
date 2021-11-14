@@ -62,6 +62,45 @@ li > a#myNav #dropdown01:hover {
   color: #040404;
 }
 
+.preface_flex_parent {
+  background-color: green;
+  display: flex;
+  flex-wrap: wrap;
+  justify-self: center;
+  height: 90vh;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.preface_flex_child {
+  background-color: red;
+  padding: 0;
+  flex: 1 1 450px;
+  /* Stretching */
+  flex: 0 1 450px;
+  /* No stretching */
+  padding: 0;
+}
+
+.preface_img {
+  position: relative;
+  background-color: yellow;
+  width: 100%;
+  height: 50%;
+}
+.preface_img img {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.preface_words {
+  background-color: lightcoral;
+  position: relative;
+  width: 100%;
+  height: 50%;
+}
+
 body.orders li.orders > a.nav-link#myNav:hover, body.orders li.orders > a.nav-link#myNav, body.products li.products > a.nav-link#myNav:hover, body.products li.products > a.nav-link#myNav, body.about li.about > a.nav-link#myNav:hover, body.about li.about > a.nav-link#myNav, body.demo li.demo > a.nav-link#myNav:hover, body.demo li.demo > a.nav-link#myNav, body.resume li.resume > a.nav-link#myNav:hover, body.resume li.resume > a.nav-link#myNav, body.home li.home > a.nav-link#myNav:hover, body.home li.home > a.nav-link#myNav {
   color: #040404;
   font-weight: 900;
@@ -79,7 +118,7 @@ body.orders li.orders > a.nav-link#myNav:hover, body.orders li.orders > a.nav-li
 
 /* trigrams ------------------------------------------------------- */
 .trigrams {
-  position: absolute;
+  position: relative;
   display: flex;
   flex-direction: column;
   min-width: 0;
