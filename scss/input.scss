@@ -9,8 +9,18 @@ body {
 }
 
 footer {
-  background-color: rgb(241, 224, 194);
-  height: 10%;
+  position: absolute;
+  width: 100vw;
+  padding-top: 10px;
+  background-color: black;
+  height: 110px;
+  text-align: center;
+  color: rgba(200, 200, 200, 0.6);
+}
+
+.homeFooter{
+  top : 85vh;
+  height: 15vh;
 }
 
 nav {
@@ -67,9 +77,10 @@ li > a#myNav #dropdown01:hover {
   display: flex;
   flex-wrap: wrap;
   justify-self: center;
-  height: 90vh;
+  height: 85vh;
   width: 100%;
   justify-content: space-around;
+  // justify-content: space-between;
 }
 
 .preface_flex_child {
